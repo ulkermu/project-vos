@@ -1,0 +1,224 @@
+@import "colors";
+@import "typography";
+@import "variables";
+
+header {
+  display: grid;
+  justify-content: center;
+
+  .nav-bar-container {
+    .nav-bar-burger {
+      display: none;
+      align-self: center;
+      justify-content: center;
+      cursor: pointer;
+
+      div {
+        width: 21px;
+        height: 2px;
+        background-color: #fff;
+        margin: 5px;
+        transition: all 0.5s ease-out;
+      }
+    }
+  }
+
+  .nav-bar {
+    background-color: $secondaryLightColor;
+    display: flex;
+    margin-top: 20.35px;
+    width: 1118px;
+    height: 40px;
+    justify-content: space-between;
+
+    .nav-bar-logo {
+      text-align: center;
+    }
+
+    .nav-bar-links {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      li {
+        list-style-type: none;
+
+        .selected {
+          color: $thirdColor;
+        }
+
+        a {
+          text-decoration: none;
+          font-size: 16px;
+          line-height: 38px;
+          letter-spacing: -0.183908px;
+          font-weight: 500;
+          font-style: normal;
+          color: #fff;
+          margin: 0 25px;
+        }
+
+        a:hover {
+          transition: all 300ms ease-out;
+          color: $thirdColor;
+        }
+      }
+
+      .search {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 27px;
+
+        svg {
+          padding: 1px 2px;
+          position: absolute;
+          cursor: pointer;
+        }
+
+        &__icon {
+          fill: #fff;
+          z-index: 99;
+        }
+
+        &__close {
+          right: 2px;
+          display: none;
+          transition: 500ms fill ease-in;
+        }
+
+        &__delete {
+          fill: $clr-gray350;
+          right: 25px;
+          display: none;
+        }
+
+        input {
+          //display: none;
+          background-color: transparent;
+          text-align: center;
+          border: none;
+          border-radius: 50%;
+          font-family: inherit;
+          outline: none;
+          width: 20px;
+          transition: 500ms width ease-in-out, 500ms padding ease-in-out,
+            500ms border-radius ease-in-out;
+
+          &:not(:placeholder-shown) ~ .search__delete {
+            display: block;
+          }
+        }
+
+        //open state
+        &-open input {
+          //display: block;
+          background-color: #fff;
+          width: 200px;
+          padding: 5px;
+          border-radius: $radius;
+        }
+
+        //when content is in text field show delete button
+        &-open svg.search__close {
+          display: block;
+          fill: $primaryColor;
+        }
+
+        &-open svg.search__icon {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.placeholder {
+  height: 1000px;
+  background-color: #0e2542;
+}
+
+@media #{$mq-1180-down} {
+  header {
+    justify-content: flex-start;
+
+    .nav-bar-container {
+      display: flex;
+      right: 1rem;
+      top: 1rem;
+      position: fixed;
+      background-color: #0e2542;
+      border-radius: 50%;
+      z-index: 2500;
+
+      .nav-bar-burger {
+        display: block;
+        padding: 6px;
+        text-align: end;
+
+        .nav-bar-burger-inc-1.nav-bar-burger-inc {
+          transform: rotate(-45deg) translate(-5px, 6px);
+        }
+
+        .nav-bar-burger-inc-2.nav-bar-burger-inc {
+          opacity: 0;
+        }
+
+        .nav-bar-burger-inc-3.nav-bar-burger-inc {
+          transform: rotate(45deg) translate(-5px, -6px);
+        }
+      }
+    }
+
+    .nav-bar-container:hover {
+      transition: all 0.2s ease-out;
+      background-color: $secondaryLightColor;
+    }
+
+    .nav-bar {
+      position: fixed;
+      transform: translateX(-100%);
+      transition: all 300ms ease-out;
+      flex-direction: column;
+      margin-top: 0;
+      width: 250px;
+      height: 100vh;
+      padding: 20px 0;
+
+      .nav-bar-links {
+        flex-direction: column;
+
+        li {
+          border-bottom: 1px solid #fff;
+          width: 100%;
+          padding: 10px 40px;
+
+          a {
+            margin: 0;
+          }
+        }
+
+        .search {
+          border-bottom: 0;
+          justify-content: flex-start;
+          margin: 0;
+
+          &__close {
+            left: 39px;
+          }
+  
+          &__delete {
+            fill: $primaryColor;
+            right: 40px;
+            display: none;
+          }
+        }
+      }
+    }
+
+    .nav-bar.show {
+      transform: translateX(0);
+    }
+  }
+}
