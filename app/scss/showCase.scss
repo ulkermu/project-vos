@@ -1,0 +1,77 @@
+@import "global";
+@import "colors";
+@import "variables";
+
+main {
+  .showcase {
+    display: flex;
+    justify-content: center;
+    margin-top: 58.19px;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .showcase-headline {
+      width: 472px;
+      height: 296px;
+      display: grid;
+      position: relative;
+      left: 62px;
+
+      div {
+        h1 {
+          color: $secondaryColor;
+          font-size: 54px;
+          line-height: 44px;
+          letter-spacing: -0.62px;
+          font-weight: 700, bold;
+        }
+
+        h2 {
+          color: $primaryColor;
+          font-size: 36px;
+          line-height: 44px;
+          letter-spacing: -0.41px;
+          font-weight: 700, bold;
+        }
+      }
+
+      p {
+        padding-top: 30px;
+        color: $primaryLightColor;
+        font-size: 16px;
+        font-weight: 400, normal;
+        line-height: 24px;
+        letter-spacing: 0.17px;
+      }
+    }
+
+    .showcase-img {
+      margin-left: 60.63px;
+
+      img {
+        max-width: 705.83px;
+        height: auto;
+      }
+    }
+  }
+}
+
+@media #{$mq-1180-down} {
+  main {
+    margin-top: 110px;
+
+    .showcase {
+      .showcase-headline {
+        position: static;
+        margin: 20px;
+      }
+      .showcase-img {
+          margin: 0;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
