@@ -4,9 +4,14 @@
 
 main {
   .showcase {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     .showcase-header {
       display: flex;
-      justify-content: center;
+      justify-content: flex-end;
+      width: 1238.46px;
       margin-top: 58.19px;
       align-items: center;
       flex-wrap: wrap;
@@ -16,7 +21,7 @@ main {
         height: 296px;
         display: grid;
         position: relative;
-        left: 62px;
+        top: -16px;
 
         div {
           display: flex;
@@ -28,57 +33,43 @@ main {
             font-size: 54px;
             line-height: 44px;
             letter-spacing: -0.62px;
-            font-weight: 700, bold;
+            font-weight: 700;
           }
 
-          h2 {
-            color: $primaryColor;
-            font-size: 36px;
+          h3 {
             line-height: 44px;
-            letter-spacing: -0.41px;
-            font-weight: 700, bold;
           }
         }
 
         p {
           color: $primaryLightColor;
-          font-size: 16px;
-          font-weight: 400;
-          line-height: 24px;
           letter-spacing: 0.17px;
           display: flex;
-          align-items: center;
+          align-items: flex-start;
         }
       }
 
-      .showcase-img {
-        margin-left: 60.63px;
-        position: relative;
-        top: 12px;
-        left: 26px;
-
-        img {
-          max-width: 705.83px;
-          height: auto;
-        }
+      img {
+        max-width: 705.83px;
+        height: auto;
       }
     }
 
     .showcase-footer {
       display: grid;
       justify-content: center;
+      margin-right: 19.54px;
 
       .showcase-links {
         display: flex;
         justify-content: space-between;
         width: 733px;
         height: 32.18px;
-        margin-left: 2.54px;
 
         .acf-link {
           position: relative;
 
-          .acf-link-sc {
+          .acf-link-triangle {
             position: absolute;
             right: 36px;
             top: 9px;
@@ -93,22 +84,25 @@ main {
   }
 }
 
-@media #{$mq-1180-down} {
+@media #{$mq-1280-down} {
   main {
-    margin-top: 110px;
+    
     .showcase {
       .showcase-header {
+        justify-content: center;
+        width: 100%;
+        //margin-top: 58.19px;
+        align-items: center;
+
         .showcase-headline {
           position: static;
           margin: 20px;
         }
-        .showcase-img {
-          margin: 0;
-          position: static;
 
-          img {
-            width: 100%;
-          }
+        img {
+          width: 100%;
+          position: static;
+          margin: 0;
         }
       }
 
@@ -124,5 +118,11 @@ main {
         }
       }
     }
+  }
+}
+
+@media #{$mq-1180-down} {
+  main {
+    margin-top: 110px;
   }
 }
