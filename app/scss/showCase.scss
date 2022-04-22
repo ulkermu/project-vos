@@ -4,53 +4,90 @@
 
 main {
   .showcase {
-    display: flex;
-    justify-content: center;
-    margin-top: 58.19px;
-    align-items: center;
-    flex-wrap: wrap;
+    .showcase-header {
+      display: flex;
+      justify-content: center;
+      margin-top: 58.19px;
+      align-items: center;
+      flex-wrap: wrap;
 
-    .showcase-headline {
-      width: 472px;
-      height: 296px;
-      display: grid;
-      position: relative;
-      left: 62px;
+      .showcase-headline {
+        width: 472px;
+        height: 296px;
+        display: grid;
+        position: relative;
+        left: 62px;
 
-      div {
-        h1 {
-          color: $secondaryColor;
-          font-size: 54px;
-          line-height: 44px;
-          letter-spacing: -0.62px;
-          font-weight: 700, bold;
+        div {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+
+          h1 {
+            color: $secondaryColor;
+            font-size: 54px;
+            line-height: 44px;
+            letter-spacing: -0.62px;
+            font-weight: 700, bold;
+          }
+
+          h2 {
+            color: $primaryColor;
+            font-size: 36px;
+            line-height: 44px;
+            letter-spacing: -0.41px;
+            font-weight: 700, bold;
+          }
         }
 
-        h2 {
-          color: $primaryColor;
-          font-size: 36px;
-          line-height: 44px;
-          letter-spacing: -0.41px;
-          font-weight: 700, bold;
+        p {
+          color: $primaryLightColor;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+          letter-spacing: 0.17px;
+          display: flex;
+          align-items: center;
         }
       }
 
-      p {
-        padding-top: 30px;
-        color: $primaryLightColor;
-        font-size: 16px;
-        font-weight: 400, normal;
-        line-height: 24px;
-        letter-spacing: 0.17px;
+      .showcase-img {
+        margin-left: 60.63px;
+        position: relative;
+        top: 12px;
+        left: 26px;
+
+        img {
+          max-width: 705.83px;
+          height: auto;
+        }
       }
     }
 
-    .showcase-img {
-      margin-left: 60.63px;
+    .showcase-footer {
+      display: grid;
+      justify-content: center;
 
-      img {
-        max-width: 705.83px;
-        height: auto;
+      .showcase-links {
+        display: flex;
+        justify-content: space-between;
+        width: 733px;
+        height: 32.18px;
+        margin-left: 2.54px;
+
+        .acf-link {
+          position: relative;
+
+          .acf-link-sc {
+            position: absolute;
+            right: 36px;
+            top: 9px;
+          }
+        }
+
+        a {
+          text-decoration: none;
+        }
       }
     }
   }
@@ -59,17 +96,29 @@ main {
 @media #{$mq-1180-down} {
   main {
     margin-top: 110px;
-
     .showcase {
-      .showcase-headline {
-        position: static;
-        margin: 20px;
-      }
-      .showcase-img {
+      .showcase-header {
+        .showcase-headline {
+          position: static;
+          margin: 20px;
+        }
+        .showcase-img {
           margin: 0;
+          position: static;
 
-        img {
+          img {
+            width: 100%;
+          }
+        }
+      }
+
+      .showcase-footer {
+        .showcase-links {
           width: 100%;
+          display: grid;
+          justify-items: center;
+          grid-gap: 40px;
+          height: auto;
         }
       }
     }
