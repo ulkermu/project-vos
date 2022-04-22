@@ -1,0 +1,107 @@
+@import "variables";
+
+main {
+  .services {
+    margin-top: 152px;
+    display: grid;
+    justify-content: center;
+    //margin-bottom: 1050px;
+
+    .services-headline {
+      width: 272px;
+      text-align: center;
+      position: relative;
+      display: grid;
+      justify-self: center;
+
+      svg {
+        position: absolute;
+        left: 0;
+        top: 29px;
+        z-index: -1;
+      }
+    }
+
+    .services-text {
+      display: grid;
+      justify-self: center;
+
+      p {
+        text-align: center;
+        max-width: 556px;
+        margin-top: 38px;
+        margin-bottom: 100px;
+      }
+    }
+
+    .services-tickets {
+      display: flex;
+      width: 1158px;
+      justify-content: space-between;
+
+      .ticket-1 {
+        width: 322.01px;
+      }
+
+      .ticket-2 {
+        width: 324px;
+        position: relative;
+        top: 59px;
+      }
+
+      .ticket-3 {
+        width: 311px;
+        position: relative;
+        top: 3px;
+      }
+
+      .services-ticket {
+        h4 {
+          text-align: center;
+          font-size: 24px;
+          line-height: 23px;
+          letter-spacing: -0.28px;
+          font-weight: 600;
+          padding-bottom: 7.5px;
+        }
+
+        p {
+          position: relative;
+
+          svg {
+            position: absolute;
+            left: -24px;
+            top: 17px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media #{$mq-1280-down} {
+  main {
+    .services {
+
+      .services-tickets {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 60px;
+        width: 100%;
+
+        .ticket-1 {
+          grid-area: ticket-1;
+        }
+
+        .ticket-2 {
+          position: static;
+        }
+
+        .ticket-3 {
+          position: static;
+        }
+      }
+    }
+  }
+}
