@@ -27,4 +27,3 @@ const searchInput = document.querySelector(".search-input");
 searchIcon.addEventListener("click", () => {
   searchInput.classList.toggle("fade");
 });
-
