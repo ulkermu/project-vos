@@ -36,6 +36,34 @@ main {
         width: 100%;
         padding: 50px 0 53px 0;
 
+        .swiper-button-prev {
+          background-image: url("../../img/customerComments/left-arrow.svg") !important;
+          width: 40px;
+          height: 15px;
+          margin-top: none;
+          left: 953px;
+          top: 476px;
+        }
+
+        .swiper-button-next {
+          background-image: url("../../img/customerComments/right-arrow.svg") !important;
+          right: 949px;
+          top: 478px;
+          width: 40px;
+          height: 15px;
+          margin-top: none;
+        }
+
+        .swiper-button-next:after,
+        .swiper-rtl .swiper-button-prev:after {
+          content: "";
+        }
+
+        .swiper-button-prev:after,
+        .swiper-rtl .swiper-button-next:after {
+          content: "";
+        }
+
         .swiper-slide {
           background-position: center;
           background-size: cover;
@@ -105,7 +133,6 @@ main {
 
 @media #{$mq-760-down} {
   main {
-
     .customerComments {
       position: relative;
 
@@ -119,8 +146,16 @@ main {
       }
 
       .comments-sliders {
-
         .swiper-container {
+          .swiper-button-prev {
+            left: 228px;
+            top: 645px;
+          }
+
+          .swiper-button-next {
+            right: 226px;
+            top: 649px;
+          }
 
           .swiper-slide {
             width: 200px;
