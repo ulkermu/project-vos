@@ -1,5 +1,6 @@
 @import "colors";
 @import "typography";
+@import "variables";
 
 main {
   .whoAreWe {
@@ -60,7 +61,6 @@ main {
       display: flex;
       gap: 25px;
       justify-content: center;
-      flex-wrap: wrap;
 
       .whoAreWe-panel {
         display: grid;
@@ -97,6 +97,32 @@ main {
           display: block;
           align-self: start;
         }
+      }
+    }
+  }
+}
+
+@media #{$mq-900-down} {
+  main {
+    .whoAreWe {
+      .whoAreWe-panels {
+        display: grid;
+        grid-gap: 25px;
+        justify-items: center;
+        grid-template-columns: repeat(2, 187px);
+      }
+    }
+  }
+}
+
+@media #{$mq-480-down} {
+  main {
+    .whoAreWe {
+      .whoAreWe-panels {
+        display: grid;
+        grid-gap: 25px;
+        justify-items: center;
+        grid-template-columns: repeat(1, 187px);
       }
     }
   }
