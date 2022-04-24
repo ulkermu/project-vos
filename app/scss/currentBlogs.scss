@@ -21,7 +21,6 @@ main {
     }
 
     .blogs {
-      //width: 1177px;
       display: flex;
       gap: 35px;
       justify-content: center;
@@ -43,6 +42,9 @@ main {
       .blog {
         border-radius: 15px;
         width: 369px;
+        box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1),
+          0 1px 2px -1px rgb(0 0 0 / 0.1);
+        padding-bottom: 24.5px;
 
         img {
           width: 100%;
@@ -60,16 +62,17 @@ main {
           padding: 0 22px;
         }
 
-        p {
+        .captionText {
           margin-bottom: 15px;
           text-align: start;
           padding: 0 22px;
+          color: #5c6185;
+          letter-spacing: -0.15px;
         }
 
         a {
           text-decoration: none;
           color: $thirdColor;
-          margin-bottom: 24.93px;
           padding: 0 22px;
         }
       }
@@ -80,12 +83,12 @@ main {
 @media #{$mq-1325-down} {
   main {
     .currentBlogs {
-
       .blogs {
-
-        .blog {
-          margin-bottom: 35px;
-        }
+        display: grid;
+        grid-template-columns: repeat(2, 369px);
+        grid-gap: 35px;
+        justify-content: center;
+        position: relative;
 
         .left-svg {
           display: none;
@@ -98,48 +101,30 @@ main {
   }
 }
 
-@media #{$mq-480-down} {
+@media #{$mq-800-down} {
   main {
     .currentBlogs {
-  
-      .blog-headline {
-        width: 181px;
-      }
-  
+
       .blogs {
-  
+        grid-template-columns: repeat(2, 300px);
+
         .blog {
-          border-radius: 15px;
           width: 300px;
-  
-          img {
-            width: 100%;
-            border-top-left-radius: 15px;
-            border-top-right-radius: 15px;
-            margin-bottom: 32.44px;
-          }
-  
-          h5 {
-            margin-bottom: 15px;
-            font-size: 16px;
-            line-height: 24px;
-            letter-spacing: -0.2px;
-            color: #0b1460;
-            padding: 0 22px;
-          }
-  
-          p {
-            margin-bottom: 15px;
-            text-align: start;
-            padding: 0 22px;
-          }
-  
-          a {
-            text-decoration: none;
-            color: $thirdColor;
-            margin-bottom: 24.93px;
-            padding: 0 22px;
-          }
+        }
+      }
+    }
+  }
+}
+
+@media #{$mq-660-down} {
+  main {
+    .currentBlogs {
+
+      .blogs {
+        grid-template-columns: repeat(1, 300px);
+
+        .blog {
+          width: 300px;
         }
       }
     }
