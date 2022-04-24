@@ -46,6 +46,7 @@ main {
           letter-spacing: 0.17px;
           display: flex;
           align-items: flex-start;
+          text-align: start;
         }
       }
 
@@ -56,29 +57,14 @@ main {
     }
 
     .showcase-footer {
-      display: grid;
-      justify-content: center;
-      margin-right: 19.54px;
+      margin-top: 68.62px;
 
       .showcase-links {
         display: flex;
-        justify-content: space-between;
-        width: 733px;
-        height: 32.18px;
-
-        .acf-link {
-          position: relative;
-
-          .acf-link-triangle {
-            position: absolute;
-            right: 36px;
-            top: 9px;
-          }
-        }
-
-        a {
-          text-decoration: none;
-        }
+        justify-content: center;
+        gap: 98.33px;
+        flex-wrap: wrap;
+        flex: 1 32.18px;
       }
     }
   }
@@ -86,35 +72,21 @@ main {
 
 @media #{$mq-1280-down} {
   main {
-    
     .showcase {
       .showcase-header {
         justify-content: center;
         width: 100%;
-        //margin-top: 58.19px;
+        margin-top: 58.19px;
         align-items: center;
 
         .showcase-headline {
           position: static;
-          margin: 20px;
         }
 
         img {
           width: 100%;
           position: static;
           margin: 0;
-        }
-      }
-
-      .showcase-footer {
-        margin-top: 150px;
-
-        .showcase-links {
-          width: 100%;
-          display: grid;
-          justify-items: center;
-          grid-gap: 40px;
-          height: auto;
         }
       }
     }
@@ -124,5 +96,53 @@ main {
 @media #{$mq-1180-down} {
   main {
     margin-top: 110px;
+
+    .showcase {
+      .showcase-header {
+        justify-content: center;
+        width: 100%;
+        margin-top: 58.19px;
+        align-items: center;
+
+        .showcase-headline {
+          position: static;
+          text-align: center;
+
+          p {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media #{$mq-800-down} {
+  main {
+    .showcase {
+      .showcase-footer {
+        .showcase-links {
+          display: grid;
+          grid-template-columns: repeat(2, minmax(161px, 1fr));
+          justify-items: center;
+          gap: 98.33px;
+        }
+      }
+    }
+  }
+}
+
+@media #{$mq-480-down} {
+  main {
+    .showcase {
+      .showcase-footer {
+        .showcase-links {
+          display: grid;
+          grid-template-columns: repeat(1, minmax(161px, 1fr));
+          justify-items: center;
+          gap: 98.33px;
+        }
+      }
+    }
   }
 }
