@@ -1,0 +1,147 @@
+@import "colors";
+@import "variables";
+
+main {
+  .currentBlogs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .blog-headline {
+      width: 181px;
+      position: relative;
+      margin-bottom: 53px;
+
+      svg {
+        position: absolute;
+        z-index: -1;
+        left: -28px;
+        bottom: -9px;
+      }
+    }
+
+    .blogs {
+      //width: 1177px;
+      display: flex;
+      gap: 35px;
+      justify-content: center;
+      flex-wrap: wrap;
+      position: relative;
+
+      .left-svg {
+        position: absolute;
+        left: -86px;
+        top: -62px;
+      }
+      .right-svg {
+        position: absolute;
+        z-index: -1;
+        right: -65px;
+        top: -44px;
+      }
+
+      .blog {
+        border-radius: 15px;
+        width: 369px;
+
+        img {
+          width: 100%;
+          border-top-left-radius: 15px;
+          border-top-right-radius: 15px;
+          margin-bottom: 32.44px;
+        }
+
+        h5 {
+          margin-bottom: 15px;
+          font-size: 16px;
+          line-height: 24px;
+          letter-spacing: -0.2px;
+          color: #0b1460;
+          padding: 0 22px;
+        }
+
+        p {
+          margin-bottom: 15px;
+          text-align: start;
+          padding: 0 22px;
+        }
+
+        a {
+          text-decoration: none;
+          color: $thirdColor;
+          margin-bottom: 24.93px;
+          padding: 0 22px;
+        }
+      }
+    }
+  }
+}
+
+@media #{$mq-1325-down} {
+  main {
+    .currentBlogs {
+
+      .blogs {
+
+        .blog {
+          margin-bottom: 35px;
+        }
+
+        .left-svg {
+          display: none;
+        }
+        .right-svg {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media #{$mq-480-down} {
+  main {
+    .currentBlogs {
+  
+      .blog-headline {
+        width: 181px;
+      }
+  
+      .blogs {
+  
+        .blog {
+          border-radius: 15px;
+          width: 300px;
+  
+          img {
+            width: 100%;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            margin-bottom: 32.44px;
+          }
+  
+          h5 {
+            margin-bottom: 15px;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: -0.2px;
+            color: #0b1460;
+            padding: 0 22px;
+          }
+  
+          p {
+            margin-bottom: 15px;
+            text-align: start;
+            padding: 0 22px;
+          }
+  
+          a {
+            text-decoration: none;
+            color: $thirdColor;
+            margin-bottom: 24.93px;
+            padding: 0 22px;
+          }
+        }
+      }
+    }
+  }
+}
