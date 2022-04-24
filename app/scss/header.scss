@@ -69,12 +69,14 @@ header {
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 16px;
+        margin-left: 27.5px;
+        position: relative;
 
         &__icon {
           text-align: center;
           fill: #fff;
           position: relative;
-          top: 18px;
           cursor: pointer;
         }
 
@@ -84,9 +86,10 @@ header {
         }
 
         .search-input {
-          position: relative;
+          position: absolute;
           background-color: #e2e2e2;
-          top: 33px;
+          top: -9px;
+          left: 45px;
           opacity: 0;
           -webkit-transition: opacity 150ms ease-in-out;
           -moz-transition: opacity 150ms ease-in-out;
@@ -95,6 +98,10 @@ header {
           padding: 10px 15px;
           outline: none;
           border: none;
+          width: 265px;
+          border-radius: 5px;
+          box-shadow: -4px 4px 19px rgba(11, 20, 96, 0.1);
+          background-color: #F8F8FF;
         }
 
         .search-input.fade {
@@ -208,6 +215,21 @@ header {
     .menu-overlay.open {
       opacity: 1;
       visibility: visible;
+    }
+  }
+}
+
+@media #{$mq-1723-down} {
+  header {
+    .nav-bar {
+      .nav-bar-links {
+        .search {
+          .search-input {
+            top: 33px;
+            left: -246px;
+          }
+        }
+      }
     }
   }
 }
