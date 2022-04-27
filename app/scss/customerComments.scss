@@ -2,11 +2,18 @@
 
 main {
   .customerComments {
-    margin: 150px 0 158px 0;
+    margin: 119px 0 158px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow: hidden;
+    position: relative;
+
+    .customerComments-right-circle {
+      position: absolute;
+      right: -200px;
+      top: -200px;
+      width: 350px;
+    }
 
     .comments-headline {
       display: flex;
@@ -24,7 +31,6 @@ main {
     }
 
     .comments-sliders {
-      //width: 891px;
       position: relative;
       width: 100%;
       display: flex;
@@ -41,14 +47,14 @@ main {
           width: 40px;
           height: 15px;
           margin-top: none;
-          left: 953px;
+          left: 838px;
           top: 476px;
         }
 
         .swiper-button-next {
           background-image: url("../../img/customerComments/right-arrow.svg") !important;
-          right: 949px;
-          top: 478px;
+          right: 839px;
+          top: 477px;
           width: 40px;
           height: 15px;
           margin-top: none;
@@ -70,7 +76,6 @@ main {
           width: 627px;
           background: rgba(255, 255, 255, 1);
           border-radius: 5px;
-          padding: 0 44px;
           box-shadow: -3px 15px 75px rgba(226, 232, 247, 0.67335);
           filter: blur(4.07742px);
 
@@ -87,7 +92,22 @@ main {
               height: 108px;
               position: relative;
 
-              img {
+              .testImg-left {
+                position: absolute;
+                width: 19px;
+                height: 74px;
+                top: 10px;
+                left: 100px;
+              }
+              .testImg-right {
+                position: absolute;
+                width: 21px;
+                height: 72px;
+                top: 16px;
+                left: -5px;
+              }
+
+              .testImg-photo {
                 width: 101px;
                 height: 100px;
                 border-radius: 50%;
@@ -131,10 +151,17 @@ main {
   }
 }
 
+@media #{$mq-1280-down} {
+  main {
+    .customerComments {
+      margin: 179px 0 158px 0;
+    }
+  }
+}
+
 @media #{$mq-760-down} {
   main {
     .customerComments {
-      position: relative;
 
       .comments-headline {
         width: 300px;
@@ -148,17 +175,17 @@ main {
       .comments-sliders {
         .swiper-container {
           .swiper-button-prev {
-            left: 228px;
+            left: 316px;
             top: 645px;
           }
 
           .swiper-button-next {
-            right: 226px;
-            top: 649px;
+            right: 317px;
+            top: 646px;
           }
 
           .swiper-slide {
-            width: 200px;
+            width: 250px;
             padding: 0 10px;
 
             .testimonialBox {
