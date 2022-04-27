@@ -12,12 +12,16 @@ html {
 }
 
 body {
-  background: url(../../img/top-bg.svg) no-repeat top right;
-  //min-width: 1180px;
-  //background-image: url(../../img/top-bg.svg);
-  //background-repeat: no-repeat;
-  //background-size: cover;
-  //background-size: 100% auto;
+  background: url(../../img/showCase/showcase-bg-crop.svg) no-repeat top right;
   width: 100%;
   height: 1421px;
+  background-size: 67.5%;
+  z-index: -1;
+  position: relative;
+  background-color: transparent;
+
+  main {
+    overflow: hidden;
+  }
 }
+
