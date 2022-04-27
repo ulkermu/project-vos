@@ -1,0 +1,42 @@
+@import "variables";
+
+main {
+  .who-serv-bg {
+    position: relative;
+    z-index: -1;
+    background-position: 100% 100%;
+    background-image: url(../../img/whoAreWe/whoAreWe-bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 120px;
+    overflow: hidden;
+
+    .whoAreWe-right-circle {
+      position: absolute;
+      right: -463px;
+      top: -199px;
+      width: 753px;
+      z-index: -2;
+    }
+
+    .services-left-circle {
+      position: absolute;
+      width: 124px;
+      left: -83px;
+      padding-top: 93px;
+    }
+  }
+}
+
+@media #{$mq-1280-down} {
+  main {
+    .who-serv-bg {
+      padding-bottom: 180px;
+      position: relative;
+
+      .whoAreWe-right-circle {
+        width: 692px;
+      }
+    }
+  }
+}
