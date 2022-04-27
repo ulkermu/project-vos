@@ -3,199 +3,39 @@
 @import "variables";
 
 main {
-  .whatCanWeDoForYou {
-    margin-top: 172.89px;
-    display: grid;
-    justify-content: center;
+  .whatCan-bg {
+    position: relative;
 
-    .whatCan-mobil {
-      display: none;
+    .showcase-left-circle {
+      position: absolute;
+      z-index: -1;
+      top: -309px;
+      width: 17%;
     }
 
-    .whatCan {
-      background-image: url(../../img/iStock-1138139368-[Converted].svg);
-      background-repeat: no-repeat;
-      width: 795px;
-      min-height: 795px;
+    .whatCanWeDoForYou {
+      margin-top: 172.89px;
       display: grid;
-      grid-template-rows: 188px;
       justify-content: center;
 
-      .whatCan-headline {
-        max-width: 412px;
-        position: relative;
-        height: 71px;
-        bottom: 4px;
-        justify-self: center;
-
-        h2 {
-          color: $primaryColor;
-          font-size: 36px;
-          line-height: 37px;
-          letter-spacing: -0.41px;
-          font-weight: 700;
-        }
-
-        h3 {
-          color: $primaryColor;
-          font-size: 26px;
-          line-height: 37px;
-          letter-spacing: -0.3px;
-          font-weight: 700;
-          position: relative;
-          left: 86px;
-        }
-
-        svg {
-          position: absolute;
-          top: 41px;
-          left: 20px;
-          z-index: -1;
-        }
-      }
-
-      .whatCan-main {
-        .whatCan-main-top {
-          display: flex;
-          justify-content: space-between;
-          width: 1010px;
-          margin-bottom: 182px;
-          margin-left: 37.5px;
-
-          .whatCan-div {
-            width: 260px;
-            background-color: #fff;
-            position: relative;
-
-            h3 {
-              font-size: 24px;
-              font-weight: 600;
-              line-height: 29.26px;
-              letter-spacing: -0.28px;
-              text-align: center;
-              color: $primaryColor;
-            }
-
-            p {
-              font-size: 16px;
-              font-weight: 400;
-              line-height: 19.5px;
-              letter-spacing: 0.19px;
-              text-align: center;
-              color: $primaryLightColor;
-            }
-
-            .whatCan-top-left-svg {
-              position: absolute;
-              top: 2px;
-              left: 277px;
-            }
-
-            .whatCan-top-right-svg {
-              position: absolute;
-              top: 2px;
-              right: 277px;
-            }
-          }
-        }
-
-        .whatCan-main-mid {
-          display: flex;
-          justify-content: space-between;
-          width: 1085px;
-          margin-bottom: 131px;
-
-          .whatCan-div {
-            width: 260px;
-            background-color: #fff;
-            position: relative;
-
-            h3 {
-              font-size: 24px;
-              font-weight: 600;
-              line-height: 29.26px;
-              letter-spacing: -0.28px;
-              text-align: center;
-              color: $primaryColor;
-            }
-
-            p {
-              font-size: 16px;
-              font-weight: 400;
-              line-height: 19.5px;
-              letter-spacing: 0.19px;
-              text-align: center;
-              color: $primaryLightColor;
-            }
-
-            .whatCan-mid-left-svg {
-              position: absolute;
-              top: 2px;
-              left: 273px;
-            }
-
-            .whatCan-mid-right-svg {
-              position: absolute;
-              top: 2px;
-              right: 273px;
-            }
-          }
-        }
-
-        .whatCan-main-bottom {
-          display: flex;
-          justify-content: center;
-
-          .whatCan-div {
-            width: 260px;
-            background-color: #fff;
-            position: relative;
-
-            h3 {
-              font-size: 24px;
-              font-weight: 600;
-              line-height: 29.26px;
-              letter-spacing: -0.28px;
-              text-align: center;
-              color: $primaryColor;
-            }
-
-            p {
-              font-size: 16px;
-              font-weight: 400;
-              line-height: 19.5px;
-              letter-spacing: 0.19px;
-              text-align: center;
-              color: $primaryLightColor;
-            }
-
-            svg {
-              position: absolute;
-              bottom: 94px;
-              left: 92px;
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
-@media #{$mq-1180-down} {
-  main {
-    .whatCanWeDoForYou {
-      .whatCan {
+      .whatCan-mobil {
         display: none;
       }
 
-      .whatCan-mobil {
+      .whatCan {
+        background-image: url(../../img/iStock-1138139368-[Converted].svg);
+        background-repeat: no-repeat;
+        width: 795px;
+        min-height: 795px;
         display: grid;
+        grid-template-rows: 188px;
         justify-content: center;
 
-        .whatCan-mobil-headline {
-          width: 300px;
-          text-align: center;
-          display: grid;
+        .whatCan-headline {
+          max-width: 412px;
+          position: relative;
+          height: 71px;
+          bottom: 4px;
           justify-self: center;
 
           h2 {
@@ -212,63 +52,237 @@ main {
             line-height: 37px;
             letter-spacing: -0.3px;
             font-weight: 700;
-          }
-
-          .mobil-headline-img {
             position: relative;
+            left: 86px;
+          }
+
+          svg {
+            position: absolute;
+            top: 41px;
+            left: 20px;
             z-index: -1;
-            width: 290px;
-            bottom: 54px;
           }
         }
 
-        .mobil-img {
-          width: 100%;
-        }
+        .whatCan-main {
+          .whatCan-main-top {
+            display: flex;
+            justify-content: space-between;
+            width: 1010px;
+            margin-bottom: 182px;
+            margin-left: 37.5px;
 
-        .whatCan-mobil-main {
-          display: grid;
-          justify-content: center;
-          position: relative;
-          margin-top: 40px;
-          grid-template-columns: repeat(2, minmax(300px, 1fr));
+            .whatCan-div {
+              width: 260px;
+              background-color: #fff;
+              position: relative;
 
-          .whatCan-mobil-art {
-            margin-bottom: 45px;
-            margin: 20px;
-            border-radius: 15px;
-            box-shadow: -3px 3px 35px -9px rgb(132 166 247 / 40%), inset -4px -4px 7px rgb(176 200 251 / 10%);
-
-            .whatCan-mobil-article {
-              display: flex;
-              padding: 20px;
-
-              .whatCan-mobil-art-logo {
-                width: 60px;
-                display: flex;
-                align-self: center;
+              h3 {
+                font-size: 24px;
+                font-weight: 600;
+                line-height: 29.26px;
+                letter-spacing: -0.28px;
+                text-align: center;
+                color: $primaryColor;
               }
 
-              div {
-                width: 240px;
-                padding: 0 5px;
+              p {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 19.5px;
+                letter-spacing: 0.19px;
+                text-align: center;
+                color: $primaryLightColor;
+              }
 
-                h3 {
-                  font-size: 24px;
-                  font-weight: 600;
-                  line-height: 29.26px;
-                  letter-spacing: -0.28px;
-                  text-align: start;
-                  color: $primaryColor;
+              .whatCan-top-left-svg {
+                position: absolute;
+                top: 2px;
+                left: 277px;
+              }
+
+              .whatCan-top-right-svg {
+                position: absolute;
+                top: 2px;
+                right: 277px;
+              }
+            }
+          }
+
+          .whatCan-main-mid {
+            display: flex;
+            justify-content: space-between;
+            width: 1085px;
+            margin-bottom: 131px;
+
+            .whatCan-div {
+              width: 260px;
+              background-color: #fff;
+              position: relative;
+
+              h3 {
+                font-size: 24px;
+                font-weight: 600;
+                line-height: 29.26px;
+                letter-spacing: -0.28px;
+                text-align: center;
+                color: $primaryColor;
+              }
+
+              p {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 19.5px;
+                letter-spacing: 0.19px;
+                text-align: center;
+                color: $primaryLightColor;
+              }
+
+              .whatCan-mid-left-svg {
+                position: absolute;
+                top: 2px;
+                left: 273px;
+              }
+
+              .whatCan-mid-right-svg {
+                position: absolute;
+                top: 2px;
+                right: 273px;
+              }
+            }
+          }
+
+          .whatCan-main-bottom {
+            display: flex;
+            justify-content: center;
+
+            .whatCan-div {
+              width: 260px;
+              background-color: #fff;
+              position: relative;
+
+              h3 {
+                font-size: 24px;
+                font-weight: 600;
+                line-height: 29.26px;
+                letter-spacing: -0.28px;
+                text-align: center;
+                color: $primaryColor;
+              }
+
+              p {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 19.5px;
+                letter-spacing: 0.19px;
+                text-align: center;
+                color: $primaryLightColor;
+              }
+
+              svg {
+                position: absolute;
+                bottom: 94px;
+                left: 92px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media #{$mq-1180-down} {
+  main {
+    .whatCan-bg {
+      .whatCanWeDoForYou {
+        .whatCan {
+          display: none;
+        }
+
+        .whatCan-mobil {
+          display: grid;
+          justify-content: center;
+
+          .whatCan-mobil-headline {
+            width: 300px;
+            text-align: center;
+            display: grid;
+            justify-self: center;
+
+            h2 {
+              color: $primaryColor;
+              font-size: 36px;
+              line-height: 37px;
+              letter-spacing: -0.41px;
+              font-weight: 700;
+            }
+
+            h3 {
+              color: $primaryColor;
+              font-size: 26px;
+              line-height: 37px;
+              letter-spacing: -0.3px;
+              font-weight: 700;
+            }
+
+            .mobil-headline-img {
+              position: relative;
+              z-index: -1;
+              width: 290px;
+              bottom: 54px;
+            }
+          }
+
+          .mobil-img {
+            width: 100%;
+          }
+
+          .whatCan-mobil-main {
+            display: grid;
+            justify-content: center;
+            position: relative;
+            margin-top: 40px;
+            grid-template-columns: repeat(2, minmax(300px, 1fr));
+
+            .whatCan-mobil-art {
+              margin-bottom: 45px;
+              margin: 20px;
+              border-radius: 15px;
+              box-shadow: -3px 3px 35px -9px rgb(132 166 247 / 40%),
+                inset -4px -4px 7px rgb(176 200 251 / 10%);
+
+              .whatCan-mobil-article {
+                display: flex;
+                padding: 20px;
+
+                .whatCan-mobil-art-logo {
+                  width: 60px;
+                  display: flex;
+                  align-self: center;
                 }
 
-                p {
-                  font-size: 16px;
-                  font-weight: 400;
-                  line-height: 19.5px;
-                  letter-spacing: 0.19px;
-                  text-align: start;
-                  color: $primaryLightColor;
+                div {
+                  width: 240px;
+                  padding: 0 5px;
+
+                  h3 {
+                    font-size: 24px;
+                    font-weight: 600;
+                    line-height: 29.26px;
+                    letter-spacing: -0.28px;
+                    text-align: start;
+                    color: $primaryColor;
+                  }
+
+                  p {
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 19.5px;
+                    letter-spacing: 0.19px;
+                    text-align: start;
+                    color: $primaryLightColor;
+                  }
                 }
               }
             }
@@ -281,10 +295,12 @@ main {
 
 @media #{$mq-620-down} {
   main {
-    .whatCanWeDoForYou {
-      .whatCan-mobil {
-        .whatCan-mobil-main {
-          grid-template-columns: repeat(1, minmax(300px, 1fr));
+    .whatCan-bg {
+      .whatCanWeDoForYou {
+        .whatCan-mobil {
+          .whatCan-mobil-main {
+            grid-template-columns: repeat(1, minmax(300px, 1fr));
+          }
         }
       }
     }
