@@ -5,7 +5,21 @@ main {
     margin-top: 152px;
     display: grid;
     justify-content: center;
-    //margin-bottom: 1050px;
+
+    .services-op-div {
+      position: relative;
+
+      .services-op {
+        padding-top: 50px;
+        display: flex;
+        justify-self: center;
+      }
+    }
+    .services-op-mini-div {
+      .services-op-mini {
+        display: none;
+      }
+    }
 
     .services-headline {
       width: 272px;
@@ -82,6 +96,18 @@ main {
 @media #{$mq-1280-down} {
   main {
     .services {
+      .services-op-div {
+        .services-op {
+          display: none;
+        }
+      }
+      .services-op-mini-div {
+        .services-op-mini {
+          display: flex;
+          justify-self: center;
+          width: 100%;
+        }
+      }
 
       .services-tickets {
         display: flex;
@@ -109,9 +135,7 @@ main {
 @media #{$mq-480-down} {
   main {
     .services {
-
       .services-text {
-
         p {
           padding: 0 20px;
           text-align: start;
@@ -125,27 +149,19 @@ main {
         gap: 60px;
         width: 100%;
 
-        .ticket-1 {
-          width: 290px;
-        }
-
-        .ticket-2 {
-          width: 290px;
-        }
-
-        .ticket-3 {
-          width: 290px;
-        }
-
         .services-ticket {
+          width: 250px;
+          display: grid;
+          justify-self: end;
+          padding-left: 10px;
 
           h4 {
             text-align: start;
           }
-  
+
           p {
             text-align: start;
-  
+
             svg {
               position: absolute;
               left: -24px;
@@ -153,8 +169,6 @@ main {
             }
           }
         }
-
-        
       }
     }
   }
