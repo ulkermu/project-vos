@@ -3,99 +3,106 @@
 @import "variables";
 
 main {
-  .whoAreWe {
-    margin-top: 139px;
-    display: grid;
-    justify-content: center;
-
-    .whoAreWe-headline {
-      width: 129px;
+  .who-serv-bg {
+    .whoAreWe {
+      width: 100%;
       position: relative;
-      display: grid;
-      justify-self: center;
-      margin-bottom: 43px;
 
-      h3 {
-        font-size: 36px;
-        line-height: 37px;
-        letter-spacing: -0.41px;
-        font-weight: 700;
-        color: $primaryColor;
-        position: relative;
-      }
-
-      h4 {
-        font-size: 26px;
-        line-height: 26px;
-        letter-spacing: -0.3px;
-        font-weight: 700;
-        color: $primaryColor;
-        width: 60px;
-        position: relative;
-        left: 22px;
-      }
-
-      svg {
-        position: absolute;
-        top: 32px;
-        left: -31px;
-        z-index: -1;
-      }
-    }
-
-    .whoAreWe-text {
-      max-width: 841px;
-      margin: 0 20px 63px 20px;
-
-      p {
-        text-align: center;
-        font-size: $bodyText-fontSize;
-        color: $primaryLightColor;
-        line-height: $bodyText-lineHeight;
-        font-weight: 400;
-        letter-spacing: 0.19px;
-      }
-    }
-
-    .whoAreWe-panels {
-      display: flex;
-      gap: 25px;
-      justify-content: center;
-
-      .whoAreWe-panel {
+      .whoAreWe-container {
+        margin-top: 139px;
         display: grid;
         justify-content: center;
-        align-items: center;
-        text-align: center;
-        width: 187px;
-        height: 228px;
-        background-color: #fff;
-        box-shadow: -3px 3px 35px -9px rgba(132, 166, 247, 0.4),
-          inset -4px -4px 7px rgba(176, 200, 251, 0.1);
-        border-radius: 15px;
 
-        svg {
-          display: block;
+        .whoAreWe-headline {
+          width: 129px;
+          position: relative;
+          display: grid;
           justify-self: center;
-          align-self: end;
+          margin-bottom: 43px;
+
+          h3 {
+            font-size: 36px;
+            line-height: 37px;
+            letter-spacing: -0.41px;
+            font-weight: 700;
+            color: $primaryColor;
+            position: relative;
+          }
+
+          h4 {
+            font-size: 26px;
+            line-height: 26px;
+            letter-spacing: -0.3px;
+            font-weight: 700;
+            color: $primaryColor;
+            width: 60px;
+            position: relative;
+            left: 22px;
+          }
+
+          svg {
+            position: absolute;
+            top: 32px;
+            left: -31px;
+            z-index: -1;
+          }
         }
 
-        h4 {
-          font-size: 24px;
-          line-height: 29px;
-          letter-spacing: -0.28px;
-          font-weight: 700;
-          color: $primaryColor;
+        .whoAreWe-text {
+          max-width: 841px;
+          margin: 0 20px 63px 20px;
+
+          p {
+            text-align: center;
+            font-size: $bodyText-fontSize;
+            color: $primaryLightColor;
+            line-height: $bodyText-lineHeight;
+            font-weight: 400;
+            letter-spacing: 0.19px;
+          }
         }
 
-        p {
-          font-size: $bodyText-fontSize;
-          color: $primaryLightColor;
-          line-height: $bodyText-lineHeight;
-          font-weight: 400;
-          letter-spacing: 0.19px;
-          display: block;
-          align-self: start;
+        .whoAreWe-panels {
+          display: flex;
+          gap: 25px;
+          justify-content: center;
+
+          .whoAreWe-panel {
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 187px;
+            height: 228px;
+            background-color: #fff;
+            box-shadow: -3px 3px 35px -9px rgba(132, 166, 247, 0.4),
+              inset -4px -4px 7px rgba(176, 200, 251, 0.1);
+            border-radius: 15px;
+
+            svg {
+              display: block;
+              justify-self: center;
+              align-self: end;
+            }
+
+            h4 {
+              font-size: 24px;
+              line-height: 29px;
+              letter-spacing: -0.28px;
+              font-weight: 700;
+              color: $primaryColor;
+            }
+
+            p {
+              font-size: $bodyText-fontSize;
+              color: $primaryLightColor;
+              line-height: $bodyText-lineHeight;
+              font-weight: 400;
+              letter-spacing: 0.19px;
+              display: block;
+              align-self: start;
+            }
+          }
         }
       }
     }
@@ -104,12 +111,16 @@ main {
 
 @media #{$mq-900-down} {
   main {
-    .whoAreWe {
-      .whoAreWe-panels {
-        display: grid;
-        grid-gap: 25px;
-        justify-items: center;
-        grid-template-columns: repeat(2, 187px);
+    .who-serv-bg {
+      .whoAreWe {
+        .whoAreWe-container {
+          .whoAreWe-panels {
+            display: grid;
+            grid-gap: 25px;
+            justify-items: center;
+            grid-template-columns: repeat(2, 187px);
+          }
+        }
       }
     }
   }
@@ -117,12 +128,16 @@ main {
 
 @media #{$mq-480-down} {
   main {
-    .whoAreWe {
-      .whoAreWe-panels {
-        display: grid;
-        grid-gap: 25px;
-        justify-items: center;
-        grid-template-columns: repeat(1, 187px);
+    .who-serv-bg {
+      .whoAreWe {
+        .whoAreWe-container {
+          .whoAreWe-panels {
+            display: grid;
+            grid-gap: 25px;
+            justify-items: center;
+            grid-template-columns: repeat(1, 187px);
+          }
+        }
       }
     }
   }
