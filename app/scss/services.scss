@@ -8,17 +8,15 @@ main {
 
     .services-op-div {
       position: relative;
+      display: flex;
+      justify-content: center;
 
       .services-op {
         padding-top: 50px;
-        display: flex;
-        justify-self: center;
       }
     }
     .services-op-mini-div {
-      .services-op-mini {
-        display: none;
-      }
+      display: none;
     }
 
     .services-headline {
@@ -28,11 +26,16 @@ main {
       display: grid;
       justify-self: center;
 
+      h3 {
+        position: relative;
+        z-index: 2;
+      }
+
       svg {
         position: absolute;
         left: 0;
         top: 29px;
-        z-index: -1;
+        z-index: 1;
       }
     }
 
@@ -50,7 +53,7 @@ main {
 
     .services-tickets {
       display: flex;
-      width: 1158px;
+      gap: 100px;
       justify-content: space-between;
 
       .ticket-1 {
@@ -97,15 +100,14 @@ main {
   main {
     .services {
       .services-op-div {
-        .services-op {
-          display: none;
-        }
+        display: none;
       }
       .services-op-mini-div {
+        display: flex;
+        justify-content: center;
         .services-op-mini {
-          display: flex;
-          justify-self: center;
           width: 100%;
+          padding: 0 20px;
         }
       }
 
@@ -132,9 +134,28 @@ main {
   }
 }
 
+@media #{$mq-1024-down} {
+  main {
+    .services {
+      margin-top: 60px;
+    }
+  }
+}
+
 @media #{$mq-480-down} {
   main {
     .services {
+      .services-headline {
+        h4 {
+          position: relative;
+          z-index: 2;
+        }
+
+        svg {
+          top: 2px;
+        }
+      }
+
       .services-text {
         p {
           padding: 0 20px;
@@ -157,6 +178,8 @@ main {
 
           h4 {
             text-align: start;
+            position: relative;
+            z-index: 2;
           }
 
           p {
