@@ -196,6 +196,7 @@ main {
   main {
     .whatCan-bg {
       .whatCanWeDoForYou {
+        margin-top: 72.89px;
         .whatCan {
           display: none;
         }
@@ -209,28 +210,13 @@ main {
             text-align: center;
             display: grid;
             justify-self: center;
-
-            h2 {
-              color: $primaryColor;
-              font-size: 36px;
-              line-height: 37px;
-              letter-spacing: -0.41px;
-              font-weight: 700;
-            }
-
-            h3 {
-              color: $primaryColor;
-              font-size: 26px;
-              line-height: 37px;
-              letter-spacing: -0.3px;
-              font-weight: 700;
-            }
+            position: relative;
 
             .mobil-headline-img {
-              position: relative;
+              position: absolute;
               z-index: -1;
               width: 290px;
-              bottom: 54px;
+              bottom: -5px;
             }
           }
 
@@ -265,6 +251,9 @@ main {
                 div {
                   width: 240px;
                   padding: 0 5px;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: space-around;
 
                   h3 {
                     font-size: 24px;
@@ -276,10 +265,7 @@ main {
                   }
 
                   p {
-                    font-size: 16px;
-                    font-weight: 400;
                     line-height: 19.5px;
-                    letter-spacing: 0.19px;
                     text-align: start;
                     color: $primaryLightColor;
                   }
@@ -288,6 +274,26 @@ main {
             }
           }
         }
+      }
+    }
+  }
+}
+
+@media #{$mq-1024-down} {
+  main {
+    .whatCan-bg {
+      .whatCanWeDoForYou {
+        margin-top: 60px;
+      }
+    }
+  }
+}
+
+@media #{$mq-760-down} {
+  main {
+    .whatCan-bg {
+      .showcase-left-circle {
+        display: none;
       }
     }
   }
