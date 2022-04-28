@@ -21,30 +21,23 @@ main {
           margin-bottom: 43px;
 
           h3 {
-            font-size: 36px;
-            line-height: 37px;
-            letter-spacing: -0.41px;
-            font-weight: 700;
-            color: $primaryColor;
             position: relative;
+            z-index: 2;
           }
 
           h4 {
-            font-size: 26px;
             line-height: 26px;
-            letter-spacing: -0.3px;
-            font-weight: 700;
-            color: $primaryColor;
             width: 60px;
             position: relative;
             left: 22px;
+            z-index: 2;
           }
 
           svg {
             position: absolute;
-            top: 32px;
+            top: 30px;
             left: -31px;
-            z-index: -1;
+            z-index: 1;
           }
         }
 
@@ -54,11 +47,6 @@ main {
 
           p {
             text-align: center;
-            font-size: $bodyText-fontSize;
-            color: $primaryLightColor;
-            line-height: $bodyText-lineHeight;
-            font-weight: 400;
-            letter-spacing: 0.19px;
           }
         }
 
@@ -103,6 +91,18 @@ main {
               align-self: start;
             }
           }
+        }
+      }
+    }
+  }
+}
+
+@media #{$mq-1024-down} {
+  main {
+    .who-serv-bg {
+      .whoAreWe {
+        .whoAreWe-container {
+          margin-top: 60px;
         }
       }
     }
