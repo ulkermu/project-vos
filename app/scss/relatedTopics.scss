@@ -1,0 +1,130 @@
+@import "colors";
+@import "variables";
+
+main {
+  .relatedTopics {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .topic-headline {
+      position: relative;
+      margin-bottom: 50px;
+
+      svg {
+        position: absolute;
+        z-index: -1;
+        left: -28px;
+        bottom: -22px;
+      }
+    }
+
+    .topics {
+      display: flex;
+      gap: 30px;
+      justify-content: center;
+      flex-wrap: wrap;
+      position: relative;
+
+      .topic-left-svg {
+        position: absolute;
+        left: -86px;
+        top: -41px;
+        z-index: 2;
+      }
+      .topic-right-svg {
+        position: absolute;
+        z-index: 11;
+        right: -80px;
+        top: -44px;
+      }
+
+      .topic {
+        border-radius: 15px;
+        width: 339px;
+        box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1),
+          0 1px 2px -1px rgb(0 0 0 / 0.1);
+        padding-bottom: 24.5px;
+        background-color: #fff;
+        position: relative;
+        z-index: 10;
+
+        img {
+          width: 100%;
+          border-top-left-radius: 15px;
+          border-top-right-radius: 15px;
+          margin-bottom: 32.44px;
+        }
+
+        h5 {
+          margin-bottom: 15px;
+          font-size: 16px;
+          line-height: 24px;
+          letter-spacing: -0.2px;
+          color: #0b1460;
+          padding: 0 22px;
+        }
+
+        .captionText {
+          margin-bottom: 15px;
+          text-align: start;
+          padding: 0 21px;
+          color: #5c6185;
+          letter-spacing: -0.15px;
+        }
+
+        a {
+          text-decoration: none;
+          color: $thirdColor;
+          padding: 0 21px;
+        }
+      }
+    }
+  }
+}
+
+@media #{$mq-1325-down} {
+    main {
+      .relatedTopics {
+        .topics {
+          display: grid;
+          grid-template-columns: repeat(2, 369px);
+          justify-content: center;
+          position: relative;
+  
+          .topic-left-svg {
+            display: none;
+          }
+          .topic-right-svg {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  
+  @media #{$mq-800-down} {
+    main {
+      .relatedTopics {
+  
+        .topics {
+          grid-template-columns: repeat(2, 300px);
+  
+          .topic {
+            width: 300px;
+          }
+        }
+      }
+    }
+  }
+  
+  @media #{$mq-660-down} {
+    main {
+      .relatedTopics {
+  
+        .topics {
+          grid-template-columns: repeat(1, 300px);
+        }
+      }
+    }
+  }
