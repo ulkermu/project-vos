@@ -1,50 +1,73 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import "variables";
 
 h1 {
-    font-size: 2rem;
-}
-
-h2 {
-    font-size: 1.5rem;
+  font-size: 54px;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: -0.62px;
+  color: #2D56D2;
 }
 
 h3 {
-    font-size: 36px;
-    line-height: 37px;
-    letter-spacing: -0.41px;
-    font-weight: 700;
-    color: #0B1460;
+  font-size: 36px;
+  line-height: 37px;
+  letter-spacing: -0.41px;
+  font-weight: 700;
+  color: #0b1460;
 }
 
 h4 {
-    font-size: 26px;
-    line-height: 37px;
-    letter-spacing: -0.3px;
-    font-weight: 700;
-    color: #0B1460;
+  font-size: 26px;
+  line-height: 37px;
+  letter-spacing: -0.3px;
+  font-weight: 700;
+  color: #0b1460;
 }
 
 p {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: -0.19px;
-    color: #5C6185;
-    text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.19px;
+  color: #5c6185;
+  text-align: center;
 }
 
 html {
-    font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .captionText {
-    font-size: 12.8px;
-    line-height: 19px;
-    letter-spacing: 0.15px;
-    font-weight: 400;
-    text-align: center;
-    color: #0B1460;
-    padding: 7.5px 0;
+  font-size: 12.8px;
+  line-height: 19px;
+  letter-spacing: 0.15px;
+  font-weight: 400;
+  text-align: center;
+  color: #0b1460;
+  padding: 7.5px 0;
+}
+
+@media #{$mq-480-down} {
+  h1 {
+    font-size: 39px;
+    line-height: 36px;
+  }
+
+  h3 {
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  h4 {
+    font-size: 19px;
+    line-height: 26px;
+  }
+
+  p {
+    font-size: 13px;
+    line-height: 20px;
+  }
 }
 
 $heading1-fontSize: 36px;

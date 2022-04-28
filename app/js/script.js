@@ -27,3 +27,11 @@ const searchInput = document.querySelector(".search-input");
 searchIcon.addEventListener("click", () => {
   searchInput.classList.toggle("fade");
 });
+
+//* Search Input - Other Pages
+const searchIconBlack = document.querySelector(".search__icon-black");
+const searchInputBlack = document.querySelector(".search-input-black");
+
+searchIconBlack.addEventListener("click", () => {
+  searchInputBlack.classList.toggle("fade");
+})
