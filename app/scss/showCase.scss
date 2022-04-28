@@ -28,14 +28,6 @@ main {
           flex-direction: column;
           justify-content: center;
 
-          h1 {
-            color: $secondaryColor;
-            font-size: 54px;
-            line-height: 44px;
-            letter-spacing: -0.62px;
-            font-weight: 700;
-          }
-
           h3 {
             line-height: 44px;
           }
@@ -43,7 +35,7 @@ main {
 
         p {
           color: $primaryLightColor;
-          letter-spacing: 0.17px;
+          letter-spacing: -0.17px;
           display: flex;
           align-items: flex-start;
           text-align: start;
@@ -125,7 +117,7 @@ main {
           display: grid;
           grid-template-columns: repeat(2, minmax(161px, 1fr));
           justify-items: center;
-          gap: 98.33px;
+          gap: 30px;
         }
       }
     }
@@ -135,12 +127,18 @@ main {
 @media #{$mq-480-down} {
   main {
     .showcase {
+      .showcase-header {
+        .showcase-headline {
+          p {
+            padding: 0 20px;
+          }
+        }
+      }
       .showcase-footer {
         .showcase-links {
           display: grid;
           grid-template-columns: repeat(1, minmax(161px, 1fr));
           justify-items: center;
-          gap: 98.33px;
         }
       }
     }
