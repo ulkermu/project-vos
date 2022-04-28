@@ -1,0 +1,135 @@
+@import "typography";
+@import "colors";
+@import "variables";
+
+main {
+  .blog-article {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 86px;
+
+    .blog-article-content {
+      display: flex;
+      flex-direction: column;
+      max-width: 844px;
+
+      .blog-article-img {
+        padding-top: 71px;
+        img {
+          width: 100%;
+          padding: 0 20px;
+        }
+      }
+
+      .blog-article-text {
+        padding: 0 60px;
+
+        h3 {
+          letter-spacing: -0.45px;
+          padding-top: 45px;
+        }
+
+        p {
+          text-align: start;
+        }
+        .blog-article-text-caption-container {
+          padding: 30px 0 45px 0;
+          display: flex;
+          gap: 50px;
+          .blog-article-text-caption {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            a {
+              font-size: 12.8px;
+              line-height: 24px;
+              letter-spacing: -0.16px;
+              color: #2d56d2;
+              text-decoration: none;
+              padding-left: 10px;
+            }
+          }
+        }
+      }
+
+      .blog-article-line {
+        width: 100%;
+        height: 1px;
+        background: radial-gradient(
+          5.53% 51.76% at 50% 50%,
+          rgba(92, 97, 133, 0.55) 0%,
+          rgba(92, 97, 133, 0.3355) 100%
+        );
+      }
+
+      .blog-prenext-container {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0;
+
+        a {
+          text-decoration: none;
+          cursor: pointer;
+
+          .blog-prenext {
+            display: flex;
+            align-items: center;
+
+            .blog-prenext-content {
+              margin: 0 15.83px;
+              
+              div:hover {
+                text-decoration: underline;
+                transition: all 150ms ease-out;
+              }
+
+              p {
+                color: #0b1460;
+                padding: 0;
+                line-height: 24px;
+                font-weight: 500;
+              }
+
+              p:hover {
+                text-decoration: underline;
+                transition: all 150ms ease-out;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media #{$mq-900-down} {
+  main {
+    .blog-article {
+      .blog-article-content {
+        .blog-prenext-container {
+          .captionText {
+            padding: 0 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media #{$mq-700-down} {
+  main {
+    .blog-article {
+      .blog-article-content {
+        .blog-prenext-container {
+          .captionText {
+            .blog-prenext {
+              p {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
