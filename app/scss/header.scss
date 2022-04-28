@@ -44,11 +44,12 @@ header {
       li {
         list-style-type: none;
 
-        .selected {
+        .nav-bar-link-white.selected,
+        .nav-bar-link-black.selected {
           color: $thirdColor;
         }
 
-        a {
+        .nav-bar-link-white {
           text-decoration: none;
           font-size: 16px;
           line-height: 38px;
@@ -59,7 +60,19 @@ header {
           margin: 0 25px;
         }
 
-        a:hover {
+        .nav-bar-link-black {
+          text-decoration: none;
+          font-size: 16px;
+          line-height: 38px;
+          letter-spacing: -0.183908px;
+          font-weight: 500;
+          font-style: normal;
+          color: #000;
+          margin: 0 25px;
+        }
+
+        .nav-bar-link-black:hover, 
+        .nav-bar-link-white:hover {
           transition: all 150ms ease-out;
           color: $thirdColor;
         }
@@ -80,7 +93,19 @@ header {
           cursor: pointer;
         }
 
+        &__icon-black {
+          text-align: center;
+          fill: #000;
+          position: relative;
+          cursor: pointer;
+        }
+
         &__icon:hover {
+          transition: all 150ms ease-out;
+          fill: $thirdColor;
+        }
+
+        &__icon-black:hover {
           transition: all 150ms ease-out;
           fill: $thirdColor;
         }
@@ -103,7 +128,29 @@ header {
           background-color: #f8f8ff;
         }
 
+        .search-input-black {
+          position: absolute;
+          top: 33px;
+          left: -246px;
+          opacity: 0;
+          -webkit-transition: opacity 150ms ease-in-out;
+          -moz-transition: opacity 150ms ease-in-out;
+          -o-transition: opacity 150ms ease-in-out;
+          transition: opacity 150ms ease-in-out;
+          padding: 10px 15px;
+          outline: none;
+          border: none;
+          width: 265px;
+          border-radius: 5px;
+          box-shadow: -4px 4px 19px rgba(11, 20, 96, 0.1);
+          background-color: #ececec;
+        }
+
         .search-input.fade {
+          opacity: 1;
+        }
+
+        .search-input-black.fade {
           opacity: 1;
         }
       }

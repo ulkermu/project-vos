@@ -3,7 +3,7 @@ console.log("Load script.js");
 // Instantiating the global app object
 var app = {};
 
-//* Toggle Nav Bar
+//* Toggle Nav Bar 
 
 const menu = document.querySelector(".menu");
 const menuLink = document.querySelector(".nav-bar-burger");
@@ -19,7 +19,7 @@ menuLink.addEventListener("click", () => {
   burger3.classList.toggle('nav-bar-burger-inc');
 });
 
-//* Search Input
+//* Search Input - Home Page
 
 const searchIcon = document.querySelector(".search__icon");
 const searchInput = document.querySelector(".search-input");
