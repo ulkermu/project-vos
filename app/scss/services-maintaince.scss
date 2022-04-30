@@ -1,3 +1,5 @@
+@import "variables";
+
 main {
   .services-maintaince {
     padding-top: 167px;
@@ -56,6 +58,46 @@ main {
       .panel-3 {
         position: relative;
         left: 30px;
+      }
+    }
+  }
+}
+
+@media #{$mq-1180-down} {
+  main {
+    .services-maintaince {
+      flex-direction: column;
+      padding: 40px 50px 0;
+
+      .maintaince-headline {
+        max-width: 1180px;
+      }
+
+      .maintaince-content {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+        .panel-1 {
+          position: static;
+        }
+        .panel-2 {
+          position: static;
+        }
+        .panel-3 {
+          position: static;
+        }
+      }
+    }
+  }
+}
+
+@media #{$mq-900-down} {
+  main {
+    .services-maintaince {
+      padding: 40px 20px 0;
+      .maintaince-content {
+        grid-template-columns: repeat(1, minmax(280px, 1fr));
+        justify-items: center;
       }
     }
   }
