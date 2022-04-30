@@ -11,15 +11,60 @@ main {
     .services-text-content {
       display: flex;
       max-width: 988px;
-      padding: 0 20px;
-      img {
+      padding: 0 40px;
+      position: relative;
+
+      .service-text-img {
         width: 235px;
       }
 
-      div {
+      .svg-1 {
+        position: absolute;
+        left: -54px;
+        top: -50px;
+      }
+
+      .svg-2 {
+        position: absolute;
+        bottom: 0;
+        right: -27px;
+        z-index: -1;
+      }
+
+      .svg-3 {
+        position: absolute;
+        top: -33px;
+        right: -50px;
+        z-index: -1;
+      }
+
+      .service-text-in {
         padding: 0 75px;
         p {
           text-align: start;
+        }
+      }
+    }
+  }
+}
+
+@media #{$mq-1180-down} {
+  main {
+    .services-text {
+      .services-text-content {
+        position: relative;
+        .svg-1 {
+          display: none;
+        }
+        .svg-2 {
+          display: none;
+        }
+        .svg-3 {
+          display: none;
+        }
+
+        .service-text-in {
+          padding: 0 20px;
         }
       }
     }
@@ -30,12 +75,7 @@ main {
   main {
     .services-text {
       .services-text-content {
-        div {
-          padding: 0 20px;
-          p {
-            text-align: start;
-          }
-        }
+        padding: 0 20px;
       }
     }
   }
@@ -47,12 +87,6 @@ main {
       gap: 40px;
       .services-text-content {
         align-items: center;
-        div {
-          padding: 0 20px;
-          p {
-            text-align: start;
-          }
-        }
       }
 
       .service-text-content-left {
