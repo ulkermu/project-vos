@@ -42,7 +42,7 @@ function jsTask() {
 // Cachebust
 function cacheBustTask() {
 	var cbString = new Date().getTime();
-	return src(['index.html', 'blog-detail.html', 'contact-us.html'])
+	return src(['index.html', 'blog-detail.html', 'contact-us.html', 'service-detail.html'])
 		.pipe(replace(/cb=\d+/g, 'cb=' + cbString))
 		.pipe(dest('.'));
 }
@@ -83,7 +83,7 @@ function watchTask() {
 // Watch HTML file for change and reload browsersync server
 // watch SCSS and JS files for changes, run scss and js tasks simultaneously and update browsersync
 function bsWatchTask() {
-	watch(['index.html', 'blog-detail.html', 'contact-us.html'], browserSyncReload);
+	watch(['index.html', 'blog-detail.html', 'contact-us.html', 'service-detail.html'], browserSyncReload);
 	//watch('blog-detail.html', browserSyncReload);
 	watch(
 		[files.scssPath, files.jsPath],
