@@ -19,13 +19,16 @@
         position: absolute;
         width: 12%;
         right: 0;
+        bottom: 130px;
+        z-index: 2;
       }
   
       .services-showcase-head {
         display: flex;
         justify-content: center;
+        gap: 90px;
         .showcase-text {
-          padding: 0 20px;
+          padding: 0 30px;
           margin-top: 177px;
           max-width: 468px;
           width: 100%;
