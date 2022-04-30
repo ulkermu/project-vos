@@ -29,6 +29,7 @@ main {
           justify-content: center;
 
           h3 {
+            padding-top: 10px;
             line-height: 44px;
           }
         }
@@ -112,6 +113,16 @@ main {
 @media #{$mq-800-down} {
   main {
     .showcase {
+      .showcase-header {
+        .showcase-headline {
+          div {
+            padding: 0 20px;
+          }
+          p {
+            padding: 0 20px;
+          }
+        }
+      }
       .showcase-footer {
         .showcase-links {
           display: grid;
@@ -127,13 +138,6 @@ main {
 @media #{$mq-480-down} {
   main {
     .showcase {
-      .showcase-header {
-        .showcase-headline {
-          p {
-            padding: 0 20px;
-          }
-        }
-      }
       .showcase-footer {
         .showcase-links {
           display: grid;
