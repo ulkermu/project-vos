@@ -1,0 +1,62 @@
+main {
+  .services-maintaince {
+    padding-top: 167px;
+    padding-bottom: 191px;
+    background: url(../../img/servicesDetail/maintaince-bg.svg) no-repeat right;
+    background-size: 40.67%;
+    display: flex;
+    justify-content: center;
+    gap: 92px;
+
+    .maintaince-headline {
+      max-width: 582px;
+
+      * {
+        text-align: start;
+      }
+
+      h4 {
+        padding: 25px 0 30px;
+      }
+    }
+
+    .maintaince-content {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+
+      .maintaince-content-panel {
+        display: flex;
+        padding: 30px 20px;
+        max-width: 380px;
+        background: #ffffff;
+        box-shadow: 5px 6px 15px 1px rgba(0, 0, 0, 0.1);
+        border-radius: 7px;
+        align-items: center;
+
+        * {
+          text-align: start;
+        }
+
+        p {
+          padding-left: 15px;
+        }
+      }
+
+      .panel-1 {
+        position: relative;
+        left: 60px;
+      }
+
+      .panel-2 {
+        position: relative;
+        left: -25px;
+      }
+
+      .panel-3 {
+        position: relative;
+        left: 30px;
+      }
+    }
+  }
+}
