@@ -66,6 +66,7 @@ main {
 @media #{$mq-1180-down} {
   main {
     .services-maintaince {
+      background: none;
       flex-direction: column;
       padding: 40px 50px 0;
 
