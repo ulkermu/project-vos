@@ -2,12 +2,17 @@
 
 main {
   .who-serv-bg {
+    display: block;
     position: relative;
     background-position: 100% 100%;
-    background-image: url(../../img/whoAreWe/whoAreWe-bg.svg);
+    background: linear-gradient(
+      180deg,
+      #ffffff 8.61%,
+      rgba(219, 238, 255, 0.402289) 99%
+    );
     background-repeat: no-repeat;
     background-size: cover;
-    padding-bottom: 120px;
+    padding-top: 139px;
     overflow: hidden;
 
     .whoAreWe-right-circle {
@@ -15,7 +20,8 @@ main {
       right: -463px;
       top: -199px;
       width: 753px;
-      z-index: -2;
+      z-index: 1;
+      overflow: hidden;
     }
 
     .services-left-circle {
@@ -23,6 +29,26 @@ main {
       width: 124px;
       left: -83px;
       padding-top: 93px;
+      overflow: hidden;
+    }
+  }
+
+  .who-serv-bg::after {
+    content: "";
+    background-image: url(../../img/whoAreWe/whoServAfter.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 100%;
+    width: 100%;
+    height: 240px;
+    display: block;
+  }
+}
+
+@media #{$mq-1440-down} {
+  main {
+    .who-serv-bg::after {
+      height: 184px;
     }
   }
 }
@@ -30,13 +56,20 @@ main {
 @media #{$mq-1280-down} {
   main {
     .who-serv-bg {
-      padding-bottom: 50px;
       position: relative;
       background-size: contain;
 
       .whoAreWe-right-circle {
         width: 692px;
       }
+    }
+  }
+}
+
+@media #{$mq-1000-down} {
+  main {
+    .who-serv-bg {
+      padding-top: 0;
     }
   }
 }
@@ -48,6 +81,14 @@ main {
     }
 
     .services-left-circle {
+      display: none;
+    }
+
+    .who-serv-bg {
+      padding-bottom: 20px;
+    }
+
+    .who-serv-bg::after {
       display: none;
     }
   }

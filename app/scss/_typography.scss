@@ -48,19 +48,41 @@ html {
   padding: 7.5px 0;
 }
 
-@media #{$mq-480-down} {
+@media #{$mq-1000-down} {
   h1 {
-    font-size: 39px;
+    font-size: 38px;
     line-height: 36px;
   }
 
   h3 {
-    font-size: 24px;
+    font-size: 28px;
     line-height: 29px;
   }
 
   h4 {
-    font-size: 21px;
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  p {
+    font-size: 14.5px;
+    line-height: 20px;
+  }
+}
+
+@media #{$mq-545-down} {
+  h1 {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  h3 {
+    font-size: 20px;
+    line-height: 29px;
+  }
+
+  h4 {
+    font-size: 18px;
     line-height: 26px;
   }
 
