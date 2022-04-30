@@ -26,6 +26,11 @@ main {
       display: grid;
       justify-self: center;
 
+      h4 {
+        position: relative;
+        z-index: 2;
+      }
+
       h3 {
         position: relative;
         z-index: 2;
@@ -75,7 +80,6 @@ main {
       .services-ticket {
         h4 {
           text-align: center;
-          font-size: 24px;
           line-height: 23px;
           letter-spacing: -0.28px;
           font-weight: 600;
@@ -142,7 +146,20 @@ main {
   }
 }
 
-@media #{$mq-480-down} {
+@media #{$mq-760-down} {
+  main {
+    .services {
+      .services-text {
+        p {
+          padding: 0 20px;
+          text-align: start;
+        }
+      }
+    }
+  }
+}
+
+@media #{$mq-545-down} {
   main {
     .services {
       .services-headline {
@@ -155,14 +172,13 @@ main {
           top: 2px;
         }
       }
+    }
+  }
+}
 
-      .services-text {
-        p {
-          padding: 0 20px;
-          text-align: start;
-        }
-      }
-
+@media #{$mq-480-down} {
+  main {
+    .services {
       .services-tickets {
         display: flex;
         flex-direction: column;
