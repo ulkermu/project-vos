@@ -1,3 +1,5 @@
+@import "variables";
+
 main {
   .contact-us {
     display: flex;
@@ -58,17 +60,66 @@ main {
             color: white;
           }
         }
+
+        button:hover {
+          background-color: white;
+          transition: all 150ms ease-out;
+          border: 1px solid #0b1460;
+          cursor: pointer;
+          
+          p {
+            color: #0b1460;
+          }
+        }
       }
     }
     .contact-show {
       .contact-img {
         position: relative;
+        display: flex;
+        justify-content: center;
 
         .shedule-img {
           position: absolute;
           z-index: 2;
           left: 0;
           top: -37px;
+          width: 500px;
+        }
+
+        .shedule-text {
+          position: absolute;
+          top: 352px;
+          text-align: center;
+
+          h4 {
+            margin-top: 5px;
+          }
+
+          p {
+            width: 321px;
+            padding-top: 15px;
+            padding-bottom: 30px;
+          }
+
+          a {
+            text-decoration: none;
+            color: rgba(45, 86, 210, 1);
+            border: 1px solid rgba(45, 86, 210, 1);
+            padding: 10px 28px;
+            border-radius: 7px;
+            font-weight: 600;
+            font-size: 12.8px;
+            line-height: 24px;
+            letter-spacing: 0.152px;
+          }
+
+          a:hover {
+            background-color: rgba(45, 86, 210, 1);
+            color: white;
+            border: none;
+            transition: all 150ms ease-out;
+          }
         }
       }
 
@@ -82,9 +133,84 @@ main {
           display: flex;
           p {
             max-width: 403px;
-            padding: 0 0 0 20px;
+            padding: 0 0 20px 20px;
             text-align: start;
           }
+        }
+      }
+
+      .contact-social-media {
+        padding: 5px 0 81px 83px;
+        display: flex;
+        gap: 17px;
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+@media #{$mq-1000-down} {
+  main {
+    .contact-us {
+      display: flex;
+      flex-direction: column-reverse;
+      margin-top: 163px;
+      gap: 40px;
+      align-items: center;
+      padding: 0 40px;
+    }
+  }
+}
+
+@media #{$mq-620-down} {
+  main {
+    .contact-us {
+      .contact-show {
+        
+        .contact-img {
+          display: flex;
+          flex-direction: column;
+          
+          .shedule-bg {
+            display: none;
+          }
+
+          .shedule-img {
+            position: static;
+            width: 100%;
+          }
+
+          .shedule-text {
+            position: static;
+            width: 100%;
+            padding: 0 0 30px 0;
+
+            p {
+              padding: 20px;
+              width: auto;
+            }
+          }
+        }
+
+        .contact-address {
+          padding-left: 0;
+          width: 100%;
+          padding: 0 20px;
+          div {
+            padding: 0;
+            display: flex;
+          }
+
+          svg {
+            min-width: 18px;
+          }
+        }
+
+        .contact-social-media {
+          padding: 0;
+          justify-content: center;
         }
       }
     }
