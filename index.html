@@ -15,7 +15,7 @@
 
     <!-- CSS File -->
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="dist/style.css?cb=1651365915212">
+    <link rel="stylesheet" href="dist/style.css?cb=1651369096222">
 </head>
 
 <body class="index-body">
@@ -1062,7 +1062,35 @@
                 slideShadows: true,
             },
             pagination: {
-                el: ".swiper-pagination"
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+
+            breakpoints: {
+                320: {
+                    effect: 'coverflow',
+                    grabCursor: true,
+                    centeredSlides: true,
+                    slidesPerView: 'auto',
+                    initialSlide: 1,
+                    coverflowEffect: {
+                        rotate: 0,
+                        stretch: 94,
+                        depth: 19.61,
+                        modifier: 2,
+                        slideShadows: true,
+                    },
+                },
+                // When window width is >= 900px
+                760: {
+                    coverflowEffect: {
+                        rotate: 0,
+                        stretch: 194,
+                        depth: 219.61,
+                        modifier: 2,
+                        slideShadows: true,
+                    },
+                }
             }
         });
     </script>
