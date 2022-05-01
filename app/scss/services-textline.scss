@@ -1,7 +1,7 @@
 @import "variables";
 
 main {
-  .services-text {
+  .services-textline {
     padding-top: 72px;
     padding-bottom: 100px;
     display: flex;
@@ -51,7 +51,7 @@ main {
 
 @media #{$mq-1180-down} {
   main {
-    .services-text {
+    .services-textline {
       .services-text-content {
         position: relative;
         .svg-1 {
@@ -74,7 +74,7 @@ main {
 
 @media #{$mq-660-down} {
   main {
-    .services-text {
+    .services-textline {
       .services-text-content {
         padding: 0;
       }
@@ -84,7 +84,7 @@ main {
 
 @media #{$mq-545-down} {
   main {
-    .services-text {
+    .services-textline {
       gap: 40px;
       .services-text-content {
         align-items: center;
