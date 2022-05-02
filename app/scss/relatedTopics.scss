@@ -78,6 +78,11 @@ main {
           color: $thirdColor;
           padding: 0 21px;
         }
+
+        a:hover {
+          color: #0b1460;
+          transition: all 150ms ease-out;
+        }
       }
     }
   }
