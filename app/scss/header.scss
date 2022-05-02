@@ -121,7 +121,7 @@ header {
           transition: opacity 150ms ease-in-out;
           padding: 10px 15px;
           outline: none;
-          border: none;
+          border: 1px solid #ececec;
           width: 265px;
           border-radius: 5px;
           box-shadow: -4px 4px 19px rgba(11, 20, 96, 0.1);
@@ -139,11 +139,11 @@ header {
           transition: opacity 150ms ease-in-out;
           padding: 10px 15px;
           outline: none;
-          border: none;
+          border: 1px solid #ececec;
           width: 265px;
           border-radius: 5px;
           box-shadow: -4px 4px 19px rgba(11, 20, 96, 0.1);
-          background-color: #ececec;
+          background-color: #f8f8ff;
         }
 
         .search-input.fade {
