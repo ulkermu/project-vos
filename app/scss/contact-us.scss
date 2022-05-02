@@ -13,6 +13,11 @@ main {
 
       .form-headline {
         max-width: 542px;
+
+        p {
+          text-align: start;
+          margin-top: 30px;
+        }
       }
 
       .form-content {
@@ -45,6 +50,7 @@ main {
           box-sizing: border-box;
           border-radius: 7px;
           padding: 20px;
+          resize: none;
         }
 
         button {
@@ -145,6 +151,18 @@ main {
         gap: 17px;
         a {
           text-decoration: none;
+
+          div {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #f4f5fc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            
+          }
         }
       }
     }
