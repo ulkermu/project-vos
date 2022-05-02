@@ -15,7 +15,7 @@
 
     <!-- CSS File -->
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="dist/style.css?cb=1651446998570">
+    <link rel="stylesheet" href="dist/style.css?cb=1651458828022">
 
 <body>
     <header>
@@ -113,7 +113,7 @@
                 <div class="pricing-advanced-img">
                     <div class="pricing-advanced-img-in">
                         <div class="pricing-advanced-show">
-                            <h2>$99</h2>
+                            <h2 id="pricingByHours">$99</h2>
                         </div>
                         <div class="pricing-advanced-img-text">
                             <h3>ADVANCED</h3>
@@ -123,27 +123,34 @@
                             <div class="pricing-line">
                                 <div class="pricing-inline"></div>
                                 <div class="pricing-circles">
-                                    <div class="pricing-circle">
+                                    <div id="circle-price-1" class="pricing-circle">
                                         <div class="pricing-inline-circle"></div>
                                     </div>
-                                    <div class="pricing-circle">
+                                    <div class="pricing-inline-ind"></div>
+                                    <div id="circle-price-2" class="pricing-circle">
                                         <div class="pricing-inline-circle"></div>
                                     </div>
-                                    <div class="pricing-circle">
+                                    <div class="pricing-inline-ind"></div>
+                                    <div id="circle-price-3" class="pricing-circle">
                                         <div class="pricing-inline-circle"></div>
                                     </div>
-                                    <div class="pricing-circle">
+                                    <div class="pricing-inline-ind"></div>
+                                    <div id="circle-price-4" class="pricing-circle">
                                         <div class="pricing-inline-circle"></div>
                                     </div>
-                                    <div class="pricing-circle">
+                                    <div class="pricing-inline-ind"></div>
+                                    <div id="circle-price-5" class="pricing-circle">
                                         <div class="pricing-inline-circle"></div>
                                     </div>
-                                    <div class="pricing-circle">
+                                    <div class="pricing-inline-ind"></div>
+                                    <div id="circle-price-6" class="pricing-circle">
                                         <div class="pricing-inline-circle"></div>
                                     </div>
-                                    <div class="pricing-circle">
+                                    <div class="pricing-inline-ind"></div>
+                                    <div id="circle-price-7" class="pricing-circle">
                                         <div class="pricing-inline-circle"></div>
                                     </div>
+                                    <div class="pricing-inline-ind"></div>
                                     <div class="pricing-circle">
                                         <div class="pricing-inline-circle"></div>
                                     </div>
@@ -358,6 +365,49 @@
         searchIconBlack.addEventListener("click", () => {
             searchInputBlack.classList.toggle("fade");
         })
+
+        //* Advanced Price Choose 
+
+        const outline = document.querySelector('.pricing-line');
+        const inline = document.querySelector('.pricing-inline');
+        const allCircles = document.querySelectorAll('.pricing-circles');
+        const outerCircle = document.querySelectorAll('.pricing-circle');
+        const pricingByHours = document.getElementById('pricingByHours');
+        let n;
+        console.log(outline, 'outline');
+        console.log(inline, 'inline');
+        console.log(outerCircle, "OuterCircle");
+        console.log(pricingByHours, "$24.75");
+
+
+        outerCircle[0].addEventListener('click', () => {
+            pricingByHours.textContent = "$25";
+        });
+        outerCircle[1].addEventListener('click', () => {
+            pricingByHours.textContent = "$50";
+        });
+        outerCircle[2].addEventListener('click', () => {
+            pricingByHours.textContent = "$75";
+        });
+        outerCircle[3].addEventListener('click', () => {
+            pricingByHours.textContent = "$99";
+        });
+        outerCircle[4].addEventListener('click', () => {
+            pricingByHours.textContent = "$125";
+        });
+        outerCircle[5].addEventListener('click', () => {
+            pricingByHours.textContent = "$150";
+        });
+        outerCircle[6].addEventListener('click', () => {
+            pricingByHours.textContent = "$175";
+        });
+        outerCircle[7].addEventListener('click', () => {
+            pricingByHours.textContent = "$200";
+        });
+
+
+
+
     </script>
 </body>
 

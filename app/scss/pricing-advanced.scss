@@ -101,7 +101,7 @@ main {
               align-content: center;
               position: relative;
               z-index: 4;
-              .pricing-inline {
+              /*.pricing-inline {
                 background: linear-gradient(
                   180deg,
                   #ffffff -184.42%,
@@ -114,7 +114,7 @@ main {
                 height: 9px;
                 position: relative;
                 z-index: 5;
-              }
+              }*/
               .pricing-circles {
                 display: flex;
                 justify-content: space-between;
@@ -126,20 +126,23 @@ main {
                 .pricing-circle {
                   width: 25px;
                   height: 25px;
-                  background: radial-gradient(
-                    50.2% 50% at 50% 50%,
-                    #ffffff 0%,
-                    #89d99d 100%
-                  );
+                  background: radial-gradient(49.46% 49.27% at 50% 50%, #FFFFFF 0%, #B1AFAF 100%);
                   border-radius: 50%;
                   display: flex;
                   justify-content: center;
                   align-items: center;
+                  position: relative;
+                  z-index: 6;
+                  :hover {
+                    cursor: pointer;
+                  }
                   .pricing-inline-circle {
                     width: 17px;
                     height: 17px;
                     background-color: #fff;
                     border-radius: 50%;
+                    position: relative;
+                    z-index: 6;
                   }
                 }
               }
