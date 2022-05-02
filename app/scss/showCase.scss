@@ -30,7 +30,6 @@ main {
 
           h3 {
             padding-top: 10px;
-            line-height: 44px;
           }
         }
 
@@ -138,6 +137,15 @@ main {
 @media #{$mq-480-down} {
   main {
     .showcase {
+      .showcase-header {
+        .showcase-headline {
+          div {
+            h3 {
+              padding-top: 5px;
+            }
+          }
+        }
+      }
       .showcase-footer {
         .showcase-links {
           display: grid;
