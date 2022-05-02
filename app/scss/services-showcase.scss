@@ -7,24 +7,6 @@
 
   main {
     .services-showcase {
-      /*.services-top-left-circle {
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -1;
-        width: 56.6%;
-        <img class="services-top-left-circle" src="./img/servicesDetail/Oval.svg">
-      }*/
-
-      .services-top-right-circle {
-        position: absolute;
-        width: 12%;
-        right: 0;
-        bottom: 130px;
-        z-index: 2;
-        overflow: hidden;
-      }
-
       .services-showcase-head {
         display: flex;
         justify-content: center;
@@ -49,6 +31,12 @@
             line-height: 24px;
             letter-spacing: 0.19px;
             font-weight: 500;
+          }
+          a:hover {
+            padding: 11px 29px;
+            border: 1px solid #0b1460;
+            background-color: #fff;
+            color: #0b1460;
           }
         }
 
@@ -80,10 +68,6 @@
     background: none;
     main {
       .services-showcase {
-        .services-top-right-circle {
-          display: none;
-        }
-
         .services-showcase-head {
           gap: 0;
           flex-direction: column;
