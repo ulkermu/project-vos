@@ -22,9 +22,10 @@
             margin: 20px 0 40px 0;
           }
           a {
-            padding: 12px 30px;
+            padding: 11px 29px;
             text-decoration: none;
             background-color: #0b1460;
+            border: 1px solid #0b1460;
             color: white;
             border-radius: 7px;
             font-size: 16px;
@@ -33,10 +34,9 @@
             font-weight: 500;
           }
           a:hover {
-            padding: 11px 29px;
-            border: 1px solid #0b1460;
             background-color: #fff;
             color: #0b1460;
+            transition: all 150ms ease-out;
           }
         }
 
