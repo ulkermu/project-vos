@@ -6,7 +6,7 @@ body {
     background-image: url(../../img/pricing/pricing-faq-bg.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 100%;
+    background-position: 100% top;
     .pricing-faq {
       display: grid;
       justify-content: center;
@@ -41,7 +41,7 @@ body {
           .pricing-faq-slidedown {
             display: flex;
             flex-direction: column;
-            padding: 13px 0 13px 0;
+            padding: 13px 0;
             position: relative;
             min-height: 81px;
             background: #ffffff;
@@ -79,12 +79,14 @@ body {
             .pricing-faq-slidedown-hidden {
               display: none;
               width: 100%;
-              padding: 30px 71px 0 40px 30px;
+              padding: 0 71px 20px 40px;
               p {
+                padding-top: 30px;
                 line-height: 24px;
                 color: #5c6185;
                 text-align: start;
                 letter-spacing: -0.183908px;
+                border-top: 1px solid rgba(92, 97, 133, 0.5);
               }
             }
           }
@@ -116,15 +118,22 @@ body {
 @media #{$mq-600-down} {
   body {
     .pricing-faq-bg {
+      margin-top: 40px;
+      background-position: 86% top;
       .pricing-faq {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         .pricing-faq-slidedowns-container {
           flex-direction: column;
           gap: 25px;
           .pricing-faq-slidedowns-1,
           .pricing-faq-slidedowns-2 {
             padding: 0 20px;
+            width: 100%;
             .pricing-faq-slidedown {
               position: relative;
+              width: 100%;
 
               .pricing-faq-slidedown-headline {
                 display: flex;
@@ -134,8 +143,12 @@ body {
                 padding: 0 20px;
                 p {
                   max-width: 367px;
-                  //line-height: 24px;
+                  line-height: 24px;
+                  font-size: 13px;
                 }
+              }
+              .pricing-faq-slidedown-hidden {
+                padding: 30px 71px 20px 20px;
               }
             }
           }
