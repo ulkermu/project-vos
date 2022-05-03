@@ -101,20 +101,6 @@ main {
               align-content: center;
               position: relative;
               z-index: 4;
-              /*.pricing-inline {
-                background: linear-gradient(
-                  180deg,
-                  #ffffff -184.42%,
-                  #89d99d 142.06%
-                );
-                box-shadow: 0px -1px 2px 1px rgba(255, 255, 255, 0.766554),
-                  inset -2px -3px 4px rgba(91, 160, 108, 0.510735);
-                border-radius: 8.5px;
-                width: 548px;
-                height: 9px;
-                position: relative;
-                z-index: 5;
-              }*/
               .pricing-circles {
                 display: flex;
                 justify-content: space-between;
@@ -126,7 +112,11 @@ main {
                 .pricing-circle {
                   width: 25px;
                   height: 25px;
-                  background: radial-gradient(49.46% 49.27% at 50% 50%, #FFFFFF 0%, #B1AFAF 100%);
+                  background: radial-gradient(
+                    49.46% 49.27% at 50% 50%,
+                    #ffffff 0%,
+                    #b1afaf 100%
+                  );
                   border-radius: 50%;
                   display: flex;
                   justify-content: center;
