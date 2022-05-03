@@ -1,3 +1,5 @@
+@import "variables";
+
 main {
   .pricing-advanced {
     display: flex;
@@ -156,11 +158,11 @@ main {
       }
       .pricing-advanced-items {
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         margin: 125px 0 72px;
+        width: 100%;
+        position: relative;
         .pricing-advanced-items-1 {
-          border-right: 1px solid rgba(92, 97, 133, 0.3355);
-          padding-right: 71px;
           .pricing-advanced-item {
             display: flex;
             padding: 10px 0;
@@ -174,8 +176,13 @@ main {
             }
           }
         }
+        .pricing-advanced-items-line {
+          position: absolute;
+          height: 100%;
+          width: 1px;
+          background-color: rgba(92, 97, 133, 0.3355);
+        }
         .pricing-advanced-items-2 {
-          padding-left: 71px;
           .pricing-advanced-item {
             display: flex;
             padding: 10px 0;
@@ -216,6 +223,32 @@ main {
         color: #4476c5;
         background: #fff;
         transition: all 150ms ease-out;
+      }
+    }
+  }
+}
+
+@media #{$mq-1000-down} {
+  main {
+    .pricing-advanced {
+      .pricing-advanced-choices {
+        width: 93%;
+      }
+    }
+  }
+}
+
+@media #{$mq-700-down} {
+  main {
+    .pricing-advanced {
+      .pricing-advanced-choices {
+        .pricing-advanced-items {
+          flex-direction: column;
+          align-items: center;
+          .pricing-advanced-items-line {
+            display: none;
+          }
+        }
       }
     }
   }
