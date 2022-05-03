@@ -51,6 +51,11 @@ main {
           line-height: 19px;
           letter-spacing: -0.18px;
         }
+
+        a:hover {
+          color: #89d99d;
+          transition: all 150ms ease-out;
+        }
       }
     }
   }
@@ -74,6 +79,11 @@ main {
 @media #{$mq-600-down} {
   main {
     .blogstop {
+      .blogstop-headline {
+        svg {
+          left: -58px;
+        }
+      }
       .blogstop-text {
         p {
           padding: 25px 20px 40px;
