@@ -1,4 +1,5 @@
 @import "variables";
+@import "colors";
 
 body {
   .blogsbottom-bg {
@@ -9,6 +10,59 @@ body {
     margin-top: 25px;
     padding-top: 169px;
     .blogsbottom {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .blogsbottom-categories {
+        display: flex;
+        gap: 30px;
+        padding: 21px 0;
+        flex-wrap: wrap;
+        span {
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 19.5px;
+          letter-spacing: -0.18px;
+          text-align: center;
+          color: $secondaryColor;
+        }
+        .categories-button {
+          font-size: 16px;
+          line-height: 19.5px;
+          letter-spacing: -0.18px;
+          text-align: center;
+          font-weight: 500;
+          color: $primaryLightColor;
+          background-color: transparent;
+          border: none;
+          cursor: pointer;
+        }
+        .categories-button:hover {
+          color: $primaryColor;
+          transition: all 150ms ease-out;
+        }
+        .selected-button {
+          font-size: 16px;
+          line-height: 20px;
+          letter-spacing: -0.18px;
+          font-weight: 500;
+          text-align: center;
+          color: $primaryColor;
+        }
+      }
+      .blogsbottom-line {
+        width: 100%;
+        background: linear-gradient(
+          270deg,
+          rgba(244, 250, 255, 0.0001) 0%,
+          rgba(255, 255, 255, 0.684346) 26.91%,
+          #ffffff 51.59%,
+          rgba(255, 255, 255, 0.467734) 74.75%,
+          rgba(246, 251, 255, 0.0001) 100%
+        );
+        filter: blur(2.71828px);
+        height: 3px;
+      }
       .blogsbottom-blogs {
         display: grid;
         grid-template-columns: repeat(3, 339px);
@@ -28,15 +82,20 @@ body {
             font-weight: 500;
             font-size: 12.8px;
             line-height: 16px;
-            color: #89d99d;
+            color: $thirdColor;
             text-decoration: none;
           }
 
           a:hover {
             transition: all 150ms ease-out;
-            color: rgba(92, 97, 133, 1);
+            color: $primaryLightColor;
           }
         }
+      }
+      .blogsbottom-pagination {
+        display: flex;
+        justify-content: center;
+        margin-top: 59px;
       }
     }
   }
@@ -45,7 +104,11 @@ body {
 @media #{$mq-1180-down} {
   body {
     .blogsbottom-bg {
+      background-position: 90%;
       .blogsbottom {
+        .blogsbottom-categories {
+          padding: 21px 40px;
+        }
         .blogsbottom-blogs {
           grid-template-columns: repeat(2, 339px);
         }
@@ -57,6 +120,8 @@ body {
 @media #{$mq-768-down} {
   body {
     .blogsbottom-bg {
+      background-position: 33%;
+      padding-top: 100px;
       .blogsbottom {
         .blogsbottom-blogs {
           display: flex;
@@ -75,21 +140,36 @@ body {
 }
 
 @media #{$mq-425-down} {
-    body {
-      .blogsbottom-bg {
-        .blogsbottom {
-          .blogsbottom-blogs {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            .blogsbottom-blog {
-              padding: 0 20px;
-              img {
-                width: 100%;
-              }
+  body {
+    .blogsbottom-bg {
+      .blogsbottom {
+        .blogsbottom-categories {
+          display: flex;
+          gap: 20px;
+          padding: 10px 20px;
+          flex-wrap: wrap;
+          span {
+            font-size: 13px;
+          }
+          .categories-button {
+            font-size: 13px;
+          }
+          .selected-button {
+            font-size: 13px;
+          }
+        }
+        .blogsbottom-blogs {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          .blogsbottom-blog {
+            padding: 0 20px;
+            img {
+              width: 100%;
             }
           }
         }
       }
     }
   }
+}
