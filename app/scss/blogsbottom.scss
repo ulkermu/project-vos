@@ -96,6 +96,27 @@ body {
         display: flex;
         justify-content: center;
         margin-top: 59px;
+
+        button {
+          background-color: transparent;
+          border: none;
+          width: fit-content;
+          height: fit-content;
+          cursor: pointer;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 20px;
+          text-align: center;
+          letter-spacing: -0.183908px;
+          color: $primaryColor;
+          padding: 7px 10px;
+        }
+        .pagination-buttons {
+          margin: 0 7.5px;
+        }
+        .current-page {
+          border-bottom: 1px solid $primaryColor;
+        }
       }
     }
   }
