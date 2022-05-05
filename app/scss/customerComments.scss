@@ -24,7 +24,6 @@ main {
 
     .comments-headline {
       display: flex;
-      width: 350px;
       flex-direction: column;
       align-items: center;
       position: relative;
@@ -33,7 +32,7 @@ main {
         position: absolute;
         z-index: -1;
         bottom: -10px;
-        left: 51px;
+        left: 24px;
       }
     }
 
@@ -161,7 +160,12 @@ main {
   main {
     .customerComments {
       margin: 60px 0 0 0;
-
+      .comments-headline {
+        svg {
+          bottom: -15px;
+          left: -37px;
+        }
+      }
       .comments-slider-container {
         padding-bottom: 60px;
 
@@ -185,16 +189,6 @@ main {
       .customerComments-right-circle {
         display: none;
       }
-
-      .comments-headline {
-        width: 300px;
-
-        svg {
-          left: 0;
-          width: 300px;
-        }
-      }
-
       .comments-sliders {
         .swiper-container {
           .swiper-button-prev {
@@ -218,6 +212,20 @@ main {
               }
             }
           }
+        }
+      }
+    }
+  }
+}
+
+@media #{$mq-545-down} {
+  main {
+    .customerComments {
+      .comments-headline {
+        svg {
+          width: 300px;
+          left: -47px;
+          width: 280px;
         }
       }
     }
