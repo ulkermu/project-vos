@@ -8,10 +8,8 @@ main {
     align-items: center;
 
     .blog-headline {
-      width: 181px;
       position: relative;
       margin-bottom: 53px;
-
       svg {
         position: absolute;
         z-index: -1;
@@ -24,7 +22,6 @@ main {
       display: flex;
       gap: 35px;
       justify-content: center;
-      flex-wrap: wrap;
       position: relative;
 
       .left-svg {
@@ -115,25 +112,25 @@ main {
     .currentBlogs {
 
       .blogs {
-        grid-template-columns: repeat(2, 300px);
-
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        padding: 0 20px;
         .blog {
-          width: 300px;
+          width: auto;
         }
       }
     }
   }
 }
 
-@media #{$mq-660-down} {
+@media #{$mq-545-down} {
   main {
     .currentBlogs {
-
-      .blogs {
-        grid-template-columns: repeat(1, 300px);
-
-        .blog {
-          width: 300px;
+      .blog-headline {
+        svg {
+          width: 200px;
         }
       }
     }
