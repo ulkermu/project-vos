@@ -1,4 +1,5 @@
 @import "variables";
+@import "colors";
 
 main {
   .contact-us {
@@ -29,14 +30,14 @@ main {
           line-height: 24px;
           letter-spacing: 0.152px;
           font-weight: 600;
-          color: #5c6185;
+          color: $primaryLightColor;
           margin: 30px 0 10px;
         }
 
         input {
           display: block;
           width: 100%;
-          border: 1px solid #5c6185;
+          border: 1px solid $primaryLightColor;
           box-sizing: border-box;
           border-radius: 7px;
           height: 52px;
@@ -46,7 +47,7 @@ main {
         textarea {
           width: 100%;
           height: 143px;
-          border: 1px solid #5c6185;
+          border: 1px solid $primaryLightColor;
           box-sizing: border-box;
           border-radius: 7px;
           padding: 20px;
@@ -56,9 +57,9 @@ main {
         button {
           width: 240px;
           height: 52px;
-          background-color: #0b1460;
+          background-color: $primaryColor;
           border-radius: 7px;
-          border: none;
+          border: 1px solid transparent;
           margin-top: 40px;
 
           p {
@@ -70,11 +71,11 @@ main {
         button:hover {
           background-color: white;
           transition: all 150ms ease-out;
-          border: 1px solid #0b1460;
+          border: 1px solid $primaryColor;
           cursor: pointer;
           
           p {
-            color: #0b1460;
+            color: $primaryColor;
           }
         }
       }
@@ -110,8 +111,8 @@ main {
 
           a {
             text-decoration: none;
-            color: rgba(45, 86, 210, 1);
-            border: 1px solid rgba(45, 86, 210, 1);
+            color: $secondaryColor;
+            border: 1px solid $secondaryColor;
             padding: 10px 28px;
             border-radius: 7px;
             font-weight: 600;
@@ -121,9 +122,8 @@ main {
           }
 
           a:hover {
-            background-color: rgba(45, 86, 210, 1);
+            background-color: $secondaryColor;
             color: white;
-            border: none;
             transition: all 150ms ease-out;
           }
         }
@@ -160,6 +160,14 @@ main {
             display: flex;
             justify-content: center;
             align-items: center;
+          }
+        }
+        a:hover {
+          div {
+            svg {
+              transition: all 150ms ease-out;
+              scale: 1.2;
+            }
           }
         }
       }

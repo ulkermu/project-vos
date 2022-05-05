@@ -44,7 +44,7 @@ main {
               font-size: 12.8px;
               line-height: 24px;
               letter-spacing: -0.16px;
-              color: #2d56d2;
+              color: $secondaryColor;
               text-decoration: none;
               padding-left: 10px;
             }
@@ -77,22 +77,23 @@ main {
 
             .blog-prenext-content {
               margin: 0 15.83px;
-              
-              div:hover {
-                text-decoration: underline;
-                transition: all 150ms ease-out;
-              }
 
               p {
-                color: #0b1460;
+                color: $primaryColor;
                 padding: 0;
                 line-height: 24px;
                 font-weight: 500;
               }
+            }
+          }
 
-              p:hover {
+          .blog-prenext:hover {
+            .blog-prenext-content {
+              div {
                 text-decoration: underline;
-                transition: all 150ms ease-out;
+              }
+              p {
+                text-decoration: underline;
               }
             }
           }

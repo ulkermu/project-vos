@@ -19,7 +19,7 @@ header {
     div {
       width: 21px;
       height: 2px;
-      background-color: black;
+      background-color: $black;
       margin: 5px;
       transition: all 150ms ease-out;
     }
@@ -56,7 +56,7 @@ header {
           letter-spacing: -0.183908px;
           font-weight: 500;
           font-style: normal;
-          color: #fff;
+          color: $white;
           margin: 0 25px;
         }
 
@@ -67,7 +67,7 @@ header {
           letter-spacing: -0.183908px;
           font-weight: 500;
           font-style: normal;
-          color: #000;
+          color: $black;
           margin: 0 25px;
         }
 
@@ -88,14 +88,14 @@ header {
 
         &__icon {
           text-align: center;
-          fill: #fff;
+          fill: $white;
           position: relative;
           cursor: pointer;
         }
 
         &__icon-black {
           text-align: center;
-          fill: #000;
+          fill: $black;
           position: relative;
           cursor: pointer;
         }
@@ -121,11 +121,11 @@ header {
           transition: opacity 150ms ease-in-out;
           padding: 10px 15px;
           outline: none;
-          border: 1px solid #ececec;
+          border: 1px solid $ltGray;
           width: 265px;
           border-radius: 5px;
           box-shadow: -4px 4px 19px rgba(11, 20, 96, 0.1);
-          background-color: #f8f8ff;
+          background-color: $inputBg;
         }
 
         .search-input-black {
@@ -139,11 +139,11 @@ header {
           transition: opacity 150ms ease-in-out;
           padding: 10px 15px;
           outline: none;
-          border: 1px solid #ececec;
+          border: 1px solid $ltGray;
           width: 265px;
           border-radius: 5px;
           box-shadow: -4px 4px 19px rgba(11, 20, 96, 0.1);
-          background-color: #f8f8ff;
+          background-color: $inputBg;
         }
 
         .search-input.fade {
@@ -161,7 +161,7 @@ header {
     display: none;
 
     .menu-overlay {
-      background-color: #82a6f7;
+      background-color: $menuOverlay;
       color: #333;
       height: 100vh;
       width: 100%;
@@ -192,7 +192,7 @@ header {
             display: flex;
             justify-content: flex-start;
             padding: 15px 0;
-            border-bottom: 1px solid #e2e2e2;
+            border-bottom: 1px solid $borderLt;
             width: 100%;
 
             .selected {
@@ -206,7 +206,7 @@ header {
               letter-spacing: -0.183908px;
               font-weight: 500;
               font-style: normal;
-              color: #fff;
+              color: $white;
               margin-left: 36px;
             }
 
@@ -236,7 +236,7 @@ header {
               cursor: pointer;
 
               .search__icon2 {
-                fill: #b1b0b0;
+                fill: $searchIcon;
               }
             }
 
@@ -251,7 +251,7 @@ header {
               width: 100%;
               border-radius: 5px;
               box-shadow: -4px 4px 19px rgba(11, 20, 96, 0.1);
-              background-color: #f8f8ff;
+              background-color: $inputBg;
             }
           }
         }
@@ -268,7 +268,7 @@ header {
 @media #{$mq-1180-down} {
   header {
     width: 100%;
-    background-color: #fff;
+    background-color: $white;
     height: 90px;
     position: fixed;
     z-index: 9999;
