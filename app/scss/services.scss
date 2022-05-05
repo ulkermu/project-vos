@@ -169,7 +169,7 @@ main {
     .services {
       .services-text {
         p {
-          padding: 0 20px;
+          padding: 0 40px;
           text-align: start;
           margin-bottom: 40px;
         }
@@ -190,6 +190,11 @@ main {
         svg {
           top: 2px;
           left: -59px;
+        }
+      }
+      .services-text {
+        p {
+          padding: 0 20px;
         }
       }
       .services-tickets {
