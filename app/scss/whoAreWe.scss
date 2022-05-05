@@ -13,7 +13,6 @@ main {
         justify-content: center;
 
         .whoAreWe-headline {
-          width: 129px;
           position: relative;
           display: grid;
           justify-self: center;
@@ -26,9 +25,8 @@ main {
 
           h4 {
             line-height: 26px;
-            width: 60px;
             position: relative;
-            left: 22px;
+            margin-left: 22px;
             z-index: 2;
           }
 
@@ -101,7 +99,7 @@ main {
     .who-serv-bg {
       .whoAreWe {
         .whoAreWe-container {
-          margin-top: 60px;
+          margin-top: 30px;
         }
       }
     }
@@ -118,6 +116,22 @@ main {
             grid-gap: 25px;
             justify-items: center;
             grid-template-columns: repeat(2, 187px);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media #{$mq-545-down} {
+  main {
+    .who-serv-bg {
+      .whoAreWe {
+        .whoAreWe-container {
+          .whoAreWe-headline {
+            svg {
+              top: 15px;
+            }
           }
         }
       }
