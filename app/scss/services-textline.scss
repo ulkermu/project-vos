@@ -88,6 +88,11 @@ main {
       gap: 40px;
       .services-text-content {
         align-items: center;
+        .service-text-in {
+          h4 {
+            padding-bottom: 10px;
+          }
+        }
       }
 
       .service-text-content-left {
