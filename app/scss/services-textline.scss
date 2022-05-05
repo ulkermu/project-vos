@@ -52,6 +52,7 @@ main {
 @media #{$mq-1180-down} {
   main {
     .services-textline {
+      gap: 40px;
       .services-text-content {
         position: relative;
         .svg-1 {
@@ -85,7 +86,6 @@ main {
 @media #{$mq-545-down} {
   main {
     .services-textline {
-      gap: 40px;
       .services-text-content {
         align-items: center;
         .service-text-in {
