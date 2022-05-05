@@ -1,4 +1,5 @@
 @import "variables";
+@import "colors";
 
 main {
   .services-maintaince {
@@ -8,10 +9,11 @@ main {
     background-size: 40.67%;
     display: flex;
     justify-content: center;
-    gap: 92px;
+    gap: 67px;
 
     .maintaince-headline {
       max-width: 582px;
+      position: relative;
 
       * {
         text-align: start;
@@ -19,6 +21,16 @@ main {
 
       h4 {
         padding: 25px 0 30px;
+      }
+
+      svg {
+        position: absolute;
+        top: 26px;
+        z-index: -1;
+      }
+
+      .maintaince-headline-placeholder {
+        padding-bottom: 30px;
       }
     }
 
@@ -31,7 +43,7 @@ main {
         display: flex;
         padding: 30px 20px;
         max-width: 380px;
-        background: #ffffff;
+        background: $white;
         box-shadow: 5px 6px 15px 1px rgba(0, 0, 0, 0.1);
         border-radius: 7px;
         align-items: center;
@@ -46,18 +58,11 @@ main {
       }
 
       .panel-1 {
-        position: relative;
-        left: 60px;
-      }
-
-      .panel-2 {
-        position: relative;
-        left: -25px;
+        margin-left: 85px;
       }
 
       .panel-3 {
-        position: relative;
-        left: 30px;
+        margin-left: 55px;
       }
     }
   }
@@ -79,13 +84,13 @@ main {
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 
         .panel-1 {
-          position: static;
+          margin: 0;
         }
         .panel-2 {
-          position: static;
+          margin: 0;
         }
         .panel-3 {
-          position: static;
+          margin: 0;
         }
       }
     }
@@ -96,9 +101,43 @@ main {
   main {
     .services-maintaince {
       padding: 40px 20px 0;
+      gap: 30px;
+      .maintaince-headline {
+        h4 {
+          padding-bottom: 20px;
+        }
+
+        .maintaince-headline-placeholder {
+          padding-bottom: 20px;
+        }
+      }
       .maintaince-content {
-        grid-template-columns: repeat(1, minmax(280px, 1fr));
+        display: flex;
         justify-items: center;
+        width: 100%;
+        gap: 20px;
+        .maintaince-content-panel {
+          max-width: inherit;
+        }
+      }
+    }
+  }
+}
+
+@media #{$mq-545-down} {
+  main {
+    .services-maintaince {
+      padding: 40px 20px 0;
+      gap: 20px;
+      .maintaince-headline {
+        h4 {
+          padding-top: 20px;
+          padding-bottom: 10px;
+        }
+
+        .maintaince-headline-placeholder {
+          padding-bottom: 10px;
+        }
       }
     }
   }
