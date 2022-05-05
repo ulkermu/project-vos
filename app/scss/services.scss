@@ -61,38 +61,36 @@ main {
       gap: 100px;
       justify-content: space-between;
 
-      .ticket-1 {
-        width: 322.01px;
-      }
-
       .ticket-2 {
-        width: 324px;
-        position: relative;
-        top: 59px;
+        padding-top: 59px;
       }
 
       .ticket-3 {
-        width: 311px;
-        position: relative;
-        top: 3px;
+        padding-top: 3px;
       }
 
       .services-ticket {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
         h4 {
           text-align: center;
           line-height: 23px;
           letter-spacing: -0.28px;
           font-weight: 600;
-          padding-bottom: 7.5px;
+          padding-left: 28px;
+          padding-bottom: 10px;
         }
-
-        p {
-          position: relative;
-
-          svg {
-            position: absolute;
-            left: -24px;
-            top: 17px;
+        .services-ticket-panel {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          p {
+            width: 322px;
+          }
+          .services-ticket-panel-icon {
+            min-width: 18px;
+            height: 23px;
           }
         }
       }
@@ -114,24 +112,32 @@ main {
           padding: 0 20px;
         }
       }
-
       .services-tickets {
-        display: flex;
         flex-direction: column;
-        align-items: center;
-        gap: 60px;
+        align-items: flex-start;
+        gap: 40px;
         width: 100%;
+        padding: 0 40px;
 
-        .ticket-1 {
-          grid-area: ticket-1;
+        .services-ticket {
+
+          h4 {
+            text-align: start;
+          }
+          .services-ticket-panel {
+            p {
+              width: auto;
+              text-align: start;
+            }
+          }
         }
 
         .ticket-2 {
-          position: static;
+          padding-bottom: 0;
         }
 
         .ticket-3 {
-          position: static;
+          padding-bottom: 0;
         }
       }
     }
@@ -173,43 +179,10 @@ main {
           top: 2px;
         }
       }
-    }
-  }
-}
-
-@media #{$mq-480-down} {
-  main {
-    .services {
       .services-tickets {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 60px;
-        width: 100%;
-
-        .services-ticket {
-          width: 250px;
-          display: grid;
-          justify-self: end;
-          padding-left: 10px;
-
-          h4 {
-            text-align: start;
-            position: relative;
-            z-index: 2;
-          }
-
-          p {
-            text-align: start;
-
-            svg {
-              position: absolute;
-              left: -24px;
-              top: 17px;
-            }
-          }
-        }
+        padding: 0 20px;
       }
     }
   }
 }
+
