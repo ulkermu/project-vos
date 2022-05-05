@@ -45,7 +45,7 @@ main {
         box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1),
           0 1px 2px -1px rgb(0 0 0 / 0.1);
         padding-bottom: 24.5px;
-        background-color: #fff;
+        background-color: $white;
         position: relative;
         z-index: 10;
 
@@ -61,7 +61,7 @@ main {
           font-size: 16px;
           line-height: 24px;
           letter-spacing: -0.2px;
-          color: #0b1460;
+          color: $primaryColor;
           padding: 0 22px;
         }
 
@@ -69,7 +69,7 @@ main {
           margin-bottom: 15px;
           text-align: start;
           padding: 0 21px;
-          color: #5c6185;
+          color: $primaryLightColor;
           letter-spacing: -0.15px;
         }
 
@@ -80,7 +80,7 @@ main {
         }
 
         a:hover {
-          color: #0b1460;
+          color: $primaryColor;
           transition: all 150ms ease-out;
         }
       }
