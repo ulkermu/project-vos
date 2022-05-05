@@ -1,4 +1,13 @@
 @import "variables";
+@import "colors";
+
+.tippy-box[data-theme~="tool"][data-placement^="top"] {
+  background-color: $thirdColor;
+  color: $white;
+  .tippy-arrow::before {
+    border-top-color: $thirdColor;
+  }
+}
 
 main {
   .pricing-advanced {
@@ -10,6 +19,7 @@ main {
     .pricing-advanced-headline {
       max-width: 435px;
       position: relative;
+      margin-top: 25px;
       h3 {
         line-height: 34px;
         letter-spacing: -0.45px;
@@ -24,9 +34,6 @@ main {
         top: 102px;
         right: -18px;
         z-index: 3;
-
-        display: none;
-
       }
     }
 
@@ -42,13 +49,10 @@ main {
       align-items: center;
       width: 934px;
       padding-top: 211.11px;
-      margin-top: 158.11px;
+      margin-top: 181.11px;
       .pricing-advanced-img {
         position: absolute;
-        top: -158.11px;
-
-        display: none;
-
+        top: -181.11px;
         .pricing-advanced-img-in {
           width: 700px;
           min-height: 389px;
@@ -65,7 +69,7 @@ main {
             background-color: #fff;
             box-shadow: -3px 7px 16px 1px rgba(92, 97, 133, 0.3);
             position: absolute;
-            top: -67px;
+            top: -78px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -80,7 +84,7 @@ main {
             }
           }
           .pricing-advanced-img-text {
-            padding-bottom: 6px;
+            padding-bottom: 50px;
             h3 {
               color: #ffffff;
               line-height: 24px;
@@ -94,6 +98,8 @@ main {
           }
           .pricing-advanced-line {
             margin-top: 40px;
+            width: 100%;
+            padding: 0 40px;
             .pricing-line {
               background: linear-gradient(
                 135.87deg,
@@ -102,13 +108,29 @@ main {
               );
               box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.5);
               border-radius: 8.5px;
-              width: 554px;
+              width: 100%;
               height: 13px;
-              display: grid;
-              justify-content: center;
+              display: flex;
+              justify-content: flex-start;
               align-content: center;
               position: relative;
               z-index: 4;
+              padding: 2px 3px;
+              .pricing-inline {
+                background: linear-gradient(
+                  180deg,
+                  #ffffff -184.42%,
+                  #89d99d 142.06%
+                );
+                box-shadow: 0px -1px 2px 1px rgba(255, 255, 255, 0.766554),
+                  inset -2px -3px 4px rgba(91, 160, 108, 0.510735);
+                border-radius: 8.5px;
+                width: 0%;
+                height: 9px;
+                position: relative;
+                display: grid;
+                z-index: 3;
+              }
               .pricing-circles {
                 display: flex;
                 justify-content: space-between;
@@ -117,14 +139,12 @@ main {
                 z-index: 6;
                 position: absolute;
                 top: -6px;
+                left: 0;
+
                 .pricing-circle {
                   width: 25px;
                   height: 25px;
-                  background: radial-gradient(
-                    49.46% 49.27% at 50% 50%,
-                    #ffffff 0%,
-                    #b1afaf 100%
-                  );
+                  background: #b1afaf;
                   border-radius: 50%;
                   display: flex;
                   justify-content: center;
@@ -155,7 +175,6 @@ main {
         }
       }
       .pricing-advanced-items-headline {
-        position: absolute;
         padding-top: 34px;
 
         .captionText {
@@ -165,7 +184,7 @@ main {
       .pricing-advanced-items {
         display: flex;
         justify-content: space-around;
-        margin: 125px 0 72px;
+        margin: 30px 0 72px;
         width: 100%;
         position: relative;
         .pricing-advanced-items-1 {
@@ -207,7 +226,8 @@ main {
         text-decoration: none;
         position: absolute;
         bottom: -30px;
-        padding: 17px 48px;
+        padding: 16px 47px;
+        border: 1px solid transparent;
         background: linear-gradient(
           141.09deg,
           #7cc6a5 -34.65%,
@@ -225,7 +245,6 @@ main {
       .pricing-advanced-started:hover {
         border: 1px solid #4476c5;
         box-shadow: 0px 4px 9px 1px rgba(45, 86, 210, 0.2);
-        border-radius: 15px;
         color: #4476c5;
         background: #fff;
         transition: all 150ms ease-out;
@@ -244,6 +263,30 @@ main {
   }
 }
 
+@media #{$mq-768-down} {
+  main {
+    .pricing-advanced {
+      .pricing-advanced-choices {
+        .pricing-advanced-img {
+          width: 100%;
+          .pricing-advanced-img-in {
+            width: 100%;
+            .pricing-advanced-line {
+              padding: 0 20px;
+              margin-top: 0;
+              margin-bottom: 40px;
+            }
+            img {
+              object-fit: cover;
+              min-height: 258px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 @media #{$mq-700-down} {
   main {
     .pricing-advanced {
@@ -253,6 +296,57 @@ main {
           align-items: center;
           .pricing-advanced-items-line {
             display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media #{$mq-545-down} {
+  main {
+    .pricing-advanced {
+      .pricing-advanced-headline {
+        p {
+          padding: 30px 46.5px 85px;
+        }
+        svg {
+          display: none;
+        }
+      }
+      .pricing-advanced-choices {
+        padding-top: 95px;
+        .pricing-advanced-img {
+          .pricing-advanced-img-in {
+            .pricing-advanced-line {
+              margin-bottom: 130px;
+              .pricing-line {
+                height: 10px;
+                .pricing-inline {
+                  height: 6px;
+                }
+                .pricing-circles {
+                  top: -4px;
+                  .pricing-circle {
+                    width: 18px;
+                    height: 18px;
+                    .pricing-inline-circle {
+                      width: 12px;
+                      height: 12px;
+                    }
+                  }
+                }
+              }
+            }
+            .pricing-advanced-show {
+              top: -48px;
+              width: 100px;
+              height: 100px;
+
+              h2 {
+                font-size: 30px;
+              }
+            }
           }
         }
       }
