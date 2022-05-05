@@ -24,14 +24,14 @@
         }
 
         h4 {
-          color: #5c6185;
+          color: $primaryLightColor;
           font-weight: 600;
         }
 
         a {
           text-decoration: none;
-          color: #2d56d2;
-          border: 1px solid #2d56d2;
+          color: $secondaryColor;
+          border: 1px solid $secondaryColor;
           padding: 12px 30px;
           border-radius: 7px;
           font-size: 16px;
@@ -42,8 +42,8 @@
         }
 
         a:hover {
-          color: #fff;
-          background-color: #2d56d2;
+          color: $white;
+          background-color: $secondaryColor;
           transition: all 150ms ease-out;
         }
       }
