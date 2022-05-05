@@ -32,10 +32,8 @@ main {
         justify-content: center;
 
         .whatCan-headline {
-          max-width: 412px;
           position: relative;
-          height: 71px;
-          bottom: 4px;
+          padding-bottom: 4px;
           justify-self: center;
 
           h3 {
@@ -68,7 +66,7 @@ main {
 
             .whatCan-div {
               width: 260px;
-              background-color: #fff;
+              background-color: $white;
               position: relative;
 
               h3 {
@@ -111,7 +109,7 @@ main {
 
             .whatCan-div {
               width: 260px;
-              background-color: #fff;
+              background-color: $white;
               position: relative;
 
               h3 {
@@ -152,7 +150,7 @@ main {
 
             .whatCan-div {
               width: 260px;
-              background-color: #fff;
+              background-color: $white;
               position: relative;
 
               h3 {
@@ -299,9 +297,32 @@ main {
   main {
     .whatCan-bg {
       .whatCanWeDoForYou {
+        display: flex;
         .whatCan-mobil {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
           .whatCan-mobil-main {
-            grid-template-columns: repeat(1, minmax(300px, 1fr));
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            padding: 30px 20px;
+            gap: 20px;
+            .whatCan-mobil-art {
+              margin: 0;
+              .whatCan-mobil-article {
+                .whatCan-mobil-art-logo {
+                  width: 83px;
+                  height: 83px;
+                }
+                div {
+                  padding: 0;
+                }
+              }
+            }
           }
         }
       }
