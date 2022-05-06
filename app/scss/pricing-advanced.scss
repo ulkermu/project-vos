@@ -19,7 +19,7 @@ main {
     .pricing-advanced-headline {
       max-width: 435px;
       position: relative;
-      margin-top: 25px;
+      margin-top: 10px;
       h3 {
         line-height: 34px;
         letter-spacing: -0.45px;
@@ -38,7 +38,7 @@ main {
     }
 
     .pricing-advanced-choices {
-      background: #ffffff;
+      background: $white;
       box-shadow: 0px 2px 12px rgba(92, 97, 133, 0.3);
       border-radius: 15px;
       border: none;
@@ -66,7 +66,7 @@ main {
             width: 160px;
             height: 160px;
             border-radius: 50%;
-            background-color: #fff;
+            background-color: $white;
             box-shadow: -3px 7px 16px 1px rgba(92, 97, 133, 0.3);
             position: absolute;
             top: -78px;
@@ -80,20 +80,20 @@ main {
               font-size: 50px;
               line-height: 61px;
               letter-spacing: -0.574713px;
-              color: #0b1460;
+              color: $primaryColor;
             }
           }
           .pricing-advanced-img-text {
             padding-bottom: 50px;
             h3 {
-              color: #ffffff;
+              color: $white;
               line-height: 24px;
               letter-spacing: 1.78621px;
               text-align: center;
             }
 
             p {
-              color: #ffffff;
+              color: $white;
             }
           }
           .pricing-advanced-line {
@@ -157,7 +157,7 @@ main {
                   .pricing-inline-circle {
                     width: 17px;
                     height: 17px;
-                    background-color: #fff;
+                    background-color: $white;
                     border-radius: 50%;
                     position: relative;
                     z-index: 6;
@@ -256,6 +256,14 @@ main {
 @media #{$mq-1000-down} {
   main {
     .pricing-advanced {
+      .pricing-advanced-headline {
+        p {
+          padding-top: 20px;
+        }
+        svg {
+          display: none;
+        }
+      }
       .pricing-advanced-choices {
         width: 93%;
       }
@@ -307,8 +315,9 @@ main {
   main {
     .pricing-advanced {
       .pricing-advanced-headline {
+        margin-top: 0;
         p {
-          padding: 30px 46.5px 85px;
+          padding: 10px 46.5px 85px;
         }
         svg {
           display: none;

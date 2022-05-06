@@ -16,7 +16,7 @@
     <!-- CSS File -->
     <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="dist/style.css?cb=1651793662814">
+    <link rel="stylesheet" href="dist/style.css?cb=1651794298613">
 
 <body>
     <header>
@@ -133,7 +133,7 @@
                                     <div class="pricing-circle" data-price="$75">
                                         <div class="pricing-inline-circle"></div>
                                     </div>
-                                    <div class="pricing-circle" data-price="$99">
+                                    <div class="pricing-circle" id="autoShowPrice" data-price="$99">
                                         <div class="pricing-inline-circle"></div>
                                     </div>
                                     <div class="pricing-circle" data-price="$125">
@@ -658,6 +658,7 @@
         })
 
         //* Advanced Price Choose 
+
         const circles = document.querySelectorAll('.pricing-circle');
         const pricingByHours = document.getElementById('pricingByHours');
         circles.forEach((circle) => {
@@ -675,9 +676,10 @@
                 animation: 'fade',
                 trigger: 'click',
                 offset: [0, 15],
+                zIndex: 1,
             });
         });
-        
+
 
         //* Pricing FAQ
         $(document).ready(function () {
@@ -691,12 +693,15 @@
                 $(this).parent().find('.pricing-faq-slidedown-headline-markdown').show();
                 $(this).parent().find('.pricing-faq-slidedown-headline-markup').hide();
             });
-
             $(".pricing-circle").click(function () {
                 $(this).parent().find('.pricing-circle').css('background', '#b1afaf');
                 $(this).css('background', '#89d99d');
             })
         });
+
+        window.onload = function () {
+            $("#autoShowPrice").click();
+        }
 
     </script>
 </body>
