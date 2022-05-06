@@ -9,7 +9,6 @@ main {
       position: relative;
       text-align: center;
       margin-top: 140px;
-      max-width: 350px;
       display: grid;
       justify-self: center;
 
@@ -102,7 +101,7 @@ main {
       }
       .pricing-basic-card-most-popular {
         position: relative;
-        scale: 1.05;
+        scale: 1.04;
         background: linear-gradient(146.53deg, #7cc6a5 -30.84%, #3966cc 100%);
         box-shadow: 0px 4px 9px 1px rgba(45, 86, 210, 0.2);
         border-radius: 4px;
@@ -176,7 +175,7 @@ main {
         grid-gap: 30px;
         grid-template-rows: 339px;
         .pricing-basic-card {
-            min-height: 339px;
+          min-height: 339px;
         }
       }
     }
@@ -189,8 +188,13 @@ main {
       display: flex;
       flex-direction: column;
       .pricing-basic-headline {
+        justify-items: center;
         p {
-          padding: 20px 0;
+          padding: 10px 0 20px;
+        }
+
+        svg {
+          left: 143px;
         }
       }
       .pricing-basic-cards {
@@ -206,4 +210,24 @@ main {
       }
     }
   }
+}
+
+
+@media #{$mq-545-down} {
+  main {
+    .pricing-basic {
+      display: flex;
+      flex-direction: column;
+      .pricing-basic-headline {
+        justify-items: center;
+        p {
+          padding: 10px 0 20px;
+        }
+
+        svg {
+          left: inherit;
+        }
+      }
+    }
   }
+}
