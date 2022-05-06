@@ -17,7 +17,7 @@ main {
 
         p {
           text-align: start;
-          margin-top: 30px;
+          margin-top: 20px;
         }
       }
 
@@ -151,7 +151,6 @@ main {
         gap: 17px;
         a {
           text-decoration: none;
-
           div {
             width: 50px;
             height: 50px;
@@ -164,13 +163,19 @@ main {
         }
         a:hover {
           div {
-            svg {
-              transition: all 150ms ease-out;
-              scale: 1.2;
-            }
+            transition: all 150ms ease-out;
+            background-color: #cccdd5;
           }
         }
       }
+    }
+  }
+}
+
+@media #{$mq-1180-down} {
+  main {
+    .contact-us {
+      margin-top: 130px;
     }
   }
 }
@@ -180,10 +185,25 @@ main {
     .contact-us {
       display: flex;
       flex-direction: column-reverse;
-      margin-top: 163px;
       gap: 40px;
       align-items: center;
       padding: 0 40px;
+      .contact-show {
+        .contact-social-media {
+          padding: 5px 0 0 83px;
+        }
+      }
+      .contact-form {
+        .form-content {
+          label {
+            margin: 20px 0 10px;
+          }
+
+          button {
+            margin-top: 20px;
+          }
+        }
+      }
     }
   }
 }
@@ -191,8 +211,9 @@ main {
 @media #{$mq-620-down} {
   main {
     .contact-us {
+      margin-top: 100px;
+      padding: 0 20px;
       .contact-show {
-        
         .contact-img {
           display: flex;
           flex-direction: column;
@@ -209,10 +230,10 @@ main {
           .shedule-text {
             position: static;
             width: 100%;
-            padding: 0 0 30px 0;
+            padding: 0 0 20px 0;
 
             p {
-              padding: 20px;
+              padding: 10px 20px 20px;
               width: auto;
             }
           }
@@ -235,6 +256,20 @@ main {
         .contact-social-media {
           padding: 0;
           justify-content: center;
+        }
+      }
+      .contact-form {
+        .form-headline {
+          margin-top: 10px;
+        }
+        .form-content {
+          label {
+            margin: 10px 0 0;
+          }
+
+          button {
+            margin-top: 10px;
+          }
         }
       }
     }
