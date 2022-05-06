@@ -144,12 +144,17 @@ body {
       background-position: 33%;
       padding-top: 100px;
       .blogsbottom {
+        .blogsbottom-categories {
+          padding: 21px 20px;
+          gap: 20px;
+        }
         .blogsbottom-blogs {
           display: flex;
           flex-direction: column;
           align-items: center;
           .blogsbottom-blog {
-            padding: 0 40px;
+            padding: 0 20px;
+            width: 100%;
             img {
               width: 100%;
             }
