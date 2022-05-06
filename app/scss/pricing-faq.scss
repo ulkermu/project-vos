@@ -1,4 +1,5 @@
 @import "variables";
+@import "colors";
 
 body {
   .pricing-faq-bg {
@@ -43,7 +44,7 @@ body {
             flex-direction: column;
             padding: 13px 0;
             position: relative;
-            background: #ffffff;
+            background: $white;
             box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.1);
             border-radius: 7px;
             width: 532px;
@@ -60,7 +61,7 @@ body {
                 font-size: 16px;
                 line-height: 55px;
                 letter-spacing: -0.183908px;
-                color: #5c6185;
+                color: $primaryLightColor;
                 text-align: start;
               }
               .pricing-faq-slidedown-headline-markdown {
@@ -82,7 +83,7 @@ body {
               p {
                 padding-top: 30px;
                 line-height: 24px;
-                color: #5c6185;
+                color: $primaryLightColor;
                 text-align: start;
                 letter-spacing: -0.183908px;
                 border-top: 1px solid rgba(92, 97, 133, 0.5);
@@ -94,7 +95,7 @@ body {
     }
   }
 }
-
+/*
 @media #{$mq-1180-down} {
   body {
     .pricing-faq-bg {
@@ -113,8 +114,9 @@ body {
     }
   }
 }
+*/
 
-@media #{$mq-600-down} {
+@media #{$mq-1180-down} {
   body {
     .pricing-faq-bg {
       margin-top: 40px;
