@@ -1,4 +1,5 @@
 @import "variables";
+@import "colors";
 
 main {
   .pricing-basic {
@@ -38,7 +39,7 @@ main {
         display: grid;
         justify-content: center;
         align-content: space-around;
-        background: #ffffff;
+        background: $white;
         box-shadow: 0px 4px 38px 1px rgba(176, 176, 176, 0.15);
         border-radius: 4px;
         * {
@@ -51,12 +52,12 @@ main {
           font-weight: 500;
           font-size: 12.8px;
           line-height: 18px;
-          color: #5c6185;
+          color: $primaryLightColor;
         }
         .card-exp {
-          background: #89d99d;
+          background: $thirdColor;
           border-radius: 7px;
-          color: #fff;
+          color: $white;
           font-size: 12.8px;
           line-height: 36px;
           font-weight: 500;
@@ -86,14 +87,14 @@ main {
             font-size: 16px;
             line-height: 24px;
             letter-spacing: 0.19px;
-            color: #ffffff;
+            color: $white;
           }
         }
 
         a:hover {
           div {
             border: 1px solid #3966cc;
-            background: #fff;
+            background: $white;
             color: #3966cc;
             transition: all 150ms ease-out;
           }
@@ -118,7 +119,7 @@ main {
           font-size: 12.8px;
           line-height: 36px;
           text-align: center;
-          color: #ffffff;
+          color: $white;
           transform: rotate(45deg);
           z-index: 2;
         }
@@ -128,29 +129,29 @@ main {
         .card-price {
           margin-top: 10px;
           h3 {
-            color: #fff;
+            color: $white;
           }
           p {
-            color: #fff;
+            color: $white;
           }
         }
         .card-per-time {
           font-weight: 500;
           font-size: 12.8px;
           line-height: 18px;
-          color: #5c6185;
+          color: $primaryLightColor;
         }
         .card-exp {
-          background: #fff;
+          background: $white;
           color: #63a2b4;
         }
         .card-text {
-          color: #fff;
+          color: $white;
         }
         a {
           div {
             background: none;
-            border: 1px solid #ffffff;
+            border: 1px solid $white;
             box-sizing: border-box;
             filter: drop-shadow(1px 5px 22px rgba(45, 86, 210, 0.3));
             border-radius: 15px;
@@ -164,6 +165,12 @@ main {
 @media #{$mq-1180-down} {
   main {
     .pricing-basic {
+      .pricing-basic-headline {
+        margin-top: 120px;
+        p {
+          padding: 20px 0 40px;
+        }
+      }
       .pricing-basic-cards {
         grid-template-columns: repeat(2, minmax(260px, 1fr));
         grid-gap: 30px;
@@ -177,11 +184,26 @@ main {
 }
 
 @media #{$mq-620-down} {
-    main {
-      .pricing-basic {
-        .pricing-basic-cards {
-          grid-template-columns: repeat(1, minmax(260px, 1fr));
+  main {
+    .pricing-basic {
+      display: flex;
+      flex-direction: column;
+      .pricing-basic-headline {
+        p {
+          padding: 20px 0;
+        }
+      }
+      .pricing-basic-cards {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        padding: 0 20px;
+        .pricing-basic-card {
+          min-height: 339px;
+          width: 100%;
         }
       }
     }
+  }
   }
