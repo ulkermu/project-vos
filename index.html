@@ -15,7 +15,7 @@
 
     <!-- CSS File -->
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="dist/style.css?cb=1651927867517">
+    <link rel="stylesheet" href="dist/style.css?cb=1651930456522">
 </head>
 
 <body class="index-body">
@@ -41,14 +41,14 @@
                         <li><a href="./pricing.html">Pricing</a></li>
                         <li><a href="./blogs.html">Blogs</a></li>
                         <li><a href="./contact-us.html">Contact Us</a></li>
-                        <form class="search2" action="">
-                            <button class="search2-button">
-                                <svg class="search__icon2" viewBox="0 0 512 512" width="26" title="search">
+                        <form class="mobil-search" action="">
+                            <button class="mobil-search-button">
+                                <svg class="mobil-search-icon" viewBox="0 0 512 512" width="26" title="search">
                                     <path
                                         d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z" />
                                 </svg>
                             </button>
-                            <input class="search-input2" type="text">
+                            <input class="mobil-search-input" type="text">
                         </form>
                     </ul>
                 </nav>
@@ -60,13 +60,13 @@
                 <img src="./img/logo.svg" alt="Company Logo">
             </a>
             <ul class="nav-bar-links">
-                <li><a class="nav-bar-link-white selected" href="./index.html">About Us</a></li>
-                <li><a class="nav-bar-link-white" href="./service-detail.html">Services</a></li>
-                <li><a class="nav-bar-link-white" href="./pricing.html">Pricing</a></li>
-                <li><a class="nav-bar-link-white" href="./blogs.html">Blogs</a></li>
-                <li><a class="nav-bar-link-white" href="./contact-us.html">Contact Us</a></li>
+                <li><a class="nav-bar-link selected" href="./index.html">About Us</a></li>
+                <li><a class="nav-bar-link" href="./service-detail.html">Services</a></li>
+                <li><a class="nav-bar-link" href="./pricing.html">Pricing</a></li>
+                <li><a class="nav-bar-link" href="./blogs.html">Blogs</a></li>
+                <li><a class="nav-bar-link" href="./contact-us.html">Contact Us</a></li>
                 <form action="" class="search">
-                    <svg class="search__icon" viewBox="0 0 512 512" width="16" title="search">
+                    <svg class="search-icon" viewBox="0 0 512 512" width="16" title="search">
                         <path
                             d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z" />
                     </svg>
@@ -556,7 +556,7 @@
 
         //* Search Input - Home Page
 
-        const searchIcon = document.querySelector(".search__icon");
+        const searchIcon = document.querySelector(".search-icon");
         const searchInput = document.querySelector(".search-input");
 
         searchIcon.addEventListener("click", () => {

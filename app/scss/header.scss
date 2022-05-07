@@ -49,7 +49,7 @@ header {
           color: $thirdColor;
         }
 
-        .nav-bar-link-white {
+        .nav-bar-link {
           text-decoration: none;
           font-size: 16px;
           line-height: 38px;
@@ -60,19 +60,11 @@ header {
           margin: 0 25px;
         }
 
-        .nav-bar-link-black {
-          text-decoration: none;
-          font-size: 16px;
-          line-height: 38px;
-          letter-spacing: -0.183908px;
-          font-weight: 500;
-          font-style: normal;
+        .black {
           color: $black;
-          margin: 0 25px;
         }
 
-        .nav-bar-link-black:hover, 
-        .nav-bar-link-white:hover {
+        .nav-bar-link:hover {
           transition: all 150ms ease-out;
           color: $thirdColor;
         }
@@ -86,26 +78,18 @@ header {
         margin-left: 27.5px;
         position: relative;
 
-        &__icon {
+        &-icon {
           text-align: center;
           fill: $white;
           position: relative;
           cursor: pointer;
         }
 
-        &__icon-black {
-          text-align: center;
+        .black {
           fill: $black;
-          position: relative;
-          cursor: pointer;
         }
 
-        &__icon:hover {
-          transition: all 150ms ease-out;
-          fill: $thirdColor;
-        }
-
-        &__icon-black:hover {
+        &-icon:hover {
           transition: all 150ms ease-out;
           fill: $thirdColor;
         }
@@ -128,29 +112,7 @@ header {
           background-color: $inputBg;
         }
 
-        .search-input-black {
-          position: absolute;
-          top: 33px;
-          left: -246px;
-          opacity: 0;
-          -webkit-transition: opacity 150ms ease-in-out;
-          -moz-transition: opacity 150ms ease-in-out;
-          -o-transition: opacity 150ms ease-in-out;
-          transition: opacity 150ms ease-in-out;
-          padding: 10px 15px;
-          outline: none;
-          border: 1px solid $ltGray;
-          width: 265px;
-          border-radius: 5px;
-          box-shadow: -4px 4px 19px rgba(11, 20, 96, 0.1);
-          background-color: $inputBg;
-        }
-
         .search-input.fade {
-          opacity: 1;
-        }
-
-        .search-input-black.fade {
           opacity: 1;
         }
       }
@@ -216,7 +178,7 @@ header {
             }
           }
 
-          .search2 {
+          .mobil-search {
             display: flex;
             align-items: center;
             border: none;
@@ -224,7 +186,7 @@ header {
             padding-top: 15px;
             width: 100%;
 
-            .search2-button {
+            .mobil-search-button {
               position: relative;
               top: 2px;
               left: 40px;
@@ -235,12 +197,12 @@ header {
               outline: none;
               cursor: pointer;
 
-              .search__icon2 {
+              .mobil-search-icon {
                 fill: $searchIcon;
               }
             }
 
-            .search-input2 {
+            .mobil-search-input {
               margin: 0 36px 0 0;
               padding: 15px 16px 15px 50px;
               outline: none;
