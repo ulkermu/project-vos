@@ -30,7 +30,7 @@ main {
             z-index: 2;
           }
 
-          svg {
+          img {
             position: absolute;
             top: 30px;
             left: -31px;
@@ -64,7 +64,7 @@ main {
               inset -4px -4px 7px rgba(176, 200, 251, 0.1);
             border-radius: 15px;
 
-            svg {
+            img {
               display: block;
               justify-self: center;
               align-self: end;
@@ -134,7 +134,7 @@ main {
       .whoAreWe {
         .whoAreWe-container {
           .whoAreWe-headline {
-            svg {
+            img {
               top: 15px;
             }
           }
@@ -166,7 +166,7 @@ main {
               width: 100%;
               align-items: center;
               height: 150px;
-              svg {
+              img {
                 align-self: center;
               }
             }
