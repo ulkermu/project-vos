@@ -7,11 +7,11 @@ main {
     flex-direction: column;
     align-items: center;
 
-    .topic-headline {
+    .relatedTopics-headline {
       position: relative;
       margin-bottom: 50px;
 
-      svg {
+      img {
         position: absolute;
         z-index: -1;
         left: -28px;
@@ -19,27 +19,27 @@ main {
       }
     }
 
-    .topics {
+    .relatedTopics-topics {
       display: flex;
       gap: 30px;
       justify-content: center;
       flex-wrap: wrap;
       position: relative;
 
-      .topic-left-svg {
+      .relatedTopics-topic-left-svg {
         position: absolute;
         left: -86px;
         top: -41px;
         z-index: 2;
       }
-      .topic-right-svg {
+      .relatedTopics-topic-right-svg {
         position: absolute;
         z-index: 11;
         right: -80px;
         top: -44px;
       }
 
-      .topic {
+      .relatedTopics-topic {
         border-radius: 15px;
         width: 339px;
         box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1),
@@ -89,47 +89,36 @@ main {
 }
 
 @media #{$mq-1325-down} {
-    main {
-      .relatedTopics {
-        .topics {
-          display: grid;
-          grid-template-columns: repeat(2, 369px);
-          justify-content: center;
-          position: relative;
-  
-          .topic-left-svg {
-            display: none;
-          }
-          .topic-right-svg {
-            display: none;
-          }
+  main {
+    .relatedTopics {
+      .relatedTopics-topics {
+        display: grid;
+        grid-template-columns: repeat(2, 369px);
+        justify-content: center;
+        position: relative;
+
+        .relatedTopics-topic {
+          width: 100%;
+        }
+
+        .relatedTopics-topic-left-svg {
+          display: none;
+        }
+        .relatedTopics-topic-right-svg {
+          display: none;
         }
       }
     }
   }
-  
-  @media #{$mq-800-down} {
-    main {
-      .relatedTopics {
-  
-        .topics {
-          grid-template-columns: repeat(2, 300px);
-  
-          .topic {
-            width: 300px;
-          }
-        }
+}
+
+@media #{$mq-800-down} {
+  main {
+    .relatedTopics {
+      .relatedTopics-topics {
+        display: flex;
+        padding: 0 20px;
       }
     }
   }
-  
-  @media #{$mq-660-down} {
-    main {
-      .relatedTopics {
-  
-        .topics {
-          grid-template-columns: repeat(1, 300px);
-        }
-      }
-    }
-  }
+}
