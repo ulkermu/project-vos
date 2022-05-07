@@ -7,7 +7,7 @@ main {
     flex-direction: column;
     align-items: center;
 
-    .blog-headline {
+    .currentBlogs-headline {
       position: relative;
       margin-bottom: 53px;
       img {
@@ -18,26 +18,26 @@ main {
       }
     }
 
-    .blogs {
+    .currentBlogs-blogs {
       display: flex;
       gap: 35px;
       justify-content: center;
       position: relative;
 
-      .left-svg {
+      .currentBlogs-blogs-left-svg {
         position: absolute;
         left: -86px;
         top: -62px;
         z-index: 20;
       }
-      .right-svg {
+      .currentBlogs-blogs-right-svg {
         position: absolute;
         z-index: -1;
         right: -65px;
         top: -44px;
       }
 
-      .blog {
+      .currentBlogs-blog {
         border-radius: 15px;
         width: 369px;
         box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1),
@@ -89,17 +89,17 @@ main {
 @media #{$mq-1325-down} {
   main {
     .currentBlogs {
-      .blogs {
+      .currentBlogs-blogs {
         display: grid;
         grid-template-columns: repeat(2, 369px);
         grid-gap: 35px;
         justify-content: center;
         position: relative;
 
-        .left-svg {
+        .currentBlogs-blogs-left-svg {
           display: none;
         }
-        .right-svg {
+        .currentBlogs-blogs-right-svg {
           display: none;
         }
       }
@@ -111,13 +111,13 @@ main {
   main {
     .currentBlogs {
 
-      .blogs {
+      .currentBlogs-blogs {
         display: flex;
         flex-direction: column;
         gap: 20px;
         width: 100%;
         padding: 0 20px;
-        .blog {
+        .currentBlogs-blog {
           width: auto;
         }
       }
@@ -128,7 +128,7 @@ main {
 @media #{$mq-545-down} {
   main {
     .currentBlogs {
-      .blog-headline {
+      .currentBlogs-headline {
         img {
           width: 200px;
         }
