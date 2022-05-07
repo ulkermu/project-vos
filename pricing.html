@@ -687,6 +687,7 @@
 
         //* Pricing FAQ
         $(document).ready(function () {
+            // markdown ve markup diye 2 ayri class olacagina tek bir class olsun, ona click oldugunda slideDown() ve slideUp() yerine slideToggle(), hide() ve show() yerine toggle() kullan.
             $(".pricing-faq-slidedown-headline-markdown").click(function () {
                 $(this).parent().parent().find(".pricing-faq-slidedown-hidden").stop().slideDown("normal");
                 $(this).parent().find('.pricing-faq-slidedown-headline-markdown').hide();
@@ -697,6 +698,7 @@
                 $(this).parent().find('.pricing-faq-slidedown-headline-markdown').show();
                 $(this).parent().find('.pricing-faq-slidedown-headline-markup').hide();
             });
+            // Direk css vermek yerine className toggle et, o className bu stillere sahip olsun. Bu sekilde stilin nereden geldigini anlamak cok zor.
             $(".pricing-circle").click(function () {
                 $(this).parent().find('.pricing-circle').css('background', '#b1afaf');
                 $(this).css('background', '#89d99d');
