@@ -10,13 +10,13 @@
 }
 
 main {
-  .pricing-advanced {
+  .pricingAdvanced {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 69px;
 
-    .pricing-advanced-headline {
+    .pricingAdvanced-headline {
       max-width: 435px;
       position: relative;
       margin-top: 10px;
@@ -37,7 +37,7 @@ main {
       }
     }
 
-    .pricing-advanced-choices {
+    .pricingAdvanced-choices {
       background: $white;
       box-shadow: 0px 2px 12px rgba(92, 97, 133, 0.3);
       border-radius: 15px;
@@ -50,10 +50,10 @@ main {
       width: 934px;
       padding-top: 211.11px;
       margin-top: 181.11px;
-      .pricing-advanced-panel {
+      .pricingAdvanced-panel {
         position: absolute;
         top: -181.11px;
-        .pricing-advanced-panel-in {
+        .pricingAdvanced-panel-in {
           width: 700px;
           min-height: 389px;
           position: relative;
@@ -62,7 +62,7 @@ main {
           align-items: center;
           justify-content: center;
           z-index: 2;
-          .pricing-advanced-hours {
+          .pricingAdvanced-hours {
             width: 160px;
             height: 160px;
             border-radius: 50%;
@@ -83,7 +83,7 @@ main {
               color: $primaryColor;
             }
           }
-          .pricing-advanced-panel-text {
+          .pricingAdvanced-panel-text {
             padding-bottom: 50px;
             h3 {
               color: $white;
@@ -96,7 +96,7 @@ main {
               color: $white;
             }
           }
-          .pricing-advanced-line {
+          .pricingAdvanced-line {
             margin-top: 40px;
             width: 100%;
             padding: 0 40px;
@@ -178,23 +178,23 @@ main {
           }
         }
       }
-      .pricing-advanced-items-headline {
+      .pricingAdvanced-items-headline {
         padding-top: 34px;
 
         .captionText {
           padding: 0;
         }
       }
-      .pricing-advanced-items {
+      .pricingAdvanced-items {
         display: flex;
         justify-content: space-around;
         margin: 30px 0 72px;
         width: 100%;
         position: relative;
 
-        .pricing-advanced-items-2,
-        .pricing-advanced-items-1 {
-          .pricing-advanced-item {
+        .pricingAdvanced-items-2,
+        .pricingAdvanced-items-1 {
+          .pricingAdvanced-item {
             display: flex;
             padding: 10px 0;
             img {
@@ -207,14 +207,14 @@ main {
             }
           }
         }
-        .pricing-advanced-items-line {
+        .pricingAdvanced-items-line {
           position: absolute;
           height: 100%;
           width: 1px;
           background-color: rgba(92, 97, 133, 0.3355);
         }
       }
-      .pricing-advanced-started {
+      .pricingAdvanced-started {
         text-decoration: none;
         position: absolute;
         bottom: -30px;
@@ -234,7 +234,7 @@ main {
         letter-spacing: 0.285px;
         color: #ffffff;
       }
-      .pricing-advanced-started:hover {
+      .pricingAdvanced-started:hover {
         border: 1px solid #4476c5;
         box-shadow: 0px 4px 9px 1px rgba(45, 86, 210, 0.2);
         color: #4476c5;
@@ -247,13 +247,13 @@ main {
 
 @media #{$mq-1000-down} {
   main {
-    .pricing-advanced {
-      .pricing-advanced-headline {
+    .pricingAdvanced {
+      .pricingAdvanced-headline {
         p {
           padding-top: 20px;
         }
       }
-      .pricing-advanced-choices {
+      .pricingAdvanced-choices {
         width: 93%;
       }
     }
@@ -262,13 +262,13 @@ main {
 
 @media #{$mq-768-down} {
   main {
-    .pricing-advanced {
-      .pricing-advanced-choices {
-        .pricing-advanced-panel {
+    .pricingAdvanced {
+      .pricingAdvanced-choices {
+        .pricingAdvanced-panel {
           width: 100%;
-          .pricing-advanced-panel-in {
+          .pricingAdvanced-panel-in {
             width: 100%;
-            .pricing-advanced-line {
+            .pricingAdvanced-line {
               padding: 0 20px;
               margin-top: 0;
               margin-bottom: 40px;
@@ -286,12 +286,12 @@ main {
 
 @media #{$mq-700-down} {
   main {
-    .pricing-advanced {
-      .pricing-advanced-choices {
-        .pricing-advanced-items {
+    .pricingAdvanced {
+      .pricingAdvanced-choices {
+        .pricingAdvanced-items {
           flex-direction: column;
           align-items: center;
-          .pricing-advanced-items-line {
+          .pricingAdvanced-items-line {
             display: none;
           }
         }
@@ -302,8 +302,8 @@ main {
 
 @media #{$mq-545-down} {
   main {
-    .pricing-advanced {
-      .pricing-advanced-headline {
+    .pricingAdvanced {
+      .pricingAdvanced-headline {
         margin-top: 0;
         p {
           padding: 10px 46.5px 85px;
@@ -312,11 +312,11 @@ main {
           display: none;
         }
       }
-      .pricing-advanced-choices {
+      .pricingAdvanced-choices {
         padding-top: 95px;
-        .pricing-advanced-panel {
-          .pricing-advanced-panel-in {
-            .pricing-advanced-line {
+        .pricingAdvanced-panel {
+          .pricingAdvanced-panel-in {
+            .pricingAdvanced-line {
               margin-bottom: 130px;
               .pricing-line {
                 height: 10px;
@@ -336,7 +336,7 @@ main {
                 }
               }
             }
-            .pricing-advanced-hours {
+            .pricingAdvanced-hours {
               top: -48px;
               width: 100px;
               height: 100px;

@@ -2,10 +2,10 @@
 @import "colors";
 
 main {
-  .pricing-basic {
+  .pricingBasic {
     display: grid;
     justify-content: center;
-    .pricing-basic-headline {
+    .pricingBasic-headline {
       position: relative;
       text-align: center;
       margin-top: 140px;
@@ -28,13 +28,13 @@ main {
         left: 0;
       }
     }
-    .pricing-basic-cards {
+    .pricingBasic-cards {
       display: grid;
       justify-content: center;
       grid-template-columns: repeat(4, minmax(260px, 1fr));
       grid-template-rows: 339px;
       grid-gap: 19px;
-      .pricing-basic-card {
+      .pricingBasic-card {
         display: grid;
         justify-content: center;
         align-content: space-around;
@@ -44,16 +44,16 @@ main {
         * {
           text-align: center;
         }
-        .card-price {
+        .pricingBasic-card-price {
           margin-top: 10px;
         }
-        .card-per-time {
+        .pricingBasic-card-per-time {
           font-weight: 500;
           font-size: 12.8px;
           line-height: 18px;
           color: $primaryLightColor;
         }
-        .card-exp {
+        .pricingBasic-card-exp {
           background: $thirdColor;
           border-radius: 7px;
           color: $white;
@@ -61,7 +61,7 @@ main {
           line-height: 36px;
           font-weight: 500;
         }
-        .card-text {
+        .pricingBasic-card-text {
           max-width: 175px;
           line-height: 34px;
         }
@@ -99,7 +99,7 @@ main {
           }
         }
       }
-      .pricing-basic-card-most-popular {
+      .pricingBasic-card-most-popular {
         position: relative;
         scale: 1.04;
         background: linear-gradient(146.53deg, #7cc6a5 -30.84%, #3966cc 100%);
@@ -110,7 +110,7 @@ main {
           top: 0;
           right: 0;
         }
-        .card-most-popular {
+        .pricingBasic-card-most-popular-text {
           right: -8px;
           top: 19px;
           position: absolute;
@@ -125,7 +125,7 @@ main {
         * {
           text-align: center;
         }
-        .card-price {
+        .pricingBasic-card-price {
           margin-top: 10px;
           h3 {
             color: $white;
@@ -134,17 +134,17 @@ main {
             color: $white;
           }
         }
-        .card-per-time {
+        .pricingBasic-card-per-time {
           font-weight: 500;
           font-size: 12.8px;
           line-height: 18px;
           color: $primaryLightColor;
         }
-        .card-exp {
+        .pricingBasic-card-exp {
           background: $white;
           color: #63a2b4;
         }
-        .card-text {
+        .pricingBasic-card-text {
           color: $white;
         }
         a {
@@ -163,18 +163,18 @@ main {
 
 @media #{$mq-1180-down} {
   main {
-    .pricing-basic {
-      .pricing-basic-headline {
+    .pricingBasic {
+      .pricingBasic-headline {
         margin-top: 120px;
         p {
           padding: 20px 0 40px;
         }
       }
-      .pricing-basic-cards {
+      .pricingBasic-cards {
         grid-template-columns: repeat(2, minmax(260px, 1fr));
         grid-gap: 30px;
         grid-template-rows: 339px;
-        .pricing-basic-card {
+        .pricingBasic-card {
           min-height: 339px;
         }
       }
@@ -184,10 +184,10 @@ main {
 
 @media #{$mq-620-down} {
   main {
-    .pricing-basic {
+    .pricingBasic {
       display: flex;
       flex-direction: column;
-      .pricing-basic-headline {
+      .pricingBasic-headline {
         justify-items: center;
         p {
           padding: 10px 0 20px;
@@ -197,13 +197,13 @@ main {
           left: 143px;
         }
       }
-      .pricing-basic-cards {
+      .pricingBasic-cards {
         display: flex;
         flex-direction: column;
         gap: 20px;
         width: 100%;
         padding: 0 20px;
-        .pricing-basic-card {
+        .pricingBasic-card {
           min-height: 339px;
           width: 100%;
         }
@@ -215,10 +215,10 @@ main {
 
 @media #{$mq-545-down} {
   main {
-    .pricing-basic {
+    .pricingBasic {
       display: flex;
       flex-direction: column;
-      .pricing-basic-headline {
+      .pricingBasic-headline {
         justify-items: center;
         p {
           padding: 10px 0 20px;
