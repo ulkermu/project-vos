@@ -48,9 +48,11 @@ main {
         }
 
         .whoAreWe-panels {
-          display: flex;
+          display: grid;
+          grid-template-columns: repeat(auto-fit, 187px);
           gap: 25px;
           justify-content: center;
+          justify-items: center;
 
           .whoAreWe-panel {
             display: grid;
