@@ -48,7 +48,7 @@ main {
             left: 86px;
           }
 
-          svg {
+          img {
             position: absolute;
             top: 41px;
             left: 20px;
@@ -171,7 +171,7 @@ main {
                 color: $primaryLightColor;
               }
 
-              svg {
+              img {
                 position: absolute;
                 bottom: 94px;
                 left: 92px;
@@ -315,11 +315,12 @@ main {
               margin: 0;
               .whatCanWeDoForYouMain-mobil-article {
                 .whatCanWeDoForYouMain-mobil-article-icon {
-                  width: 83px;
-                  height: 83px;
+                  width: 60px;
+                  height: 60px;
                 }
                 div {
                   padding: 0;
+                  width: auto;
                 }
               }
             }
