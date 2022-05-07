@@ -3,7 +3,7 @@
 @import "variables";
 
 main {
-  .whatCan-bg {
+  .whatCanWeDoForYouBg {
     position: relative;
 
     .showcase-left-circle {
@@ -18,12 +18,12 @@ main {
       display: grid;
       justify-content: center;
 
-      .whatCan-mobil {
+      .whatCanWeDoForYou-mobil {
         display: none;
       }
 
-      .whatCan {
-        background-image: url(../../img/iStock-1138139368-[Converted].svg);
+      .whatCanWeDoForYou-desktop {
+        background-image: url(../../img/whatCanWeDo/whatCanWeDoForYou-img.svg);
         background-repeat: no-repeat;
         width: 795px;
         min-height: 795px;
@@ -31,7 +31,7 @@ main {
         grid-template-rows: 188px;
         justify-content: center;
 
-        .whatCan-headline {
+        .whatCanWeDoForYou-headline {
           position: relative;
           padding-bottom: 4px;
           justify-self: center;
@@ -56,15 +56,15 @@ main {
           }
         }
 
-        .whatCan-main {
-          .whatCan-main-top {
+        .whatCanWeDoForYouMain {
+          .whatCanWeDoForYouMain-top {
             display: flex;
             justify-content: space-between;
             width: 1010px;
             margin-bottom: 182px;
             margin-left: 37.5px;
 
-            .whatCan-div {
+            .whatCanWeDoForYouMain-panels {
               width: 260px;
               background-color: $white;
               position: relative;
@@ -101,13 +101,13 @@ main {
             }
           }
 
-          .whatCan-main-mid {
+          .whatCanWeDoForYouMain-mid {
             display: flex;
             justify-content: space-between;
             width: 1085px;
             margin-bottom: 131px;
 
-            .whatCan-div {
+            .whatCanWeDoForYouMain-panels {
               width: 260px;
               background-color: $white;
               position: relative;
@@ -144,11 +144,11 @@ main {
             }
           }
 
-          .whatCan-main-bottom {
+          .whatCanWeDoForYouMain-bottom {
             display: flex;
             justify-content: center;
 
-            .whatCan-div {
+            .whatCanWeDoForYouMain-panels {
               width: 260px;
               background-color: $white;
               position: relative;
@@ -186,25 +186,25 @@ main {
 
 @media #{$mq-1180-down} {
   main {
-    .whatCan-bg {
+    .whatCanWeDoForYouBg {
       .whatCanWeDoForYou {
         margin-top: 72.89px;
-        .whatCan {
+        .whatCanWeDoForYou-desktop {
           display: none;
         }
 
-        .whatCan-mobil {
+        .whatCanWeDoForYou-mobil {
           display: grid;
           justify-content: center;
 
-          .whatCan-mobil-headline {
+          .whatCanWeDoForYou-mobil-headline {
             width: 300px;
             text-align: center;
             display: grid;
             justify-self: center;
             position: relative;
 
-            .mobil-headline-img {
+            .whatCanWeDoForYou-mobil-headline-img {
               position: absolute;
               z-index: -1;
               width: 290px;
@@ -212,29 +212,29 @@ main {
             }
           }
 
-          .mobil-img {
+          .whatCanWeDoForYou-mobil-img {
             width: 100%;
           }
 
-          .whatCan-mobil-main {
+          .whatCanWeDoForYouMain-mobil {
             display: grid;
             justify-content: center;
             position: relative;
             margin-top: 40px;
             grid-template-columns: repeat(2, minmax(300px, 1fr));
 
-            .whatCan-mobil-art {
+            .whatCanWeDoForYouMain-mobil-article-container {
               margin-bottom: 45px;
               margin: 20px;
               border-radius: 15px;
               box-shadow: -3px 3px 35px -9px rgb(132 166 247 / 40%),
                 inset -4px -4px 7px rgb(176 200 251 / 10%);
 
-              .whatCan-mobil-article {
+              .whatCanWeDoForYouMain-mobil-article {
                 display: flex;
                 padding: 20px;
 
-                .whatCan-mobil-art-logo {
+                .whatCanWeDoForYouMain-mobil-article-icon {
                   width: 60px;
                   display: flex;
                   align-self: center;
@@ -275,7 +275,7 @@ main {
 
 @media #{$mq-1024-down} {
   main {
-    .whatCan-bg {
+    .whatCanWeDoForYouBg {
       .whatCanWeDoForYou {
         margin-top: 60px;
       }
@@ -285,7 +285,7 @@ main {
 
 @media #{$mq-760-down} {
   main {
-    .whatCan-bg {
+    .whatCanWeDoForYouBg {
       .showcase-left-circle {
         display: none;
       }
@@ -295,26 +295,26 @@ main {
 
 @media #{$mq-620-down} {
   main {
-    .whatCan-bg {
+    .whatCanWeDoForYouBg {
       .whatCanWeDoForYou {
         display: flex;
-        .whatCan-mobil {
+        .whatCanWeDoForYou-mobil {
           display: flex;
           flex-direction: column;
           justify-content: center;
           align-items: center;
           width: 100%;
-          .whatCan-mobil-main {
+          .whatCanWeDoForYouMain-mobil {
             display: flex;
             flex-direction: column;
             justify-content: center;
             width: 100%;
             padding: 30px 20px;
             gap: 20px;
-            .whatCan-mobil-art {
+            .whatCanWeDoForYouMain-mobil-article-container {
               margin: 0;
-              .whatCan-mobil-article {
-                .whatCan-mobil-art-logo {
+              .whatCanWeDoForYouMain-mobil-article {
+                .whatCanWeDoForYouMain-mobil-article-icon {
                   width: 83px;
                   height: 83px;
                 }
