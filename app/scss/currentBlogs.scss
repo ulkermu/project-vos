@@ -10,7 +10,7 @@ main {
     .blog-headline {
       position: relative;
       margin-bottom: 53px;
-      svg {
+      img {
         position: absolute;
         z-index: -1;
         left: -28px;
@@ -129,7 +129,7 @@ main {
   main {
     .currentBlogs {
       .blog-headline {
-        svg {
+        img {
           width: 200px;
         }
       }
