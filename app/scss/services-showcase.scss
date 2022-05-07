@@ -8,7 +8,7 @@
 
   main {
     .services-showcase {
-      .services-showcase-head {
+      .services-showcase-header {
         display: flex;
         justify-content: center;
         gap: 90px;
@@ -57,7 +57,7 @@
     background-size: 56.6%;
     main {
       .services-showcase {
-        .services-showcase-head {
+        .services-showcase-header {
           gap: 0;
         }
       }
@@ -70,7 +70,7 @@
     background: none;
     main {
       .services-showcase {
-        .services-showcase-head {
+        .services-showcase-header {
           gap: 0;
           flex-direction: column;
           align-items: center;
@@ -108,7 +108,7 @@
   .service-detail-body {
     main {
       .services-showcase {
-        .services-showcase-head {
+        .services-showcase-header {
           .showcase-text {
             margin-top: 0;
           }

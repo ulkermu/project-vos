@@ -19,20 +19,20 @@ main {
         width: 235px;
       }
 
-      .svg-1 {
+      .service-text-img-bg-1 {
         position: absolute;
         left: -54px;
         top: -50px;
       }
 
-      .svg-2 {
+      .service-text-img-bg-2 {
         position: absolute;
         bottom: 0;
         right: -27px;
         z-index: -1;
       }
 
-      .svg-3 {
+      .service-text-img-bg-3 {
         position: absolute;
         top: -33px;
         right: -50px;
@@ -55,18 +55,21 @@ main {
       gap: 40px;
       .services-text-content {
         position: relative;
-        .svg-1 {
+        .service-text-img-bg-1 {
           display: none;
         }
-        .svg-2 {
+        .service-text-img-bg-2 {
           display: none;
         }
-        .svg-3 {
+        .service-text-img-bg-3 {
           display: none;
         }
 
         .service-text-in {
           padding: 0 20px;
+          h4 {
+            padding-bottom: 10px;
+          }
         }
       }
     }
@@ -88,11 +91,6 @@ main {
     .services-textline {
       .services-text-content {
         align-items: center;
-        .service-text-in {
-          h4 {
-            padding-bottom: 10px;
-          }
-        }
       }
 
       .service-text-content-left {
