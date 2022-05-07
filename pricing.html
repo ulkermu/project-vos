@@ -16,7 +16,7 @@
     <!-- CSS File -->
     <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="dist/style.css?cb=1651951438883">
+    <link rel="stylesheet" href="dist/style.css?cb=1651952130607">
 
 <body>
     <header>
@@ -81,9 +81,9 @@
                 <h3>Our Unbeatable Pricing</h3>
                 <p>Choose the package hour and
                     create the plan that best fits your budget.</p>
-                <img src="./img/pricing/pricing-advanced-arrow.svg">
             </div>
             <div class="pricingAdvanced-choices">
+                <img class="pricingAdvanced-panel-arrow" src="./img/pricing/pricing-advanced-arrow.svg">
                 <div class="pricingAdvanced-panel">
                     <div class="pricingAdvanced-panel-in">
                         <div class="pricingAdvanced-hours">
@@ -524,6 +524,9 @@
                 arrow: true,
                 theme: 'tool',
                 animation: 'fade',
+                //hideOnClick: false,
+                multiple: false,
+                triggerTarget: null,
                 trigger: 'click',
                 offset: [0, 15],
                 zIndex: 1,
@@ -543,7 +546,6 @@
 
             $(".pricing-circle").click(function () {
                 if ($(this).hasClass("pricing-circle-bg")) {
-                    //$(".pricing-circle").removeClass("pricing-circle-bg");
                     return;
                 }
                 else {

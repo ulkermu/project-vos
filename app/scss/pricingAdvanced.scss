@@ -34,12 +34,6 @@ main {
         padding: 30px 46.5px 125px;
         text-align: center;
       }
-      img {
-        position: absolute;
-        top: 102px;
-        right: -18px;
-        z-index: 3;
-      }
     }
 
     .pricingAdvanced-choices {
@@ -55,6 +49,14 @@ main {
       width: 934px;
       padding-top: 211.11px;
       margin-top: 181.11px;
+
+      .pricingAdvanced-panel-arrow {
+        position: absolute;
+        right: 223px;
+        top: -314px;
+        z-index: 3;
+      }
+
       .pricingAdvanced-panel {
         position: absolute;
         top: -181.11px;
@@ -260,6 +262,10 @@ main {
       }
       .pricingAdvanced-choices {
         width: 93%;
+        
+        .pricingAdvanced-panel-arrow {
+          display: none;
+        }
       }
     }
   }
@@ -315,9 +321,6 @@ main {
         margin-top: 0;
         p {
           padding: 10px 46.5px 85px;
-        }
-        img {
-          display: none;
         }
       }
       .pricingAdvanced-choices {
