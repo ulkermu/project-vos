@@ -61,26 +61,24 @@ main {
           border-radius: 7px;
           border: 1px solid transparent;
           margin-top: 40px;
-
-          p {
-            font-weight: 500;
-            color: white;
-          }
+          font-weight: 500;
+          color: $white;
+          font-size: 16px;
+          line-height: 24px;
+          letter-spacing: 0.19px;
         }
 
         button:hover {
-          background-color: white;
+          background-color: $white;
           transition: all 150ms ease-out;
           border: 1px solid $primaryColor;
           cursor: pointer;
-          
-          p {
-            color: $primaryColor;
-          }
+          color: $primaryColor;
+          font-weight: 600;
         }
       }
     }
-    .contact-show {
+    .contact-showcase {
       .contact-img {
         position: relative;
         display: flex;
@@ -123,7 +121,7 @@ main {
 
           a:hover {
             background-color: $secondaryColor;
-            color: white;
+            color: $white;
             transition: all 150ms ease-out;
           }
         }
@@ -188,7 +186,7 @@ main {
       gap: 40px;
       align-items: center;
       padding: 0 40px;
-      .contact-show {
+      .contact-showcase {
         .contact-social-media {
           padding: 5px 0 0 83px;
         }
@@ -213,11 +211,11 @@ main {
     .contact-us {
       margin-top: 100px;
       padding: 0 20px;
-      .contact-show {
+      .contact-showcase {
         .contact-img {
           display: flex;
           flex-direction: column;
-          
+
           .shedule-bg {
             display: none;
           }
