@@ -2,18 +2,18 @@
 @import "colors";
 
 body {
-  .blogsbottom-bg {
+  .blogsBottomBg {
     background-image: url(../../img/blogs/blogsbottom-bg-2.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 100%;
     margin-top: 25px;
     padding-top: 169px;
-    .blogsbottom {
+    .blogsBottom {
       display: flex;
       flex-direction: column;
       align-items: center;
-      .blogsbottom-categories {
+      .blogsBottom-categories {
         display: flex;
         gap: 30px;
         padding: 21px 0;
@@ -26,7 +26,7 @@ body {
           text-align: center;
           color: $secondaryColor;
         }
-        .blogsbottom-categories-button {
+        .blogsBottom-categories-button {
           font-size: 16px;
           line-height: 19.5px;
           letter-spacing: -0.18px;
@@ -37,7 +37,7 @@ body {
           border: none;
           cursor: pointer;
         }
-        .blogsbottom-categories-button:hover {
+        .blogsBottom-categories-button:hover {
           color: $primaryColor;
           transition: all 150ms ease-out;
         }
@@ -50,7 +50,7 @@ body {
           color: $primaryColor;
         }
       }
-      .blogsbottom-line {
+      .blogsBottom-line {
         width: 100%;
         background: linear-gradient(
           270deg,
@@ -63,13 +63,13 @@ body {
         filter: blur(2.71828px);
         height: 3px;
       }
-      .blogsbottom-blogs {
+      .blogsBottom-blogs {
         display: grid;
         grid-template-columns: repeat(3, 339px);
         grid-gap: 52px;
         justify-content: center;
         padding-top: 30px;
-        .blogsbottom-blog {
+        .blogsBottom-blog {
           h6 {
             padding: 30px 0 15px;
           }
@@ -92,7 +92,7 @@ body {
           }
         }
       }
-      .blogsbottom-pagination {
+      .blogsBottom-pagination {
         display: flex;
         justify-content: center;
         margin-top: 59px;
@@ -111,7 +111,7 @@ body {
           color: $primaryColor;
           padding: 7px 10px;
         }
-        .blogsbottom-pagination-buttons {
+        .blogsBottom-pagination-buttons {
           margin: 0 7.5px;
         }
         .current-page {
@@ -124,13 +124,13 @@ body {
 
 @media #{$mq-1180-down} {
   body {
-    .blogsbottom-bg {
+    .blogsBottomBg {
       background-position: 90%;
-      .blogsbottom {
-        .blogsbottom-categories {
+      .blogsBottom {
+        .blogsBottom-categories {
           padding: 21px 40px;
         }
-        .blogsbottom-blogs {
+        .blogsBottom-blogs {
           grid-template-columns: repeat(2, 339px);
         }
       }
@@ -140,19 +140,19 @@ body {
 
 @media #{$mq-768-down} {
   body {
-    .blogsbottom-bg {
+    .blogsBottomBg {
       background-position: 33%;
       padding-top: 100px;
-      .blogsbottom {
-        .blogsbottom-categories {
+      .blogsBottom {
+        .blogsBottom-categories {
           padding: 21px 20px;
           gap: 20px;
         }
-        .blogsbottom-blogs {
+        .blogsBottom-blogs {
           display: flex;
           flex-direction: column;
           align-items: center;
-          .blogsbottom-blog {
+          .blogsBottom-blog {
             padding: 0 20px;
             width: 100%;
             img {
@@ -167,9 +167,9 @@ body {
 
 @media #{$mq-425-down} {
   body {
-    .blogsbottom-bg {
-      .blogsbottom {
-        .blogsbottom-categories {
+    .blogsBottomBg {
+      .blogsBottom {
+        .blogsBottom-categories {
           display: flex;
           gap: 20px;
           padding: 10px 20px;
@@ -177,18 +177,18 @@ body {
           span {
             font-size: 13px;
           }
-          .blogsbottom-categories-button {
+          .blogsBottom-categories-button {
             font-size: 13px;
           }
           .selected-button {
             font-size: 13px;
           }
         }
-        .blogsbottom-blogs {
+        .blogsBottom-blogs {
           display: flex;
           flex-direction: column;
           align-items: center;
-          .blogsbottom-blog {
+          .blogsBottom-blog {
             padding: 0 20px;
             img {
               width: 100%;
