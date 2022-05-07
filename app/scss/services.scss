@@ -6,17 +6,14 @@ main {
     display: grid;
     justify-content: center;
 
-    .services-op-div {
+    .services-operation {
       position: relative;
       display: flex;
       justify-content: center;
 
-      .services-op {
+      .services-operation-img {
         padding-top: 50px;
       }
-    }
-    .services-op-mini-div {
-      display: none;
     }
 
     .services-headline {
@@ -100,15 +97,14 @@ main {
 @media #{$mq-1280-down} {
   main {
     .services {
-      .services-op-div {
-        display: none;
-      }
-      .services-op-mini-div {
+      .services-operation {
+        position: relative;
         display: flex;
         justify-content: center;
-        .services-op-mini {
-          width: 100%;
+
+        .services-operation-img {
           padding: 0 20px;
+          width: 100%;
         }
       }
       .services-tickets {
@@ -119,7 +115,6 @@ main {
         padding: 0 40px;
 
         .services-ticket {
-
           h4 {
             text-align: start;
           }
@@ -132,11 +127,11 @@ main {
         }
 
         .ticket-2 {
-          padding-bottom: 0;
+          padding: 0;
         }
 
         .ticket-3 {
-          padding-bottom: 0;
+          padding: 0;
         }
       }
     }
@@ -203,4 +198,3 @@ main {
     }
   }
 }
-
