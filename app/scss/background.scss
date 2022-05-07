@@ -1,7 +1,7 @@
 @import "variables";
 
 main {
-  .who-serv-bg {
+  .whoAreWe-services-bg {
     display: block;
     position: relative;
     background-position: 100% 100%;
@@ -33,7 +33,7 @@ main {
     }
   }
 
-  .who-serv-bg::after {
+  .whoAreWe-services-bg::after {
     content: "";
     background-image: url(../../img/whoAreWe/whoServAfter.svg);
     background-repeat: no-repeat;
@@ -47,7 +47,7 @@ main {
 
 @media #{$mq-1440-down} {
   main {
-    .who-serv-bg::after {
+    .whoAreWe-services-bg::after {
       height: 184px;
     }
   }
@@ -55,7 +55,7 @@ main {
 
 @media #{$mq-1280-down} {
   main {
-    .who-serv-bg {
+    .whoAreWe-services-bg {
       position: relative;
       background-size: contain;
 
@@ -68,7 +68,7 @@ main {
 
 @media #{$mq-1000-down} {
   main {
-    .who-serv-bg {
+    .whoAreWe-services-bg {
       padding-top: 0;
     }
   }
@@ -84,11 +84,11 @@ main {
       display: none;
     }
 
-    .who-serv-bg {
+    .whoAreWe-services-bg {
       padding-bottom: 20px;
     }
 
-    .who-serv-bg::after {
+    .whoAreWe-services-bg::after {
       display: none;
     }
   }

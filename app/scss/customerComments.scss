@@ -18,11 +18,11 @@ main {
       overflow: hidden;
     }
 
-    .comments-slider-container {
+    .customerComments-slider-container {
       padding-bottom: 158px;
     }
 
-    .comments-headline {
+    .customerComments-headline {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -36,7 +36,7 @@ main {
       }
     }
 
-    .comments-sliders {
+    .customerComments-sliders {
       position: relative;
       width: 100%;
       display: flex;
@@ -88,7 +88,7 @@ main {
             display: grid;
             justify-content: center;
 
-            .testImg {
+            .testimonialBox-img {
               display: flex;
               justify-content: flex-end;
               justify-self: center;
@@ -97,14 +97,14 @@ main {
               height: 108px;
               position: relative;
 
-              .testImg-left {
+              .testimonialBox-img-left {
                 position: absolute;
                 width: 19px;
                 height: 74px;
                 top: 10px;
                 left: 100px;
               }
-              .testImg-right {
+              .testimonialBox-img-right {
                 position: absolute;
                 width: 21px;
                 height: 72px;
@@ -112,7 +112,7 @@ main {
                 left: -5px;
               }
 
-              .testImg-photo {
+              .testimonialBox-img-photo {
                 width: 101px;
                 height: 100px;
                 border-radius: 50%;
@@ -160,16 +160,16 @@ main {
   main {
     .customerComments {
       margin: 60px 0 0 0;
-      .comments-headline {
+      .customerComments-headline {
         svg {
           bottom: -15px;
           left: -37px;
         }
       }
-      .comments-slider-container {
+      .customerComments-slider-container {
         padding-bottom: 60px;
 
-        .comments-sliders {
+        .customerComments-sliders {
           .swiper-button-prev {
             top: 461px;
           }
@@ -189,7 +189,7 @@ main {
       .customerComments-right-circle {
         display: none;
       }
-      .comments-sliders {
+      .customerComments-sliders {
         .swiper-container {
           .swiper-button-prev {
             left: 316px;
@@ -221,7 +221,7 @@ main {
 @media #{$mq-545-down} {
   main {
     .customerComments {
-      .comments-headline {
+      .customerComments-headline {
         svg {
           width: 300px;
           left: -47px;
