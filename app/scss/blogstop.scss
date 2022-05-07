@@ -25,10 +25,12 @@ main {
       }
     }
     .blogsTop-blogs {
-      display: grid;
-      grid-template-columns: repeat(2, 540px);
       grid-gap: 40px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, 540px);
       justify-content: center;
+      max-width: 1120px;
+      justify-items: center;
       .blogsTop-blog {
         img {
           width: 100%;
