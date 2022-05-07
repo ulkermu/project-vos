@@ -10,7 +10,7 @@ main {
     .blogstop-headline {
       width: fit-content;
       position: relative;
-      svg {
+      img {
         position: absolute;
         z-index: -1;
         left: -28px;
@@ -80,7 +80,7 @@ main {
   main {
     .blogstop {
       .blogstop-headline {
-        svg {
+        img {
           left: -58px;
         }
       }
