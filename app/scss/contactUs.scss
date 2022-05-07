@@ -2,17 +2,17 @@
 @import "colors";
 
 main {
-  .contact-us {
+  .contactUs {
     display: flex;
     margin-top: 163px;
     gap: 89px;
     justify-content: center;
     padding: 0 40px;
-    .contact-form {
+    .contactUs-form {
       display: flex;
       flex-direction: column;
 
-      .form-headline {
+      .contactUs-form-headline {
         max-width: 542px;
 
         p {
@@ -21,7 +21,7 @@ main {
         }
       }
 
-      .form-content {
+      .contactUs-form-content {
         max-width: 560px;
 
         label {
@@ -78,13 +78,13 @@ main {
         }
       }
     }
-    .contact-showcase {
-      .contact-img {
+    .contactUs-showcase {
+      .contactUs-img {
         position: relative;
         display: flex;
         justify-content: center;
 
-        .shedule-img {
+        .contactUs-shedule-img {
           position: absolute;
           z-index: 2;
           left: 0;
@@ -92,7 +92,7 @@ main {
           width: 500px;
         }
 
-        .shedule-text {
+        .contactUs-shedule-text {
           position: absolute;
           top: 352px;
           text-align: center;
@@ -127,7 +127,7 @@ main {
         }
       }
 
-      .contact-address {
+      .contactUs-address {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -143,7 +143,7 @@ main {
         }
       }
 
-      .contact-social-media {
+      .contactUs-social-media {
         padding: 5px 0 81px 83px;
         display: flex;
         gap: 17px;
@@ -172,7 +172,7 @@ main {
 
 @media #{$mq-1180-down} {
   main {
-    .contact-us {
+    .contactUs {
       margin-top: 130px;
     }
   }
@@ -180,19 +180,19 @@ main {
 
 @media #{$mq-1000-down} {
   main {
-    .contact-us {
+    .contactUs {
       display: flex;
       flex-direction: column-reverse;
       gap: 40px;
       align-items: center;
       padding: 0 40px;
-      .contact-showcase {
-        .contact-social-media {
+      .contactUs-showcase {
+        .contactUs-social-media {
           padding: 5px 0 0 83px;
         }
       }
-      .contact-form {
-        .form-content {
+      .contactUs-form {
+        .contactUs-form-content {
           label {
             margin: 20px 0 10px;
           }
@@ -208,24 +208,24 @@ main {
 
 @media #{$mq-620-down} {
   main {
-    .contact-us {
+    .contactUs {
       margin-top: 100px;
       padding: 0 20px;
-      .contact-showcase {
-        .contact-img {
+      .contactUs-showcase {
+        .contactUs-img {
           display: flex;
           flex-direction: column;
 
-          .shedule-bg {
+          .contactUs-shedule-bg {
             display: none;
           }
 
-          .shedule-img {
+          .contactUs-shedule-img {
             position: static;
             width: 100%;
           }
 
-          .shedule-text {
+          .contactUs-shedule-text {
             position: static;
             width: 100%;
             padding: 0 0 20px 0;
@@ -237,7 +237,7 @@ main {
           }
         }
 
-        .contact-address {
+        .contactUs-address {
           padding-left: 0;
           width: 100%;
           padding: 0 20px;
@@ -251,16 +251,16 @@ main {
           }
         }
 
-        .contact-social-media {
+        .contactUs-social-media {
           padding: 0;
           justify-content: center;
         }
       }
-      .contact-form {
-        .form-headline {
+      .contactUs-form {
+        .contactUs-form-headline {
           margin-top: 10px;
         }
-        .form-content {
+        .contactUs-form-content {
           label {
             margin: 10px 0 0;
           }
