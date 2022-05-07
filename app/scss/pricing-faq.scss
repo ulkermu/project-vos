@@ -21,7 +21,7 @@ body {
           max-width: 80px;
           text-align: center;
         }
-        svg {
+        img {
           position: absolute;
           top: 30px;
           z-index: -1;
@@ -76,12 +76,6 @@ body {
               .pricing-faq-slidedown-headline-mark.pricing-faq-slidedown-headline-markup {
                 display: none;
               }
-
-              /*.pricing-faq-slidedown-headline-markup {
-                cursor: pointer;
-                width: 16px;
-                display: none;
-              }*/
             }
             .pricing-faq-slidedown-hidden {
               display: none;
@@ -102,26 +96,6 @@ body {
     }
   }
 }
-/*
-@media #{$mq-1180-down} {
-  body {
-    .pricing-faq-bg {
-      .pricing-faq {
-        .pricing-faq-slidedowns-container {
-          flex-direction: column;
-          gap: 25px;
-          .pricing-faq-slidedowns-1,
-          .pricing-faq-slidedowns-2 {
-            display: flex;
-            flex-direction: column;
-            gap: 25px;
-          }
-        }
-      }
-    }
-  }
-}
-*/
 
 @media #{$mq-1180-down} {
   body {
@@ -163,6 +137,20 @@ body {
                 }
               }
             }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media #{$mq-1000-down} {
+  body {
+    .pricing-faq-bg {
+      .pricing-faq {
+        .pricing-faq-headline {
+          img {
+            top: 20px;
           }
         }
       }
