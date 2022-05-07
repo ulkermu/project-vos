@@ -16,7 +16,7 @@
     <!-- CSS File -->
     <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="dist/style.css?cb=1651930456522">
+    <link rel="stylesheet" href="dist/style.css?cb=1651932256995">
 
 <body>
     <header>
@@ -540,14 +540,15 @@
                 $(this).parent().find('.pricingFaq-slidedown-headline-mark').toggle();
             });
 
-            // Direk css vermek yerine className toggle et, o className bu stillere sahip olsun. Bu sekilde stilin nereden geldigini anlamak cok zor.
             $(".pricing-circle").click(function () {
-                $(this).parent().find('.pricing-circle').css('background', '#b1afaf');
-                $(this).css('background', '#89d99d');
-            })
-            /*$(".pricing-circle").click(function () {
-                $(this).parent().find('.pricing-circle').toggleClass('pricing-circle-bg');
-            });*/
+                if ($(this).hasClass("pricing-circle-bg")) {
+                    $(".pricing-circle").removeClass("pricing-circle-bg");
+                }
+                else {
+                    $(".pricing-circle").removeClass("pricing-circle-bg");
+                    $(this).addClass("pricing-circle-bg");
+                }
+            });
         });
 
     </script>
