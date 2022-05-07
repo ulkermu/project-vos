@@ -64,17 +64,24 @@ body {
                 color: $primaryLightColor;
                 text-align: start;
               }
-              .pricing-faq-slidedown-headline-markdown {
+              .pricing-faq-slidedown-headline-mark {
                 cursor: pointer;
                 width: 16px;
+              }
+
+              .pricing-faq-slidedown-headline-mark.pricing-faq-slidedown-headline-markdown {
                 display: block;
               }
 
-              .pricing-faq-slidedown-headline-markup {
+              .pricing-faq-slidedown-headline-mark.pricing-faq-slidedown-headline-markup {
+                display: none;
+              }
+
+              /*.pricing-faq-slidedown-headline-markup {
                 cursor: pointer;
                 width: 16px;
                 display: none;
-              }
+              }*/
             }
             .pricing-faq-slidedown-hidden {
               display: none;
