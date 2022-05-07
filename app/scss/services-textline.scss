@@ -1,7 +1,7 @@
 @import "variables";
 
 main {
-  .services-textline {
+  .servicesTextline {
     padding-top: 72px;
     padding-bottom: 100px;
     display: flex;
@@ -9,37 +9,37 @@ main {
     align-items: center;
     gap: 75px;
 
-    .services-text-content {
+    .servicesTextline-text-content {
       display: flex;
       max-width: 988px;
       padding: 0 40px;
       position: relative;
 
-      .service-text-img {
+      .servicesTextline-text-img {
         width: 235px;
       }
 
-      .service-text-img-bg-1 {
+      .servicesTextline-text-img-bg-1 {
         position: absolute;
         left: -54px;
         top: -50px;
       }
 
-      .service-text-img-bg-2 {
+      .servicesTextline-text-img-bg-2 {
         position: absolute;
         bottom: 0;
         right: -27px;
         z-index: -1;
       }
 
-      .service-text-img-bg-3 {
+      .servicesTextline-text-img-bg-3 {
         position: absolute;
         top: -33px;
         right: -50px;
         z-index: -1;
       }
 
-      .service-text-in {
+      .servicesTextline-text-in {
         padding: 0 75px;
         p {
           text-align: start;
@@ -51,21 +51,21 @@ main {
 
 @media #{$mq-1180-down} {
   main {
-    .services-textline {
+    .servicesTextline {
       gap: 40px;
-      .services-text-content {
+      .servicesTextline-text-content {
         position: relative;
-        .service-text-img-bg-1 {
+        .servicesTextline-text-img-bg-1 {
           display: none;
         }
-        .service-text-img-bg-2 {
+        .servicesTextline-text-img-bg-2 {
           display: none;
         }
-        .service-text-img-bg-3 {
+        .servicesTextline-text-img-bg-3 {
           display: none;
         }
 
-        .service-text-in {
+        .servicesTextline-text-in {
           padding: 0 20px;
           h4 {
             padding-bottom: 10px;
@@ -78,8 +78,8 @@ main {
 
 @media #{$mq-660-down} {
   main {
-    .services-textline {
-      .services-text-content {
+    .servicesTextline {
+      .servicesTextline-text-content {
         padding: 0;
       }
     }
@@ -88,15 +88,15 @@ main {
 
 @media #{$mq-545-down} {
   main {
-    .services-textline {
-      .services-text-content {
+    .servicesTextline {
+      .servicesTextline-text-content {
         align-items: center;
       }
 
-      .service-text-content-left {
+      .servicesTextline-text-content-left {
         flex-direction: column;
       }
-      .service-text-content-right {
+      .servicesTextline-text-content-right {
         flex-direction: column-reverse;
       }
     }

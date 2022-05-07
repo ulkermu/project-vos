@@ -2,7 +2,7 @@
 @import "colors";
 
 main {
-  .services-maintaince {
+  .servicesMaintaince {
     padding-top: 167px;
     padding-bottom: 191px;
     background: url(../../img/servicesDetail/maintaince-bg.svg) no-repeat right;
@@ -11,7 +11,7 @@ main {
     justify-content: center;
     gap: 67px;
 
-    .maintaince-headline {
+    .servicesMaintaince-headline {
       max-width: 582px;
       position: relative;
 
@@ -29,17 +29,17 @@ main {
         z-index: -1;
       }
 
-      .maintaince-headline-placeholder {
+      .servicesMaintaince-headline-placeholder {
         padding-bottom: 30px;
       }
     }
 
-    .maintaince-content {
+    .servicesMaintaince-content {
       display: flex;
       flex-direction: column;
       gap: 40px;
 
-      .maintaince-content-panel {
+      .servicesMaintaince-content-panel {
         display: flex;
         padding: 30px 20px;
         max-width: 380px;
@@ -70,16 +70,16 @@ main {
 
 @media #{$mq-1180-down} {
   main {
-    .services-maintaince {
+    .servicesMaintaince {
       background: none;
       flex-direction: column;
       padding: 40px 50px 0;
 
-      .maintaince-headline {
+      .servicesMaintaince-headline {
         max-width: 1180px;
       }
 
-      .maintaince-content {
+      .servicesMaintaince-content {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 
@@ -99,24 +99,24 @@ main {
 
 @media #{$mq-900-down} {
   main {
-    .services-maintaince {
+    .servicesMaintaince {
       padding: 40px 20px 0;
       gap: 30px;
-      .maintaince-headline {
+      .servicesMaintaince-headline {
         h4 {
           padding-bottom: 20px;
         }
 
-        .maintaince-headline-placeholder {
+        .servicesMaintaince-headline-placeholder {
           padding-bottom: 20px;
         }
       }
-      .maintaince-content {
+      .servicesMaintaince-content {
         display: flex;
         justify-items: center;
         width: 100%;
         gap: 20px;
-        .maintaince-content-panel {
+        .servicesMaintaince-content-panel {
           max-width: inherit;
         }
       }

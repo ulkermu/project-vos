@@ -7,12 +7,12 @@
   background-size: 56.6%;
 
   main {
-    .services-showcase {
-      .services-showcase-header {
+    .servicesShowcase {
+      .servicesShowcase-header {
         display: flex;
         justify-content: center;
         gap: 90px;
-        .showcase-text {
+        .servicesShowcase-text {
           padding: 0 30px;
           margin-top: 177px;
           max-width: 468px;
@@ -42,7 +42,7 @@
           }
         }
 
-        .showcase-img {
+        .servicesShowcase-img {
           margin-top: 71px;
         }
       }
@@ -56,8 +56,8 @@
     width: 100%;
     background-size: 56.6%;
     main {
-      .services-showcase {
-        .services-showcase-header {
+      .servicesShowcase {
+        .servicesShowcase-header {
           gap: 0;
         }
       }
@@ -69,13 +69,13 @@
   .service-detail-body {
     background: none;
     main {
-      .services-showcase {
-        .services-showcase-header {
+      .servicesShowcase {
+        .servicesShowcase-header {
           gap: 0;
           flex-direction: column;
           align-items: center;
 
-          .showcase-text {
+          .servicesShowcase-text {
             padding: 0 20px;
             margin-top: 20px;
             display: flex;
@@ -93,7 +93,7 @@
             }
           }
   
-          .showcase-img {
+          .servicesShowcase-img {
             margin-top: 40px;
             width: 100%;
             padding: 0 20px;
@@ -107,9 +107,9 @@
 @media #{$mq-900-down} {
   .service-detail-body {
     main {
-      .services-showcase {
-        .services-showcase-header {
-          .showcase-text {
+      .servicesShowcase {
+        .servicesShowcase-header {
+          .servicesShowcase-text {
             margin-top: 0;
           }
         }

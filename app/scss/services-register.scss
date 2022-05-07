@@ -2,17 +2,17 @@
 @import "colors";
 
 .service-detail-body {
-  .services-bg {
+  .servicesBg {
     background-image: url(../../img/servicesDetail/services-detail-bottom-bg.svg);
     background-repeat: no-repeat;
     width: 100%;
     background-size: 100%;
-    .services-register {
+    .servicesRegister {
       display: flex;
       justify-content: center;
       position: relative;
 
-      .services-register-content {
+      .servicesRegister-content {
         max-width: 611px;
         padding-top: 200px;
         display: flex;
@@ -54,9 +54,9 @@
 
 @media #{$mq-1000-down} {
   .service-detail-body {
-    .services-bg {
-      .services-register {
-        .services-register-content {
+    .servicesBg {
+      .servicesRegister {
+        .servicesRegister-content {
           padding: 90px 20px 60px;
         }
       }
