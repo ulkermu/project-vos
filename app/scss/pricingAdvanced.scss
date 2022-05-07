@@ -16,6 +16,11 @@ main {
     align-items: center;
     margin-top: 69px;
 
+    .pricingAdvanced-headline-right-circle {
+      position: absolute;
+      right: 0;
+    }
+
     .pricingAdvanced-headline {
       max-width: 435px;
       position: relative;
@@ -263,6 +268,9 @@ main {
 @media #{$mq-768-down} {
   main {
     .pricingAdvanced {
+      .pricingAdvanced-headline-right-circle {
+        display: none;
+      }
       .pricingAdvanced-choices {
         .pricingAdvanced-panel {
           width: 100%;

@@ -16,7 +16,7 @@
     <!-- CSS File -->
     <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="dist/style.css?cb=1651932256995">
+    <link rel="stylesheet" href="dist/style.css?cb=1651951438883">
 
 <body>
     <header>
@@ -76,6 +76,7 @@
 
     <main>
         <section class="pricingAdvanced">
+            <img class="pricingAdvanced-headline-right-circle" src="./img/pricing/pricing-advanced-right-circle.svg">
             <div class="pricingAdvanced-headline">
                 <h3>Our Unbeatable Pricing</h3>
                 <p>Choose the package hour and
@@ -542,7 +543,8 @@
 
             $(".pricing-circle").click(function () {
                 if ($(this).hasClass("pricing-circle-bg")) {
-                    $(".pricing-circle").removeClass("pricing-circle-bg");
+                    //$(".pricing-circle").removeClass("pricing-circle-bg");
+                    return;
                 }
                 else {
                     $(".pricing-circle").removeClass("pricing-circle-bg");
