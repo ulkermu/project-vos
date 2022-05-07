@@ -28,7 +28,7 @@ main {
       align-items: center;
       position: relative;
 
-      svg {
+      img {
         position: absolute;
         z-index: -1;
         bottom: -10px;
@@ -161,7 +161,7 @@ main {
     .customerComments {
       margin: 60px 0 0 0;
       .customerComments-headline {
-        svg {
+        img {
           bottom: -15px;
           left: -37px;
         }
@@ -222,7 +222,7 @@ main {
   main {
     .customerComments {
       .customerComments-headline {
-        svg {
+        img {
           width: 300px;
           left: -47px;
           width: 280px;
