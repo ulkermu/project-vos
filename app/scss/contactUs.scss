@@ -133,11 +133,18 @@ main {
         align-items: flex-start;
         padding-left: 54px;
         padding-top: 60px;
+        padding-bottom: 25px;
+        gap: 20px;
         div {
           display: flex;
+          gap: 20px;
+          img {
+            display: flex;
+            align-self: flex-start;
+            padding-top: 6px;
+          }
           p {
             max-width: 403px;
-            padding: 0 0 20px 20px;
             text-align: start;
           }
         }
@@ -240,13 +247,12 @@ main {
         .contactUs-address {
           padding-left: 0;
           width: 100%;
-          padding: 0 20px;
+          padding: 20px;
           div {
-            padding: 0;
             display: flex;
           }
 
-          svg {
+          img {
             min-width: 18px;
           }
         }
