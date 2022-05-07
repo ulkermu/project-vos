@@ -3,7 +3,7 @@
 @import "variables";
 
 main {
-  .whoAreWe-services-bg {
+  .whoAreWeServicesBg {
     .whoAreWe {
       width: 100%;
       position: relative;
@@ -101,7 +101,7 @@ main {
 
 @media #{$mq-1024-down} {
   main {
-    .whoAreWe-services-bg {
+    .whoAreWeServicesBg {
       .whoAreWe {
         .whoAreWe-container {
           margin-top: 30px;
@@ -113,7 +113,7 @@ main {
 
 @media #{$mq-900-down} {
   main {
-    .whoAreWe-services-bg {
+    .whoAreWeServicesBg {
       .whoAreWe {
         .whoAreWe-container {
           .whoAreWe-panels {
@@ -130,7 +130,7 @@ main {
 
 @media #{$mq-545-down} {
   main {
-    .whoAreWe-services-bg {
+    .whoAreWeServicesBg {
       .whoAreWe {
         .whoAreWe-container {
           .whoAreWe-headline {
@@ -146,7 +146,7 @@ main {
 
 @media #{$mq-480-down} {
   main {
-    .whoAreWe-services-bg {
+    .whoAreWeServicesBg {
       .whoAreWe {
         .whoAreWe-container {
           display: flex;
