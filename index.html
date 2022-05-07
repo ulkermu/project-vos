@@ -15,7 +15,7 @@
 
     <!-- CSS File -->
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="dist/style.css?cb=1651887384025">
+    <link rel="stylesheet" href="dist/style.css?cb=1651889318669">
 </head>
 
 <body class="index-body">
@@ -957,6 +957,7 @@
         //* Toggle Nav Bar 
 
         const menu = document.querySelector(".menu");
+        const mobilMenu = document.querySelector(".mobil-menu");
         const menuLink = document.querySelector(".nav-bar-burger");
         const menuOverlay = document.querySelector(".menu-overlay");
         const burger1 = document.querySelector(".nav-bar-burger-inc-1");
@@ -968,6 +969,7 @@
             burger1.classList.toggle('nav-bar-burger-inc');
             burger2.classList.toggle('nav-bar-burger-inc');
             burger3.classList.toggle('nav-bar-burger-inc');
+            document.body.classList.toggle('overflow');
         });
 
         //* Search Input - Home Page

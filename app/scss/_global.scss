@@ -14,6 +14,10 @@ html {
   font-family: "Montserrat", sans-serif;
 }
 
+body.overflow {
+  overflow-y: hidden;
+}
+
 .index-body {
   background: url(../../img/showCase/showcase-bg-crop.svg) no-repeat top right;
   width: 100%;
