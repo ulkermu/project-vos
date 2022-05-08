@@ -44,8 +44,7 @@ header {
       li {
         list-style-type: none;
 
-        .nav-bar-link-white.selected,
-        .nav-bar-link-black.selected {
+        .nav-bar-link.selected {
           color: $thirdColor;
         }
 

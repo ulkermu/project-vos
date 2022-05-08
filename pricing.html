@@ -16,7 +16,7 @@
     <!-- CSS File -->
     <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="dist/style.css?cb=1652010674832">
+    <link rel="stylesheet" href="dist/style.css?cb=1652014142229">
 
 <body>
     <header>
@@ -479,84 +479,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://unpkg.com/@popperjs/core@2"></script>
-    <script src="https://unpkg.com/tippy.js@6"></script>
-    <script type="module">
-        //* Toggle Nav Bar 
-
-        const menu = document.querySelector(".menu");
-        const menuLink = document.querySelector(".nav-bar-burger");
-        const menuOverlay = document.querySelector(".menu-overlay");
-        const burger1 = document.querySelector(".nav-bar-burger-inc-1");
-        const burger2 = document.querySelector(".nav-bar-burger-inc-2");
-        const burger3 = document.querySelector(".nav-bar-burger-inc-3");
-
-        menuLink.addEventListener("click", () => {
-            menuOverlay.classList.toggle("open");
-            burger1.classList.toggle('nav-bar-burger-inc');
-            burger2.classList.toggle('nav-bar-burger-inc');
-            burger3.classList.toggle('nav-bar-burger-inc');
-        });
-
-        //* Search Bar
-
-        const searchIcon = document.querySelector(".search-icon");
-        const searchInput = document.querySelector(".search-input");
-
-        searchIcon.addEventListener("click", () => {
-            searchInput.classList.toggle("fade");
-        })
-
-        //* Advanced Price Choose 
-
-        const circles = document.querySelectorAll('.pricing-circle');
-        const pricingByHours = document.getElementById('pricingByHours');
-        circles.forEach((circle) => {
-            const index = [...circle.parentElement.children].indexOf(circle);
-            circle.addEventListener('click', () => {
-                const greenLine = document.querySelector(".pricing-inline");
-                greenLine.style.width = `${(index * 100) / (circles.length - 1)}%`;
-                pricingByHours.textContent = `${circle.getAttribute('data-price')}`;
-            });
-            tippy(circle, {
-                content: `${index + 1} hr.`,
-                placement: 'top',
-                arrow: true,
-                theme: 'tool',
-                animation: 'fade',
-                hideOnClick: false,
-                //multiple: false,
-                triggerTarget: null,
-                trigger: 'click',
-                offset: [0, 15],
-                zIndex: 1,
-            });
-        });
-
-        window.onload = function () {
-            $("#autoShowPrice").click();
-        }
-
-        //* Pricing FAQ
-        $(document).ready(function () {
-            $(".pricingFaq-slidedown-headline-mark").click(function () {
-                $(this).parent().parent().find(".pricingFaq-slidedown-hidden").stop().slideToggle("normal");
-                $(this).parent().find('.pricingFaq-slidedown-headline-mark').toggle();
-                $(this).parent().find('p').toggleClass('selected-p');
-            });
-
-            $(".pricing-circle").click(function () {
-                if ($(this).hasClass("pricing-circle-bg")) {
-                    return;
-                }
-                else {
-                    $(".pricing-circle").removeClass("pricing-circle-bg");
-                    $(this).addClass("pricing-circle-bg");
-                }
-            });
-        });
-
-    </script>
+    <script type="module" src="dist/all.js?cb=1652014142229"></script>
 </body>
 
 </html>

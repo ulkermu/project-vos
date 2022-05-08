@@ -15,7 +15,7 @@
 
     <!-- CSS File -->
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="dist/style.css?cb=1652010674832">
+    <link rel="stylesheet" href="dist/style.css?cb=1652014260690">
 
 <body class="service-detail-body">
     <header>
@@ -279,33 +279,7 @@
         </footer>
     </div>
     <!-- JavaScript File -->
-    <script>
-
-        //* Toggle Nav Bar 
-
-        const menu = document.querySelector(".menu");
-        const menuLink = document.querySelector(".nav-bar-burger");
-        const menuOverlay = document.querySelector(".menu-overlay");
-        const burger1 = document.querySelector(".nav-bar-burger-inc-1");
-        const burger2 = document.querySelector(".nav-bar-burger-inc-2");
-        const burger3 = document.querySelector(".nav-bar-burger-inc-3");
-
-        menuLink.addEventListener("click", () => {
-            menuOverlay.classList.toggle("open");
-            burger1.classList.toggle('nav-bar-burger-inc');
-            burger2.classList.toggle('nav-bar-burger-inc');
-            burger3.classList.toggle('nav-bar-burger-inc');
-        });
-
-        //* Search Bar
-        
-        const searchIcon = document.querySelector(".search-icon");
-        const searchInput = document.querySelector(".search-input");
-
-        searchIcon.addEventListener("click", () => {
-            searchInput.classList.toggle("fade");
-        })
-    </script>
+    <script type="module" src="dist/all.js?cb=1652014260690"></script>
 </body>
 
 </html>
