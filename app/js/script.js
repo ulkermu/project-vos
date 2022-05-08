@@ -30,90 +30,107 @@ searchIcon.addEventListener("click", () => {
 });
 
 //* Swiper
+const swiperContainer = document.getElementById("swiper");
 
-const swiper = new Swiper(".swiper-container", {
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  effect: "coverflow",
-  grabCursor: true,
-  centeredSlides: true,
-  slidesPerView: "auto",
-  initialSlide: 1,
-  coverflowEffect: {
-    rotate: 0,
-    stretch: 194,
-    depth: 219.61,
-    modifier: 2,
-    slideShadows: true,
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
+if (swiperContainer) {
+  new Swiper(".swiper-container", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    initialSlide: 1,
+    coverflowEffect: {
+      rotate: 0,
+      stretch: 194,
+      depth: 219.61,
+      modifier: 2,
+      slideShadows: true,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
 
-  breakpoints: {
-    320: {
-      effect: "coverflow",
-      grabCursor: true,
-      centeredSlides: true,
-      slidesPerView: "auto",
-      initialSlide: 1,
-      speed: 300,
-      coverflowEffect: {
-        rotate: 0,
-        stretch: 94,
-        depth: 19.61,
-        modifier: 2,
-        slideShadows: true,
+    breakpoints: {
+      320: {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        initialSlide: 1,
+        speed: 300,
+        coverflowEffect: {
+          rotate: 0,
+          stretch: 94,
+          depth: 19.61,
+          modifier: 2,
+          slideShadows: true,
+        },
+      },
+      // When window width is >= 760px
+      760: {
+        coverflowEffect: {
+          rotate: 0,
+          stretch: 194,
+          depth: 219.61,
+          modifier: 2,
+          slideShadows: true,
+        },
       },
     },
-    // When window width is >= 760px
-    760: {
-      coverflowEffect: {
-        rotate: 0,
-        stretch: 194,
-        depth: 219.61,
-        modifier: 2,
-        slideShadows: true,
-      },
-    },
-  },
-});
-
-//* Advanced Price Choose
-
-const circles = document.querySelectorAll(".pricing-circle");
-const pricingByHours = document.getElementById("pricingByHours");
-circles.forEach((circle) => {
-  const index = [...circle.parentElement.children].indexOf(circle);
-  circle.addEventListener("click", () => {
-    const greenLine = document.querySelector(".pricing-inline");
-    greenLine.style.width = `${(index * 100) / (circles.length - 1)}%`;
-    pricingByHours.textContent = `${circle.getAttribute("data-price")}`;
   });
-});
+}
 
-//* Pricing FAQ
-$(document).ready(function () {
-  $(".pricingFaq-slidedown-headline-mark").click(function () {
-    $(this)
-      .parent()
-      .parent()
-      .find(".pricingFaq-slidedown-hidden")
-      .stop()
-      .slideToggle("normal");
-    $(this).parent().find(".pricingFaq-slidedown-headline-mark").toggle();
-    $(this).parent().find("p").toggleClass("selected-p");
+//* Price
+const priceContainer = document.getElementById("priceContainer");
+
+if (priceContainer) {
+  const circles = document.querySelectorAll(".pricing-circle");
+  const pricingByHours = document.getElementById("pricingByHours");
+  circles.forEach((circle) => {
+    const index = [...circle.parentElement.children].indexOf(circle);
+    circle.addEventListener("click", () => {
+      const greenLine = document.querySelector(".pricing-inline");
+      greenLine.style.width = `${(index * 100) / (circles.length - 1)}%`;
+      pricingByHours.textContent = `${circle.getAttribute("data-price")}`;
+    });
   });
 
-  $(".pricing-circle").click(function () {
-    if ($(this).hasClass("pricing-circle-bg")) {
-      return;
-    } else {
-      $(".pricing-circle").removeClass("pricing-circle-bg");
-      $(this).addClass("pricing-circle-bg");
-    }
+  window.onload = function () {
+    $("#autoShowPrice").click();
+  };
+
+  $(document).ready(function () {
+    $(".pricingFaq-slidedown-headline-mark").click(function () {
+      $(this)
+        .parent()
+        .parent()
+        .find(".pricingFaq-slidedown-hidden")
+        .stop()
+        .slideToggle("normal");
+      $(this).parent().find(".pricingFaq-slidedown-headline-mark").toggle();
+      $(this).parent().find("p").toggleClass("selected-p");
+    });
+
+    $(".pricing-circle").click(function () {
+      if (
+        $(this).hasClass("pricing-circle-bg") &&
+        $(this).children().children().hasClass("messageTopDisplay")
+      ) {
+        return;
+      } else {
+        $(".pricing-circle").removeClass("pricing-circle-bg");
+        $(this).addClass("pricing-circle-bg");
+        $(".pricing-circle")
+          .children()
+          .children()
+          .removeClass("messageTopDisplay");
+        $(this).children().children().addClass("messageTopDisplay");
+      }
+    });
   });
-});
+}
