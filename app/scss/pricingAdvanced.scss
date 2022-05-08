@@ -170,6 +170,34 @@ main {
                     border-radius: 50%;
                     position: relative;
                     z-index: 6;
+
+                    .messageTop {
+                      position: absolute;
+                      top: -50px;
+                      left: -21px;
+                      width: 59px;
+                      height: 33px;
+                      background-color: $thirdColor;
+                      border-radius: 7px;
+                      font-size: 16px;
+                      color: $white;
+                      justify-content: center;
+                      align-items: center;
+                      display: none;
+                    }
+                    .messageTop::after {
+                      content: "";
+                      width: 0;
+                      height: 0;
+                      border-style: solid;
+                      border-width: 6px 6px 0 6px;
+                      border-color: #89d99d transparent transparent transparent;
+                      position: absolute;
+                      bottom: -6px;
+                    }
+                    .messageTopDisplay {
+                      display: flex;
+                    }
                   }
                 }
 
@@ -264,7 +292,7 @@ main {
       }
       .pricingAdvanced-choices {
         width: 93%;
-        
+
         .pricingAdvanced-panel-arrow {
           display: none;
         }
@@ -287,7 +315,10 @@ main {
             .pricingAdvanced-line {
               padding: 0 20px;
               margin-top: 0;
-              margin-bottom: 40px;
+              margin-bottom: 50px;
+            }
+            .pricingAdvanced-panel-text {
+              padding-bottom: 60px;
             }
             img {
               object-fit: cover;

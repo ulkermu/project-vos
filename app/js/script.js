@@ -20,7 +20,7 @@ menuLink.addEventListener("click", () => {
   burger3.classList.toggle("nav-bar-burger-inc");
 });
 
-//* Search Input - Home Page
+//* Search Input
 
 const searchIcon = document.querySelector(".search-icon");
 const searchInput = document.querySelector(".search-input");
