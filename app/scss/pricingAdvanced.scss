@@ -158,6 +158,8 @@ main {
                   align-items: center;
                   position: relative;
                   z-index: 6;
+                  border: none;
+                  outline: none;
                   :hover {
                     cursor: pointer;
                   }

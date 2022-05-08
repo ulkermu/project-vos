@@ -64,6 +64,10 @@ body {
                 color: $primaryLightColor;
                 text-align: start;
               }
+              .selected-p {
+                color: $secondaryColor;
+                transition: all 500ms ease-out;
+              }
               .pricingFaq-slidedown-headline-mark {
                 cursor: pointer;
                 width: 16px;

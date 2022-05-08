@@ -16,7 +16,7 @@
     <!-- CSS File -->
     <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="dist/style.css?cb=1651952130607">
+    <link rel="stylesheet" href="dist/style.css?cb=1652010674832">
 
 <body>
     <header>
@@ -97,30 +97,30 @@
                             <div class="pricing-line">
                                 <div class="pricing-inline"></div>
                                 <div class="pricing-circles">
-                                    <div class="pricing-circle" data-price="$25">
+                                    <button class="pricing-circle" data-price="$25">
                                         <div class="pricing-inline-circle"></div>
-                                    </div>
-                                    <div class="pricing-circle" data-price="$50">
+                                    </button>
+                                    <button class="pricing-circle" data-price="$50">
                                         <div class="pricing-inline-circle"></div>
-                                    </div>
-                                    <div class="pricing-circle" data-price="$75">
+                                    </button>
+                                    <button class="pricing-circle" data-price="$75">
                                         <div class="pricing-inline-circle"></div>
-                                    </div>
-                                    <div class="pricing-circle" id="autoShowPrice" data-price="$99">
+                                    </button>
+                                    <button class="pricing-circle" id="autoShowPrice" data-price="$99">
                                         <div class="pricing-inline-circle"></div>
-                                    </div>
-                                    <div class="pricing-circle" data-price="$125">
+                                    </button>
+                                    <button class="pricing-circle" data-price="$125">
                                         <div class="pricing-inline-circle"></div>
-                                    </div>
-                                    <div class="pricing-circle" data-price="$150">
+                                    </button>
+                                    <button class="pricing-circle" data-price="$150">
                                         <div class="pricing-inline-circle"></div>
-                                    </div>
-                                    <div class="pricing-circle" data-price="$175">
+                                    </button>
+                                    <button class="pricing-circle" data-price="$175">
                                         <div class="pricing-inline-circle"></div>
-                                    </div>
-                                    <div class="pricing-circle" data-price="$200">
+                                    </button>
+                                    <button class="pricing-circle" data-price="$200">
                                         <div class="pricing-inline-circle"></div>
-                                    </div>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -524,8 +524,8 @@
                 arrow: true,
                 theme: 'tool',
                 animation: 'fade',
-                //hideOnClick: false,
-                multiple: false,
+                hideOnClick: false,
+                //multiple: false,
                 triggerTarget: null,
                 trigger: 'click',
                 offset: [0, 15],
@@ -542,6 +542,7 @@
             $(".pricingFaq-slidedown-headline-mark").click(function () {
                 $(this).parent().parent().find(".pricingFaq-slidedown-hidden").stop().slideToggle("normal");
                 $(this).parent().find('.pricingFaq-slidedown-headline-mark').toggle();
+                $(this).parent().find('p').toggleClass('selected-p');
             });
 
             $(".pricing-circle").click(function () {
