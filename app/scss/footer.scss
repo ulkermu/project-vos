@@ -3,12 +3,12 @@
 @import "variables";
 
 footer {
+  padding-top: 500px;
   background-position: 0 0;
   background-size: cover;
-  background-image: url(../../img/footer/footer-bottom.svg);
+  background-image: url(../../img/footer/footer-bg.svg);
   background-repeat: no-repeat;
   position: relative;
-  margin-top: 200px;
 
   .footer {
     display: flex;
@@ -145,29 +145,9 @@ footer {
   }
 }
 
-footer::before {
-  background-position: 0 0;
-  background-size: cover;
-  background-image: url(../../img/footer/footer-top.svg);
-  background-repeat: no-repeat;
-  position: absolute;
-  width: 100%;
-  content: "";
-  top: -699px;
-  height: 700px;
-}
-
-@media #{$mq-2560-down} {
-  footer::before {
-    height: 500px;
-    top: -499px;
-  }
-}
-
 @media #{$mq-1920-down} {
-  footer::before {
-    height: 353px;
-    top: -353px;
+  footer {
+    padding-top: 382px;
   }
 }
 
@@ -175,6 +155,7 @@ footer::before {
   footer {
     background-position: 86%;
     background-size: cover;
+    padding-top: 179px;
     .footer {
       display: flex;
       flex-direction: column;
@@ -244,9 +225,5 @@ footer::before {
         }
       }
     }
-  }
-
-  footer::before {
-    background-position: 21%;
   }
 }
