@@ -27,6 +27,12 @@
         h4 {
           color: $primaryLightColor;
           font-weight: 600;
+          position: relative;
+          img {
+            position: absolute;
+            left: -26px;
+            top: 3px;
+          }
         }
 
         a {
@@ -58,6 +64,22 @@
       .servicesRegister {
         .servicesRegister-content {
           padding: 90px 20px 60px;
+        }
+      }
+    }
+  }
+}
+
+@media #{$mq-660-down} {
+  .service-detail-body {
+    .servicesBg {
+      .servicesRegister {
+        .servicesRegister-content {
+          h4 {
+            img {
+              display: none;
+            }
+          }
         }
       }
     }

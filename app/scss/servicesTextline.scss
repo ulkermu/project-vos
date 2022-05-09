@@ -2,7 +2,6 @@
 
 main {
   .servicesTextline {
-    padding-top: 72px;
     padding-bottom: 100px;
     display: flex;
     flex-direction: column;
@@ -52,6 +51,7 @@ main {
 @media #{$mq-1180-down} {
   main {
     .servicesTextline {
+      padding-top: 72px;
       gap: 40px;
       .servicesTextline-text-content {
         position: relative;
