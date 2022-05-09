@@ -11,8 +11,8 @@ main {
       display: flex;
       justify-content: center;
 
-      .services-operation-img {
-        padding-top: 50px;
+      .services-operation-img-mobile {
+        display: none;
       }
     }
 
@@ -102,9 +102,14 @@ main {
         display: flex;
         justify-content: center;
 
-        .services-operation-img {
+        .services-operation-img-mobile {
+          display: block;
           padding: 0 20px;
           width: 100%;
+        }
+
+        .services-operation-img {
+          display: none;
         }
       }
       .services-tickets {
