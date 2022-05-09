@@ -6,7 +6,10 @@ main {
   .blogArticle {
     display: flex;
     justify-content: center;
-    margin-bottom: 86px;
+    padding-bottom: 86px;
+    background: url(../../img/blogDetail/blog-detail-bg.svg) no-repeat top;
+    background-position: 0 150px;
+    background-size: cover;
 
     .blogArticle-content {
       display: flex;
@@ -111,6 +114,19 @@ main {
   }
 }
 
+@media #{$mq-1180-down} {
+  main {
+    .blogArticle {
+      background-position: 0 79px;
+      .blogArticle-content {
+        .blogArticle-content-img {
+          padding-top: 0;
+        }
+      }
+    }
+  }
+}
+
 @media #{$mq-900-down} {
   main {
     .blogArticle {
@@ -128,7 +144,7 @@ main {
 @media #{$mq-700-down} {
   main {
     .blogArticle {
-      margin-bottom: 40px;
+      padding-bottom: 40px;
       .blogArticle-content {
         .blogArticle-content-text {
           .blogArticle-content-text-caption-container {
