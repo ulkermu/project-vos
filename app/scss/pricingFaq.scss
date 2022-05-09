@@ -42,7 +42,6 @@ body {
           .pricingFaq-slidedown {
             display: flex;
             flex-direction: column;
-            //padding: 13px 0;
             position: relative;
             background: $white;
             box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.1);
@@ -55,6 +54,7 @@ body {
               align-items: center;
               justify-content: space-between;
               padding: 13px 40px;
+              cursor: pointer;
               p {
                 max-width: 367px;
                 font-weight: 600;
