@@ -105,15 +105,14 @@ if (priceContainer) {
   };
 
   $(document).ready(function () {
-    $(".pricingFaq-slidedown-headline-mark").click(function () {
+    $(".pricingFaq-slidedown-headline").click(function () {
       $(this)
-        .parent()
         .parent()
         .find(".pricingFaq-slidedown-hidden")
         .stop()
         .slideToggle("normal");
-      $(this).parent().find(".pricingFaq-slidedown-headline-mark").toggle();
-      $(this).parent().find("p").toggleClass("selected-p");
+      $(this).find(".pricingFaq-slidedown-headline-mark").toggle();
+      $(this).find("p").toggleClass("selected-p");
     });
 
     $(".pricing-circle").click(function () {
