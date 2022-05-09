@@ -23,6 +23,10 @@ header {
       margin: 5px;
       transition: all 150ms ease-out;
     }
+
+    .white {
+      background-color: $white;
+    }
   }
 
   .nav-bar {
@@ -122,7 +126,7 @@ header {
     display: none;
 
     .menu-overlay {
-      background-color: $menuOverlay;
+      background-color: $white;
       color: #333;
       height: 100vh;
       width: 100%;
@@ -153,7 +157,7 @@ header {
             display: flex;
             justify-content: flex-start;
             padding: 15px 0;
-            border-bottom: 1px solid $borderLt;
+            border-bottom: 1px solid rgb(132 166 247 / 40%);
             width: 100%;
 
             .selected {
@@ -167,7 +171,7 @@ header {
               letter-spacing: -0.183908px;
               font-weight: 500;
               font-style: normal;
-              color: $white;
+              color: $menuOverlay;
               margin-left: 36px;
             }
 
@@ -229,12 +233,11 @@ header {
 @media #{$mq-1180-down} {
   header {
     width: 100%;
-    background-color: $white;
+    background-color: transparent;
     height: 90px;
     position: fixed;
     z-index: 9999;
     top: 0;
-    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
 
     .nav-bar-logo-fix {
       display: block;
@@ -257,6 +260,7 @@ header {
 
       .nav-bar-burger-inc.nav-bar-burger-inc-1 {
         transform: rotate(-45deg) translate(-5px, 5px);
+        background-color: $menuOverlay;
       }
 
       .nav-bar-burger-inc.nav-bar-burger-inc-2 {
@@ -265,6 +269,7 @@ header {
 
       .nav-bar-burger-inc.nav-bar-burger-inc-3 {
         transform: rotate(45deg) translate(-4px, -5px);
+        background-color: $menuOverlay;
       }
     }
 
@@ -292,5 +297,9 @@ header {
         }
       }
     }
+  }
+  header.scrolled  {
+    background-color: rgb(130, 166, 247, 0.9) !important;
+    transition: background-color 150ms linear;
   }
 }
