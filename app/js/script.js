@@ -6,12 +6,13 @@ var app = {};
 //* Toggle Nav Bar
 
 const menu = document.querySelector(".menu");
-const mobilMenu = document.querySelector(".mobil-menu");
 const menuLink = document.querySelector(".nav-bar-burger");
 const menuOverlay = document.querySelector(".menu-overlay");
 const burger1 = document.querySelector(".nav-bar-burger-inc-1");
 const burger2 = document.querySelector(".nav-bar-burger-inc-2");
 const burger3 = document.querySelector(".nav-bar-burger-inc-3");
+const mobilSearch = document.querySelector(".mobil-search-input");
+const mobilSearchIcon = document.querySelector(".mobil-search-icon");
 
 menuLink.addEventListener("click", () => {
   menuOverlay.classList.toggle("open");
@@ -29,6 +30,16 @@ searchIcon.addEventListener("click", () => {
   searchInput.classList.toggle("fade");
 });
 
+mobilSearch.addEventListener("focusin", () => {
+  mobilSearchIcon.classList.add("mobil-search-icon-focus");
+});
+
+mobilSearch.addEventListener("focusout", () => {
+  mobilSearchIcon.classList.remove("mobil-search-icon-focus");
+});
+
+
+
 //* Scroll Nav
 
 $(function () {
@@ -38,9 +49,9 @@ $(function () {
     var $burger2 = $(".nav-bar-burger-inc-2");
     var $burger3 = $(".nav-bar-burger-inc-3");
     $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-    $burger1.toggleClass('white', $(this).scrollTop() > $nav.height());
-    $burger2.toggleClass('white', $(this).scrollTop() > $nav.height());
-    $burger3.toggleClass('white', $(this).scrollTop() > $nav.height());
+    $burger1.toggleClass('nav-bar-burger-inc-color', $(this).scrollTop() > $nav.height());
+    $burger2.toggleClass('nav-bar-burger-inc-color', $(this).scrollTop() > $nav.height());
+    $burger3.toggleClass('nav-bar-burger-inc-color', $(this).scrollTop() > $nav.height());
   });
 });
 
