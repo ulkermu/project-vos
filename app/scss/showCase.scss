@@ -89,7 +89,7 @@ main {
 
 @media #{$mq-1177-down} {
   main {
-    margin-top: 120px;
+    margin-top: 30px;
     .showcase {
       .showcase-header {
         width: 100%;
@@ -131,17 +131,6 @@ main {
           grid-template-columns: repeat(2, minmax(161px, 1fr));
           justify-items: center;
           gap: 30px;
-        }
-      }
-    }
-  }
-}
-
-@media #{$mq-545-down} {
-  main {
-    .showcase {
-      .showcase-header {
-        .showcase-headline {
         }
       }
     }

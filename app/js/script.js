@@ -38,15 +38,14 @@ mobilSearch.addEventListener("focusout", () => {
   mobilSearchIcon.classList.remove("mobil-search-icon-focus");
 });
 
-
-
 //* Scroll Nav
 
 $(function () {
   $(document).scroll(function () {
-    const $nav = $(".header");
+    const $header = $(".header");
     const $showcase = $(".showcase")
-    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height() + $showcase.height());
+    $header.toggleClass('scrolled', $(this).scrollTop() > $header.height() + $showcase.height());
+    $header.toggleClass('sticky', $(this).scrollTop() > $header.height() + $showcase.height());
   });
 });
 
