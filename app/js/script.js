@@ -45,7 +45,6 @@ $(function () {
     const $header = $(".header");
     const $showcase = $(".showcase")
     $header.toggleClass('scrolled', $(this).scrollTop() > $header.height() + $showcase.height());
-    $header.toggleClass('sticky', $(this).scrollTop() > $header.height() + $showcase.height());
   });
 });
 
