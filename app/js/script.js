@@ -1,5 +1,3 @@
-console.log("Load script.js");
-
 // Instantiating the global app object
 var app = {};
 
@@ -45,6 +43,7 @@ $(function () {
     const $header = $(".header");
     const $showcase = $(".showcase")
     $header.toggleClass('scrolled', $(this).scrollTop() > $header.height() + $showcase.height());
+    $header.toggleClass('header-transform', $(this).scrollTop() > $header.height()*2);
   });
 });
 
