@@ -249,6 +249,7 @@ header {
   header {
     width: 100%;
     background-color: transparent;
+    transition: background-color 150ms linear;
     height: 90px;
     position: fixed;
     z-index: 9999;
@@ -313,9 +314,18 @@ header {
       }
     }
   }
-  header.scrolled  {
-    background-color: rgb(130, 166, 247, 0.9) !important;
-    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  .header.scrolled {
+    background-color: $white;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
     transition: background-color 150ms linear;
+  }
+  .headerOthers {
+    width: 100%;
+    background-color: $white;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    height: 90px;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
   }
 }

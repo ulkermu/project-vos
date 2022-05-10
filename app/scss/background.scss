@@ -8,7 +8,7 @@ main {
     background: linear-gradient(
       180deg,
       #ffffff 8.61%,
-      rgba(219, 238, 255, 0.402289) 99%
+      rgba(219, 238, 255, 0.402289) 48%
     );
     background-repeat: no-repeat;
     background-size: cover;
@@ -40,7 +40,7 @@ main {
     background-size: cover;
     background-position: 100% 100%;
     width: 100%;
-    height: 240px;
+    height: 25vh;
     display: block;
   }
 }
@@ -48,7 +48,7 @@ main {
 @media #{$mq-1440-down} {
   main {
     .whoAreWeServicesBg::after {
-      height: 184px;
+      height: 17vh;
     }
   }
 }

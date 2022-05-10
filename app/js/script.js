@@ -44,14 +44,9 @@ mobilSearch.addEventListener("focusout", () => {
 
 $(function () {
   $(document).scroll(function () {
-    var $nav = $("header");
-    var $burger1 = $(".nav-bar-burger-inc-1");
-    var $burger2 = $(".nav-bar-burger-inc-2");
-    var $burger3 = $(".nav-bar-burger-inc-3");
-    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-    $burger1.toggleClass('nav-bar-burger-inc-color', $(this).scrollTop() > $nav.height());
-    $burger2.toggleClass('nav-bar-burger-inc-color', $(this).scrollTop() > $nav.height());
-    $burger3.toggleClass('nav-bar-burger-inc-color', $(this).scrollTop() > $nav.height());
+    const $nav = $(".header");
+    const $showcase = $(".showcase")
+    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height() + $showcase.height());
   });
 });
 
